@@ -1,0 +1,114 @@
+// all-button-css-start
+
+
+// border-btn-1-css-start
+.txa-btn-border-1 {
+    display: inline-block;
+    font-family: var(--urbanist);
+    font-size: 15px;
+    font-weight: 800;
+    text-transform: capitalize;
+    color: var(--txa-heading-1);
+    border: 1px solid  #06462B;
+    border-radius: 10px;
+    line-height: 1;
+    padding: 15px 17px;
+}
+// border-btn-1-css-end
+
+
+
+// login-reg-btn-1-css-start
+.txa-login-reg-btn-1 {
+    a , span , button {
+      font-family: var(--urbanist);
+      font-weight: 800;
+      text-transform: capitalize;
+      color: var(--txa-heading-1);
+      display: inline-block;
+      font-size: 15px;
+      transition: 400ms var(--cube-1);
+      &:hover {
+        color: var(--txa-pr-1);
+        transform: translateY(-2px);
+      }
+    }
+}
+// login-reg-btn-1-css-end
+
+// bar-1-css-start
+.txa-bar-1 {
+    flex: 0 0 auto;
+    width: 22px;
+    height: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: 500ms var(--cube-1);
+    
+    span {
+        display: block;
+        background: #000;
+        width: 100%;
+        height: 3px;
+        transition: 500ms var(--cube-1);
+        &:nth-child(2) {
+            width: 80%;
+        }
+        &:nth-child(3) {
+            width: 50%;
+        }
+    }
+    &:hover {
+        span {
+            background-color: var(--txa-pr-1);
+            &:nth-child(2) {
+                width: 100%;
+            }
+            &:nth-child(3) {
+                width: 100%;
+            }
+        }
+    }
+}
+
+// bar-1-css-end
+
+// mobile-toggle-1-css-start
+.txa-mobile-menu-1 {
+    font-size: 24px;
+    color: var(--txa-heading-1);
+    transition: 400ms var(--cube-1);
+    &:hover {
+        color: var(--txa-pr-1);
+    }
+}
+// mobile-toggle-1-css-end
+
+
+// cart-icon-1-css-start]
+.txa-cart-btn-1 {
+    display: inline-block;
+    font-family: var(--urbanist);
+    color: var(--txa-heading-1);
+    font-weight: 800;
+    font-size: 15px;
+    line-height: 1;
+    transition: 400ms var(--cube-1);
+    i {
+        display: inline-block;
+        font-size: 18px;
+        margin-left: 3px;
+        transition: 400ms var(--cube-1);
+    }
+    &:hover {
+        color: var(--txa-pr-1);
+        transform: translateY(-2px);
+    }
+}
+
+// cart-icon-1-css-end
+
+// all-button-css-end
+

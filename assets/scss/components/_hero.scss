@@ -1,0 +1,174 @@
+@use '../abstracts/variables' as *;
+
+.txa-hero-1-content {
+    position: relative;
+
+    .il-img-1 {
+        position: absolute;
+        left: 15vw;
+        top: 10%;
+        @media #{$lg} {
+            left: 10vw;
+        }
+        @media #{$md,$xs} {
+            display: none;
+        }
+    }
+    
+    .il-img-2 {
+        position: absolute;
+        right: 10vw;
+        top: 16%;
+        @media #{$lg} {
+            right: 7vw;
+        }
+        @media #{$md,$xs} {
+            display: none;
+        }
+    }
+    
+    .il-img-3 {
+        position: absolute;
+        left: 9vw;
+        top: 46%;
+        @media #{$lg} {
+            left: 0vw;
+        }
+        @media #{$md,$xs} {
+            display: none;
+        }
+    }
+    
+    .il-img-4 {
+        position: absolute;
+        right: 6vw;
+        bottom: 34%;
+        @media #{$lg} {
+            right: 0vw;
+        }
+        @media #{$md,$xs} {
+            display: none;
+        }
+    }
+    
+    .il-img-5 {
+        position: absolute;
+        right: 8vw;
+        bottom: 18%;
+        @media #{$lg} {
+            right: 0vw;
+        }
+        @media #{$md,$xs} {
+            display: none;
+        }
+    }
+
+    .subtitle {
+        font-size: 22px;
+        line-height: 1.27;
+        margin-bottom: 27px;
+    }
+    .title {
+        font-size: 65px;
+        line-height: 1.16;
+        font-weight: 700;
+        max-width: 740px;
+        margin: 0 auto;
+        margin-bottom: 16px;
+        span {
+            font-weight: 800;
+        }
+        @media #{$lg} {
+            font-size: 60px;
+        }
+        @media #{$md} {
+            font-size: 55px;
+        }
+        @media #{$xs} {
+            font-size: 45px;
+        }
+        @media #{$sm} {
+            font-size: 50px;
+        }
+    }
+    .disc {
+        max-width: 660px;
+        margin: 0 auto;
+        font-size: 22px;
+        margin-bottom: 36px;
+    }
+}
+
+.txa-search-form-1 {
+    max-width: 740px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    input {
+        width: 100%;
+        height: 80px;
+        border-radius: 40px;
+        border: none;
+        outline: none;
+        font-size: 15px;
+        font-weight: 500;
+        color: #9F9F9F;
+        text-transform: capitalize;
+        padding-left: 60px;
+        padding-right: 230px;
+    }
+    .txa-form-1-btn {
+        border: none;
+        outline: none;
+        background: var(--txa-gd-1);
+        font-size: 18px;
+        font-weight: 800;
+
+        line-height: 1;
+        color: #fff;
+        padding: 0px 42px;
+        text-transform: uppercase;
+        height: 100%;
+        border-radius: 0 40px 40px  0;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    
+}
+
+.txa-feature-list {
+    gap: 30px;
+    li {
+        font-family: var(--urbanist);
+        font-weight: 800;
+        color: var(--txa-heading-1);
+        text-transform: capitalize;
+        font-size: 19px;
+        display: inline-block;
+        .icon {
+            display: inline-block;
+            width: 38px;
+            height: 38px;
+            background: var(--txa-gd-1);
+            border-radius: 50%;
+            text-align: center;
+            line-height: 38px;
+            color: #fff;
+            font-size: 16px;
+            margin-right: 4px;
+            transition: 400ms var(--cube-1);
+            i {
+                transition: 800ms var(--cube-1);
+                display: inline-block;
+            }
+        }
+        &:hover {
+            .icon {
+                i {
+                    transform: rotateY(360deg);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,32 @@
+
+
+@font-face {
+    font-family: "flaticon_txa";
+    src: url("../fonts/flaticon_txa.woff2?9ef29c03caddd0789515068a84c5de9d") format("woff2"),
+url("../fonts/flaticon_txa.woff?9ef29c03caddd0789515068a84c5de9d") format("woff"),
+url("../fonts/flaticon_txa.eot?9ef29c03caddd0789515068a84c5de9d#iefix") format("embedded-opentype"),
+url("../fonts/flaticon_txa.ttf?9ef29c03caddd0789515068a84c5de9d") format("truetype"),
+url("../fonts/flaticon_txa.svg?9ef29c03caddd0789515068a84c5de9d#flaticon_txa") format("svg")
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon_txa !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-facebook:before {
+    content: "\f101";
+}
+.flaticon-instagram:before {
+    content: "\f102";
+}
+.flaticon-twitter:before {
+    content: "\f103";
+}
+
