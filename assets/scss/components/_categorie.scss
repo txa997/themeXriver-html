@@ -1,0 +1,168 @@
+@use '../abstracts/variables' as *;
+
+.txa-categorie-1 {
+    &-section-title {
+        max-width: 740px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    &-btn {
+        border-width: 3px;
+        border-color: rgb(227, 242, 227);
+        border-style: dashed;
+        border-radius: 10px;
+        padding: 20px 45px;
+        @media #{$lg} {
+            padding: 20px 25px;
+        }
+        @media #{$xs} {
+            padding: 20px 15px;
+        }
+        @media #{$sm} {
+            padding: 20px 40px;
+        }
+        .nav-link {
+            border: none;
+            outline: none;
+            background: transparent;
+            font-family: var(--urbanist);
+            text-transform: capitalize;
+            font-weight: 700;
+            line-height: 1;
+            font-size: 22px;
+            color: #1e1c1c;
+            padding: 18px 0;
+            position: relative;
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+            width: 100%;
+            transition: 600ms var(--cube-1);
+            @media #{$md,$xs} {
+                padding: 18px 20px;
+            }
+            i {
+                font-size: 18px;
+                line-height: 1;
+                display: inline-block;
+                color: #004226;
+                transform: translateX(-50px);
+                opacity: 0;
+                transition: 600ms var(--cube-1);
+            }
+
+            &::after {
+                content: "";
+                top: 0;
+                left: 0px;
+                background: var(--txa-gd-1);
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+                border-radius: 26.5px 0 0 26.5px;
+                opacity: 0;
+                transition: 600ms var(--cube-1);
+                
+            }
+            &:is(.active) {
+                color: #fff;
+                i {
+                    transform: translateX(0px);
+                    opacity: 1;
+                    @media #{$md,$xs} {
+                        color: #fff;
+                    }
+                }
+                &::after {
+                    opacity: 1;
+                    left: -60px;
+                    width: 113%;
+                    @media #{$lg} {
+                        left: -40px;
+                        width: 100%;
+                    }
+                    @media #{$md,$xs} {
+                        left: 0px;
+                        width: 100%;
+                        border-radius: 26.5px;
+                    }
+                }
+            }
+        }
+
+    }
+    &-tabs-content {
+        padding-left: 40px;
+        @media #{$lg} {
+            padding-left: 0;
+        }
+        @media #{$md,$xs} {
+            padding-top: 50px;
+            padding-left: 0;
+        }
+    }
+    
+}
+
+.txa-categorie-1-item {
+    .main-img {
+        width: 100%;
+        height: 475px;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+    .content-wrap {
+        background: #f5f8ff;
+        border-radius: 0px 0px 10px 10px;
+        margin-left: 35px;
+        margin-right: 35px;
+        padding: 35px 70px;
+        @media #{$lg,$md} {
+            padding: 35px 20px;
+        }
+        @media #{$xs} {
+            padding: 35px 20px;
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+        @media #{$sm} {
+            padding: 35px 20px;
+            margin-left: 35px;
+            margin-right: 35px;
+        }
+    }
+    .title {
+        font-size: 35px;
+        line-height: 1.28;
+        transition: 400ms var(--cube-1);
+
+        @media #{$xl,$lg,$md} {
+            font-size: 32px;
+        }
+
+        @media #{$xs} {
+            font-size: 26px;
+        }
+        @media #{$sm} {
+            font-size: 30px;
+        }
+
+        a {
+            background-image: linear-gradient(#cc2b5e, #cc2b5e);
+            background-size: 100% 0px;
+            background-repeat: no-repeat;
+            background-position: bottom;
+            transition: 400ms var(--cube-1);
+        }
+        &:hover {
+            color: var(--txa-pr-1);
+            a {
+                background-size: 100% 2px;
+            }
+        }
+    }
+}
+

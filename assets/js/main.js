@@ -127,8 +127,99 @@ menuToggle2.addEventListener('click', function(){
 // mobile-menu-toggle-end
 
 
+var tl = gsap.timeline({
+	repeat: -1,
+  });
+  
+  tl.from(".img-path-3", {
+	  opacity: 0,
+	  duration: 1
+  },"1")
+  tl.from(".img-path-3", {
+	  right: "0%",
+	  duration: 2
+  })
+  tl.from(".img-path-1", {
+	opacity: 0,
+	duration: .5
+  })
+  tl.from(".img-path-1", {
+	  top: "50%",
+	  left: "10%",
+	  width: "30%",
+	  duration: 2
+  },)
+  tl.to(".img-path-1", {
+	opacity: 0,
+	duration: .5
+  })
+  tl.to(".img-path-3", {
+	opacity: 0,
+	duration: .5
+  })
+
+  var txacta1 = gsap.timeline({
+
+	scrollTrigger: {
+	  animation: txacta1,
+	  trigger: '.txa-cta-1-area',
+	  start: "top 80%",
+	  end: "top 0%",
+	  scrub: 3,
+	  toggleActions: "play reverse play reverse",
+	  markers: false
+	}
+	});
+	txacta1.from( ".txa-cta-1-il-2" , { right: "0",  duration:1 } )
+	txacta1.from( ".txa-cta-1-il-3" , { right: "0",  duration:1 } )
+	txacta1.from( ".txa-cta-1-il-1" , { left: "0",  duration:1 } )
+
+
+
+
+
+
 
 // gsap-end
+
+
+
+var txacategorie1 = new Swiper(".txa-categorie-1-active", {
+    loop: true,
+    speed: 1000,
+    autoplay: {     //add
+        delay: 4000,   //add
+    },   
+  });
+/*
+brand-logo-1
+====end====
+*/
+
+
+
+let txat1 = new Swiper('.txa-t1-active', {
+	loop: true,
+	spaceBetween: 0,
+	speed: 1000,
+    autoplay: {     //add
+        delay: 4000,   //add
+    }, 
+	navigation: {
+		nextEl: ".txa_t1_next",
+		prevEl: ".txa_t1_prev",
+	},
+	breakpoints: {
+		768: {
+		  slidesPerView: 1,
+		},
+		992: {
+		  slidesPerView: 2,
+		},
+	},
+
+  });
+
 
 
 
@@ -156,43 +247,6 @@ back-to-top
 
 
 
-/*
-mouse-move-animation
-====start====
-*/
-
-document.addEventListener("mousemove" , parallax);
-function parallax(e){
-
-    document.querySelectorAll(".object").forEach(function(move){
-
-        var moving_value = move.getAttribute("data-value");
-        var x = (e.clientX * moving_value) /250;
-        var y = (e.clientY * moving_value) /250;
-
-        move.style.transform = "translateX(" + x + "px) translateY(" + y +"px)";
-    })
-
-}
-
-/*
-mouse-move-animation
-*/
-
-
-/*
-counter-activition
-====start====
-*/
-$('.counter').counterUp({
-	delay: 10,
-	time: 3000
-});
-/*
-counter-activition
-====end====
-*/
-
 
 /*
 data-bg-activition
@@ -206,15 +260,6 @@ data-bg-activition
 ====end====
 */
 
-/*
-wow-activition
-=====start==== 
-*/
-new WOW().init();
-/*
-wow-activition
-=====end==== 
-*/
 
 
 })(jQuery);

@@ -89,7 +89,8 @@
 
 // cart-icon-1-css-start]
 .txa-cart-btn-1 {
-    display: inline-block;
+    display: flex;
+    align-items: center;
     font-family: var(--urbanist);
     color: var(--txa-heading-1);
     font-weight: 800;
@@ -98,7 +99,7 @@
     transition: 400ms var(--cube-1);
     i {
         display: inline-block;
-        font-size: 18px;
+        font-size: 22px;
         margin-left: 3px;
         transition: 400ms var(--cube-1);
     }
@@ -109,6 +110,64 @@
 }
 
 // cart-icon-1-css-end
+
+// pr-btn-1-css-start
+.txa-pr-btn-1 {
+    display: inline-block;
+    flex: 0 0 auto;
+    font-family: var(--urbanist);
+    text-transform: capitalize;
+    font-weight: 900;
+    line-height: 1;
+    font-size: 18px;
+    letter-spacing: .2px;
+    background: var(--txa-gd-1);
+    color: #fff;
+    padding: 21px 45px;
+    border-radius: 31px;
+}
+// pr-btn-1-css-end
+
+// purchase-btn-css-start
+.txa-purchase-btn {
+    font-family: var(--urbanist);
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 16px;
+    background: #595959;
+    color: #fff;
+    line-height: 1;
+    padding: 17px  25px;
+    border-radius: 25px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: 500ms var(--cube-1);
+    &::after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: var(--txa-gd-1);
+        position: absolute;
+        z-index: -1;
+        border-radius: 27px;
+        transform: translate(40px, -20px) rotate(350deg);
+        transition: 500ms var(--cube-1);
+        opacity: 0;
+    }
+    &:hover {
+        color: #fff;
+        letter-spacing: .4px;
+        &::after {
+            transform: translate(0px, 0px) rotate(360deg);
+            opacity: 1;
+        }
+
+    }
+}
+// purchase-btn-css-end
 
 // all-button-css-end
 

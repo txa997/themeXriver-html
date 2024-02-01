@@ -85,10 +85,10 @@
             font-size: 55px;
         }
         @media #{$xs} {
-            font-size: 45px;
+            font-size: 36px;
         }
         @media #{$sm} {
-            font-size: 50px;
+            font-size: 45px;
         }
     }
     .disc {
@@ -116,6 +116,14 @@
         text-transform: capitalize;
         padding-left: 60px;
         padding-right: 230px;
+        @media #{$xs} {
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+        @media #{$sm} {
+            padding-left: 60px;
+            padding-right: 230px;
+        }
     }
     .txa-form-1-btn {
         border: none;
@@ -133,6 +141,23 @@
         position: absolute;
         right: 0;
         top: 0;
+
+         i {
+            line-height: 1;
+            transform: translateY(3px);
+            display: inline-block;
+        }
+
+        @media #{$xs} {
+            border-radius: 40px 40px 40px 40px;
+            position: unset;
+            height: 80px;
+        }
+        @media #{$sm} {
+            border-radius: 0 40px 40px  0;
+            position: absolute;
+            height: 100%;
+        }
     }
     
 }
@@ -153,7 +178,7 @@
             background: var(--txa-gd-1);
             border-radius: 50%;
             text-align: center;
-            line-height: 38px;
+            line-height: 42px;
             color: #fff;
             font-size: 16px;
             margin-right: 4px;
@@ -161,12 +186,13 @@
             i {
                 transition: 800ms var(--cube-1);
                 display: inline-block;
+                line-height: 1;
             }
         }
         &:hover {
             .icon {
                 i {
-                    transform: rotateY(360deg);
+                    transform: rotateY(180deg);
                 }
             }
         }

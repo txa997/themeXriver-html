@@ -1,0 +1,99 @@
+@use '../abstracts/variables' as *;
+.txa-about-1 {
+    &-area {
+        position: relative;
+        z-index: 1;
+    }
+    &-bg-color {
+        display: block;
+        width: 56%;
+        margin-left: auto;
+        margin-right: auto;
+        height: 50%;
+        background: linear-gradient( 180deg, rgb(217,229,255) 0%, rgb(236,242,255) 52%, rgb(255,255,255) 100%);
+        position: absolute;
+        border-radius: 10px;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: -1;
+        @media #{$xxl,$xl,$lg,$md,$xs} {
+            width: 95%;
+        }
+
+
+    }
+    &-section-title {
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    &-feature-wrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr .8fr;
+        gap: 30px;
+        @media #{$lg,$md} {
+            grid-template-columns: 1fr 1fr; 
+        }
+        @media #{$xs} {
+            grid-template-columns: 1fr; 
+        }
+    }
+    &-feature {
+        gap: 18px;
+        .icon {
+            flex: 0 0 auto;
+            width: 125px;
+            height: 125px;
+            background: #fff4c1;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 145px;
+            font-size: 70px;
+            color: var(--txa-heading-1);
+            &:is(.has-color-1) {
+                background-color: #cedbff;
+            }
+            &:is(.has-color-2) {
+                background-color: #F1FFC4;
+            }
+
+            i {
+                display: inline-block;
+                transition: 800ms var(--cube-1);
+            }
+
+        }
+        .subtitle {
+            display: inline-block;
+            font-size: 18px;
+            line-height: 21px;
+            font-weight: 500;
+            margin-bottom: 5px;
+
+        }
+        .title {
+            font-size: 32px;
+            line-height: 1.25;
+            letter-spacing: -.2px;
+            @media #{$xl,$lg} {
+                font-size: 28px;
+            }
+            @media #{$md,$xs} {
+                font-size: 24px;
+            }
+        }
+        &:hover {
+            .icon {
+                i {
+                    transform: rotateY(180deg);
+                }
+            }
+        }
+    }
+    &-disc {
+        max-width: 810px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
