@@ -26,76 +26,79 @@ i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
 .flaticon-arrow-down-sign-to-navigate:before {
     content: "\f102";
 }
-.flaticon-search-interface-symbol:before {
+.flaticon-fast-forward-double-right-arrows-symbol:before {
     content: "\f103";
 }
-.flaticon-straight-right-arrow:before {
+.flaticon-search-interface-symbol:before {
     content: "\f104";
 }
-.flaticon-facebook:before {
+.flaticon-viber:before {
     content: "\f105";
 }
-.flaticon-user:before {
+.flaticon-facebook:before {
     content: "\f106";
 }
-.flaticon-star:before {
+.flaticon-user:before {
     content: "\f107";
 }
-.flaticon-instagram:before {
+.flaticon-star:before {
     content: "\f108";
 }
-.flaticon-youtube:before {
+.flaticon-instagram:before {
     content: "\f109";
 }
-.flaticon-facebook-1:before {
+.flaticon-youtube:before {
     content: "\f10a";
 }
-.flaticon-down:before {
+.flaticon-facebook-1:before {
     content: "\f10b";
 }
-.flaticon-star-1:before {
+.flaticon-down:before {
     content: "\f10c";
 }
-.flaticon-down-arrow:before {
+.flaticon-star-1:before {
     content: "\f10d";
 }
-.flaticon-search:before {
+.flaticon-down-arrow:before {
     content: "\f10e";
 }
-.flaticon-linkedin:before {
+.flaticon-search:before {
     content: "\f10f";
 }
-.flaticon-grocery-store:before {
+.flaticon-linkedin:before {
     content: "\f110";
 }
-.flaticon-linkedin-1:before {
+.flaticon-grocery-store:before {
     content: "\f111";
 }
-.flaticon-down-arrow-1:before {
+.flaticon-linkedin-1:before {
     content: "\f112";
 }
-.flaticon-copy:before {
+.flaticon-down-arrow-1:before {
     content: "\f113";
 }
-.flaticon-left-arrow:before {
+.flaticon-copy:before {
     content: "\f114";
 }
-.flaticon-calendar:before {
+.flaticon-left-arrow:before {
     content: "\f115";
 }
-.flaticon-businessman:before {
+.flaticon-calendar:before {
     content: "\f116";
 }
-.flaticon-time-is-money:before {
+.flaticon-businessman:before {
     content: "\f117";
 }
-.flaticon-production:before {
+.flaticon-time-is-money:before {
     content: "\f118";
 }
-.flaticon-lauch:before {
+.flaticon-production:before {
     content: "\f119";
 }
-.flaticon-twitter:before {
+.flaticon-lauch:before {
     content: "\f11a";
+}
+.flaticon-twitter:before {
+    content: "\f11b";
 }
 

@@ -1,0 +1,101 @@
+
+
+@use '../abstracts/variables' as *;
+
+.breadcrumb {
+    &-area {
+        padding-top: 290px;
+        padding-bottom: 250px;
+    }
+    &-title {
+        font-size: 70px;
+        color: #fff;
+        font-family: var(--urbanist);
+        line-height: 1.14;
+        font-weight: 900;
+        margin-bottom: 30px;
+        @media #{$xl} {
+            font-size: 60px;
+        }
+        @media #{$lg} {
+            font-size: 55px;
+        }
+        @media #{$md} {
+            font-size: 50px;
+        }
+        @media #{$xs} {
+            font-size: 35px;
+            margin-bottom: 15px
+        }
+        @media #{$sm} {
+            font-size: 45px;
+        }
+    }
+    &-list {
+        & a,& span {
+            font-weight: 600;
+            font-size: 20px;
+            font-family: var(--urbanist);
+            color: #fff;
+            text-decoration: none;
+            display: inline-block;
+        }
+        & a {
+            padding-right: 25px;
+            position: relative;
+            margin-right: 20px;
+            &:hover {
+                color: var(--pr-ec4814);
+            }
+            &::after {
+                content: "\f103";
+                position: absolute;
+                font-family: flaticon_txa !important;
+                right: -12px;
+                top: 53%;
+                transform: translateY(-50%);
+                color: var(--pr-ec4814);
+            }
+        }
+        & span {
+            position: relative; 
+            text-transform: capitalize;
+            color: var(--pr-ec4814);
+            &::before {
+                position: absolute;
+                content: "";
+                width: 100%;
+                height: 1px;
+                background-color: var(--clr-common-white);
+                bottom: -2px;
+                left: 0;
+            }
+        }
+    }
+}
+
+.breadcrumb-list {
+    display: inline-block;
+    position: relative;
+    padding: 12px 30px;
+    border: 1px solid #EC4813;
+    border-radius: 10px;
+    &::after {
+        content: "";
+        position: absolute;
+        background: #EC4813;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        border-radius: 10px;
+        z-index: -1;
+        opacity: 10%;
+    }
+}
+
+
+.breadcrumb-wrap {
+    position: relative;
+    z-index: 1;
+}
