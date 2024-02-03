@@ -52,9 +52,11 @@
     }
     
     .il-img-5 {
+        transform-origin: top right ;
         position: absolute;
         right: 8vw;
         bottom: 18%;
+        animation: heroil 4s var(--cube-1) infinite;
         @media #{$lg} {
             right: 0vw;
         }
@@ -99,6 +101,18 @@
     }
 }
 
+@keyframes heroil {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(30deg);
+    }
+    0% {
+        transform: rotate(0deg);
+    }
+}
+
 .txa-search-form-1 {
     max-width: 740px;
     margin-left: auto;
@@ -128,10 +142,9 @@
     .txa-form-1-btn {
         border: none;
         outline: none;
-        background: var(--txa-gd-1);
+        background: transparent;
         font-size: 18px;
         font-weight: 800;
-
         line-height: 1;
         color: #fff;
         padding: 0px 42px;
@@ -141,11 +154,43 @@
         position: absolute;
         right: 0;
         top: 0;
-
+        z-index: 1;
+        transition: 600ms var(--cube-1);
          i {
             line-height: 1;
             transform: translateY(3px);
             display: inline-block;
+            transition: 600ms var(--cube-1);
+        }
+        .icon-2 {
+            margin-left: -18px;
+            opacity: 0;
+            transition: 600ms var(--cube-1);
+        }
+        &::after {
+            content: "";
+            width: 100%;
+            height: 100%;
+            background: var(--txa-gd-1);
+            top: 0;
+            left: 0;
+            position: absolute;
+            border-radius: 0 40px 40px  0;
+            z-index: -1;
+            transition: 600ms var(--cube-1);
+        }
+        svg {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+            transition: 600ms var(--cube-1);
+            z-index: -1;
+            * {
+                fill: var(--txa-pr-1);
+            }
         }
 
         @media #{$xs} {
@@ -157,6 +202,26 @@
             border-radius: 0 40px 40px  0;
             position: absolute;
             height: 100%;
+        }
+
+        &:hover {
+            background: #fff;
+            color: var(--txa-heading-1);
+
+            .icon-1 {
+                opacity: 0;
+            }
+            .icon-2 {
+                opacity: 1;
+                transform: translate(17px, 2px);
+            }
+            &::after {
+                opacity: 0;
+            }
+
+            svg {
+                clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+            }
         }
     }
     

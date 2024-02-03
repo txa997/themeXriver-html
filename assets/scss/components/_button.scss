@@ -13,6 +13,34 @@
     border-radius: 10px;
     line-height: 1;
     padding: 15px 17px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: 600ms var(--cube-1);
+    svg {
+        width: 100%;
+        height: 115%;
+        line-height: 1;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -1;
+        clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+        transition: 600ms var(--cube-1);
+        * {
+            fill: #000;
+        }
+    }
+    &:hover {
+        background-color: var(--txa-pr-1);
+        color: #fff;
+        border-color: transparent;
+        svg {
+            clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+
+        }
+    }
+
 }
 // border-btn-1-css-end
 
@@ -102,10 +130,31 @@
         font-size: 22px;
         margin-left: 3px;
         transition: 400ms var(--cube-1);
+        transition: 500ms var(--cube-1);
+    }
+    .icon {
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        .icon-2 {
+            position: absolute;
+            top: 50%;
+            left: -70%;
+            transform: translate(-50%,-50%);
+            transition: 500ms var(--cube-1);
+        }
     }
     &:hover {
         color: var(--txa-pr-1);
         transform: translateY(-2px);
+        .icon {
+            .icon-1 {
+                transform: translateX(110%);
+            }
+            .icon-2 {
+                left: 40%;
+            }
+        }
     }
 }
 
@@ -121,10 +170,37 @@
     line-height: 1;
     font-size: 18px;
     letter-spacing: .2px;
-    background: var(--txa-gd-1);
+    background: transparent;
     color: #fff;
     padding: 21px 45px;
     border-radius: 31px;
+    position: relative;
+    z-index: 1;
+    transition: 400ms var(--cube-1);
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    transition: 400ms var(--cube-1);
+    &::after {
+        content: "";
+        background: var(--txa-gd-1);
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        position: absolute;
+        z-index: -1;
+        transform-origin: left;
+        transition: 800ms var(--cube-1);
+    }
+    &:hover {
+        
+        color: #fff;
+        letter-spacing: .4px;
+        &::after {
+            transform: scaleX(3);
+        }
+    }
 }
 // pr-btn-1-css-end
 
@@ -151,11 +227,24 @@
         left: 0;
         background: var(--txa-gd-1);
         position: absolute;
-        z-index: -1;
+        z-index: -2;
         border-radius: 27px;
         transform: translate(40px, -20px) rotate(350deg);
         transition: 500ms var(--cube-1);
         opacity: 0;
+    }
+    svg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        transition: 500ms var(--cube-1);
+        clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+        * {
+            fill: #000;
+        }
     }
     &:hover {
         color: #fff;
@@ -163,6 +252,9 @@
         &::after {
             transform: translate(0px, 0px) rotate(360deg);
             opacity: 1;
+        }
+        svg {
+            clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
         }
 
     }

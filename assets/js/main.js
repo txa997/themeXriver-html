@@ -127,6 +127,8 @@ menuToggle2.addEventListener('click', function(){
 // mobile-menu-toggle-end
 
 
+
+
 var tl = gsap.timeline({
 	repeat: -1,
   });
@@ -177,11 +179,37 @@ var tl = gsap.timeline({
 
 
 
-
-
+const boxes = gsap.utils.toArray('.txa-showcase-1-item-img');
+boxes.forEach(img => {
+	gsap.to(img, {
+		scrollTrigger: {
+			trigger: img,
+			scrub: 1,
+			start: "top 80%",
+			end: "bottom bottom",
+			toggleClass: "active",
+			toggleActions: "play none none none",
+			once: true,
+		}
+	});
+});
 
 // gsap-end
 
+
+document.addEventListener("mousemove" , parallax);
+function parallax(e){
+
+	document.querySelectorAll(".object").forEach(function(move){
+
+		var moving_value = move.getAttribute("data-value");
+		var x = (e.clientX * moving_value) /250;
+		var y = (e.clientY * moving_value) /250;
+
+		move.style.transform = "translateX(" + x + "px) translateY(" + y +"px)";
+	})
+
+}
 
 
 var txacategorie1 = new Swiper(".txa-categorie-1-active", {
@@ -190,6 +218,10 @@ var txacategorie1 = new Swiper(".txa-categorie-1-active", {
     autoplay: {     //add
         delay: 4000,   //add
     },   
+	navigation: {
+		nextEl: ".txa_c1_next",
+		prevEl: ".txa_c1_prev",
+	},
   });
 /*
 brand-logo-1
@@ -245,7 +277,18 @@ back-to-top
 =====end==== 
 */
 
-
+/*
+counter-activition
+====start====
+*/
+$('.counter').counterUp({
+	delay: 10,
+	time: 3000
+});
+/*
+counter-activition
+====end====
+*/
 
 
 /*
