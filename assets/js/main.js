@@ -160,23 +160,6 @@ var tl = gsap.timeline({
 	duration: .5
   })
 
-  var txacta1 = gsap.timeline({
-
-	scrollTrigger: {
-	  animation: txacta1,
-	  trigger: '.txa-cta-1-area',
-	  start: "top 80%",
-	  end: "top 0%",
-	  scrub: 3,
-	  toggleActions: "play reverse play reverse",
-	  markers: false
-	}
-	});
-	txacta1.from( ".txa-cta-1-il-2" , { right: "0",  duration:1 } )
-	txacta1.from( ".txa-cta-1-il-3" , { right: "0",  duration:1 } )
-	txacta1.from( ".txa-cta-1-il-1" , { left: "0",  duration:1 } )
-
-
 
 
 const boxes = gsap.utils.toArray('.txa-showcase-1-item-img');
@@ -251,9 +234,6 @@ let txat1 = new Swiper('.txa-t1-active', {
 	},
 
   });
-
-
-
 
 /*
 back-to-top

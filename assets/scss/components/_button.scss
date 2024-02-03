@@ -28,7 +28,7 @@
         clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
         transition: 600ms var(--cube-1);
         * {
-            fill: #000;
+            fill: #ffffff6b;
         }
     }
     &:hover {
@@ -229,8 +229,8 @@
         position: absolute;
         z-index: -2;
         border-radius: 27px;
-        transform: translate(40px, -20px) rotate(350deg);
         transition: 500ms var(--cube-1);
+        transform-origin: l;
         opacity: 0;
     }
     svg {
@@ -240,17 +240,16 @@
         width: 100%;
         height: 100%;
         z-index: -1;
-        transition: 500ms var(--cube-1);
+        transition: 800ms var(--cube-1);
         clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
         * {
-            fill: #000;
+            fill: #ffffff6b;
         }
     }
     &:hover {
         color: #fff;
         letter-spacing: .4px;
         &::after {
-            transform: translate(0px, 0px) rotate(360deg);
             opacity: 1;
         }
         svg {

@@ -11,12 +11,14 @@
             position: absolute;
             right: 6vw;
             top: 120px;
+            animation: txacta1 6s linear infinite;
         }
         
         .txa-cta-1-il-1 {
             position: absolute;
             left: 6vw;
             bottom: 150px;
+            animation: txacta1 8s linear infinite;
             @media #{$xxl,$xl,$lg,$md,$xs} {
                 bottom: 50px;
             }
@@ -26,6 +28,7 @@
             position: absolute;
             right: 3vw;
             top: 50%;
+            animation: txacta1 10s linear infinite;
             @media #{$xxl,$xl,$lg,$md,$xs} {
                 top: 90%;
             }
@@ -95,6 +98,24 @@
                 }
             }
         }
+    }
+}
+
+@keyframes txacta1 {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(50%);
+    }
+    50% {
+        transform: translateX(-50%);
+    }
+    75% {
+        transform: translateX(-25%);
+    }
+    100% {
+        transform: translateX(0%);
     }
 }
 

@@ -36,7 +36,7 @@
     gap: 30px;
   }
   &-action-link {
-    gap: 40px;
+    gap: 30px;
     @media #{$xs} {
       gap: 15px;
     }
@@ -96,7 +96,13 @@
 .txa-categories-1 {
   flex: 0 0 auto;
   position: relative;
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  .title {
+    line-height: 3;
+  }
   a {
     font-family: var(--urbanist);
     color: var(--txa-heading-1);
@@ -106,11 +112,11 @@
     font-size: 15px;
      i {
       display: inline-block;
-      margin-left: 30px;
+      margin-left: 20px;
       font-size: 20px;
       line-height: 1;
       transition: 600ms var(--cube-1);
-      transform-origin: center;
+      transform-origin: center center;
       transform: rotate(270deg) translateX(-3px);
     }
   }
@@ -144,8 +150,13 @@
   &:hover {
     a {
       i {
-        transform: rotate(360deg) translateX(-3px);
-        color: var(--txa-pr-1);
+        transform: rotate(360deg)  translateY(3px) translateX(-3px);
+      }
+    }
+    .txa-bar-1 {
+      span {
+        width: 100%;
+        background-color: var(--txa-pr-1);
       }
     }
     .txa-categories-1-option {
