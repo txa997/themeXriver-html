@@ -233,9 +233,20 @@
           color: #fff;
           padding: 3px 10px;
           position: absolute;
-          right: -40px;
+          left: 78%;
           top: 8px;
           transition:  0.3s var(--cube-1);
+          &::after {
+            position: absolute;
+            top: 100%;
+            left: 7px;
+            width: 9px;
+            height: 4px;
+            background: var(--txa-pr-1);
+            content: "";
+            clip-path: polygon(100% 0, 0 0, 50% 100%);
+            z-index: -1;
+          }
         }
         a {
           position: relative;
@@ -245,11 +256,10 @@
           font-weight: 700;
           letter-spacing: .2px;
           text-decoration: none;
-          padding: 20px 0;
+          padding: 24px 0;
           display: inline-block;
           text-transform: capitalize;
           line-height: 28px;
-          position: relative;
           z-index: 1;
           transition:  0.3s var(--cube-1);
         }
@@ -323,7 +333,7 @@
             }
           }
           .has-offer {
-            right: -35px;
+            left: 73%;
           }
           .dropdown-menu {
             opacity: 1;

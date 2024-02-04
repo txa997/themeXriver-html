@@ -10,6 +10,15 @@
     margin-bottom: 0px;
 }
 
+.txa-heading-2 {
+    font-family: var(--urbanist);
+    font-weight: 800;
+    line-height: 1.16;
+    color: var(--txa-heading-2);
+    text-transform: capitalize;
+    margin-bottom: 0px;
+}
+
 .txa-para-1 {
     font-family: var(--urbanist);
     font-weight: 500;
@@ -40,6 +49,17 @@
     padding: 16px 26px;
     border-radius: 26px;
     margin-bottom: 6px;
+}
+
+.txa-subtitle-3  {
+    font-family: var(--urbanist);
+    text-transform: capitalize;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 600;
+    display: inline-block;
+    color: var(--txa-pr-1);
+    margin-bottom: 18px;
 }
 
 .txa-title-1 {
@@ -81,6 +101,35 @@
         @media #{$sm} {
             font-size: 40px;
         }
+    }
+
+    &:is(.has-white) {
+        color: #fff;
+    }
+
+}
+
+
+
+.txa-title-2 {
+    font-family: var(--urbanist);
+    text-transform: capitalize;
+    color: var(--txa-heading-2);
+    font-size: 60px;
+    font-weight: 800;
+    line-height: 1.16;
+    margin-bottom: 0;
+    @media #{$lg} {
+        font-size: 55px;
+    }
+    @media #{$md} {
+        font-size: 50px;
+    }
+    @media #{$xs} {
+        font-size: 32px;
+    }
+    @media #{$sm} {
+        font-size: 40px;
     }
 
     &:is(.has-white) {

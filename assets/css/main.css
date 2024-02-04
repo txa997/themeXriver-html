@@ -5,6 +5,7 @@
   --white-color: #fff;
   --txa-pr-1: #cc2b5e;
   --txa-heading-1: #141414;
+  --txa-heading-2: #1E1C1C;
   --txa-gd-1: linear-gradient( 36deg, rgb(204,43,94) 0%, rgb(117,58,136) 100%);
   --cube-1: cubic-bezier(.23,1,.32,1);
 }
@@ -1786,6 +1787,15 @@ input:focus::placeholder, textarea:focus::placeholder {
   margin-bottom: 0px;
 }
 
+.txa-heading-2 {
+  font-family: var(--urbanist);
+  font-weight: 800;
+  line-height: 1.16;
+  color: var(--txa-heading-2);
+  text-transform: capitalize;
+  margin-bottom: 0px;
+}
+
 .txa-para-1 {
   font-family: var(--urbanist);
   font-weight: 500;
@@ -1816,6 +1826,17 @@ input:focus::placeholder, textarea:focus::placeholder {
   padding: 16px 26px;
   border-radius: 26px;
   margin-bottom: 6px;
+}
+
+.txa-subtitle-3 {
+  font-family: var(--urbanist);
+  text-transform: capitalize;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 600;
+  display: inline-block;
+  color: var(--txa-pr-1);
+  margin-bottom: 18px;
 }
 
 .txa-title-1 {
@@ -1877,6 +1898,39 @@ input:focus::placeholder, textarea:focus::placeholder {
   }
 }
 .txa-title-1:is(.has-white) {
+  color: #fff;
+}
+
+.txa-title-2 {
+  font-family: var(--urbanist);
+  text-transform: capitalize;
+  color: var(--txa-heading-2);
+  font-size: 60px;
+  font-weight: 800;
+  line-height: 1.16;
+  margin-bottom: 0;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .txa-title-2 {
+    font-size: 55px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .txa-title-2 {
+    font-size: 50px;
+  }
+}
+@media (max-width: 767px) {
+  .txa-title-2 {
+    font-size: 32px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .txa-title-2 {
+    font-size: 40px;
+  }
+}
+.txa-title-2:is(.has-white) {
   color: #fff;
 }
 
@@ -2100,9 +2154,20 @@ input:focus::placeholder, textarea:focus::placeholder {
   color: #fff;
   padding: 3px 10px;
   position: absolute;
-  right: -40px;
+  left: 78%;
   top: 8px;
   transition: 0.3s var(--cube-1);
+}
+.main-navigation .navbar-nav li .has-offer::after {
+  position: absolute;
+  top: 100%;
+  left: 7px;
+  width: 9px;
+  height: 4px;
+  background: var(--txa-pr-1);
+  content: "";
+  clip-path: polygon(100% 0, 0 0, 50% 100%);
+  z-index: -1;
 }
 .main-navigation .navbar-nav li a {
   position: relative;
@@ -2112,11 +2177,10 @@ input:focus::placeholder, textarea:focus::placeholder {
   font-weight: 700;
   letter-spacing: 0.2px;
   text-decoration: none;
-  padding: 20px 0;
+  padding: 24px 0;
   display: inline-block;
   text-transform: capitalize;
   line-height: 28px;
-  position: relative;
   z-index: 1;
   transition: 0.3s var(--cube-1);
 }
@@ -2180,7 +2244,7 @@ input:focus::placeholder, textarea:focus::placeholder {
   scale: 1;
 }
 .main-navigation .navbar-nav li:hover .has-offer {
-  right: -35px;
+  left: 73%;
 }
 .main-navigation .navbar-nav li:hover .dropdown-menu {
   opacity: 1;
@@ -3567,6 +3631,146 @@ input:focus::placeholder, textarea:focus::placeholder {
   margin-right: auto;
 }
 
+.txa-about-2-section-title {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0 70px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  .txa-about-2-section-title {
+    grid-template-columns: 1fr;
+  }
+}
+.txa-about-2-section-title .txa-subtitle-3 {
+  grid-column: 1/-1;
+}
+.txa-about-2-counter-wrap {
+  position: relative;
+  align-self: start;
+  justify-self: self-start;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  .txa-about-2-counter-wrap {
+    margin-top: 30px;
+  }
+}
+.txa-about-2-counter-wrap .txa-counter-1-item {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.txa-about-2-counter-wrap .txa-counter-1-item .number {
+  font-size: 48px;
+  color: var(--txa-pr-1);
+  line-height: 1;
+  font-weight: 700;
+}
+.txa-about-2-content {
+  padding-right: 25px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  .txa-about-2-content {
+    padding-right: 0;
+    margin-bottom: 50px;
+  }
+}
+.txa-about-2-content .disc {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  color: var(--txa-heading-2);
+}
+.txa-about-2-content .disc:nth-child(1) {
+  margin-bottom: 20px;
+}
+.txa-about-2-img {
+  margin-right: -48%;
+  height: 545px;
+}
+@media (min-width: 1800px) {
+  .txa-about-2-img {
+    margin-right: -48%;
+  }
+}
+@media only screen and (min-width: 1600px) and (max-width: 1799px) {
+  .txa-about-2-img {
+    margin-right: -24%;
+  }
+}
+@media only screen and (min-width: 1400px) and (max-width: 1599px) {
+  .txa-about-2-img {
+    margin-right: -8%;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px) {
+  .txa-about-2-img {
+    margin-right: 0%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  .txa-about-2-img {
+    margin-right: 0%;
+    height: 400px;
+  }
+}
+
+.txa-experiance-1 {
+  width: 185px;
+  position: relative;
+}
+.txa-experiance-1 .text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 170px;
+  font-size: 19px;
+  fill: #FFF;
+}
+
+.txa-call-icon-1 {
+  flex: 0 0 auto;
+  width: 62px;
+  height: 62px;
+  background: var(--txa-gd-1);
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  line-height: 67px;
+  font-size: 20px;
+  color: #fff;
+  transition: 400ms var(--cube-1);
+}
+.txa-call-icon-1 i {
+  display: inline-block;
+  transition: 400ms var(--cube-1);
+}
+
+.txa-phone-number {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.txa-phone-number .title {
+  font-size: 16px;
+  color: #595959;
+  font-weight: 400;
+  display: block;
+}
+.txa-phone-number a {
+  font-size: 26px;
+  line-height: 34px;
+  transition: 400ms var(--cube-1);
+}
+.txa-phone-number a:hover {
+  color: var(--txa-pr-1);
+  letter-spacing: 0.3px;
+}
+.txa-phone-number:hover .txa-call-icon-1 i {
+  transform: rotateY(180deg);
+}
+
 .txa-feature-1-area {
   background: linear-gradient(180deg, rgb(217, 229, 255) 0%, rgb(236, 242, 255) 52%, rgb(255, 255, 255) 100%);
 }
@@ -4038,22 +4242,8 @@ input:focus::placeholder, textarea:focus::placeholder {
   color: var(--txa-pr-1);
 }
 
-.breadcrumb-area {
-  padding-top: 290px;
-  padding-bottom: 250px;
-}
 .breadcrumb-title {
-  font-size: 70px;
-  color: #fff;
-  font-family: var(--urbanist);
-  line-height: 1.14;
-  font-weight: 900;
-  margin-bottom: 30px;
-}
-@media only screen and (min-width: 1200px) and (max-width: 1399px) {
-  .breadcrumb-title {
-    font-size: 60px;
-  }
+  margin-bottom: 25px;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .breadcrumb-title {
@@ -4078,9 +4268,10 @@ input:focus::placeholder, textarea:focus::placeholder {
 }
 .breadcrumb-list a, .breadcrumb-list span {
   font-weight: 600;
+  line-height: 28px;
   font-size: 20px;
   font-family: var(--urbanist);
-  color: #fff;
+  color: var(--txa-pr-1);
   text-decoration: none;
   display: inline-block;
 }
@@ -4090,7 +4281,7 @@ input:focus::placeholder, textarea:focus::placeholder {
   margin-right: 20px;
 }
 .breadcrumb-list a:hover {
-  color: var(--pr-ec4814);
+  color: var(--txa-pr-1);
 }
 .breadcrumb-list a::after {
   content: "\f103";
@@ -4100,45 +4291,6 @@ input:focus::placeholder, textarea:focus::placeholder {
   top: 53%;
   transform: translateY(-50%);
   color: var(--pr-ec4814);
-}
-.breadcrumb-list span {
-  position: relative;
-  text-transform: capitalize;
-  color: var(--pr-ec4814);
-}
-.breadcrumb-list span::before {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 1px;
-  background-color: var(--clr-common-white);
-  bottom: -2px;
-  left: 0;
-}
-
-.breadcrumb-list {
-  display: inline-block;
-  position: relative;
-  padding: 12px 30px;
-  border: 1px solid #EC4813;
-  border-radius: 10px;
-}
-.breadcrumb-list::after {
-  content: "";
-  position: absolute;
-  background: #EC4813;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  border-radius: 10px;
-  z-index: -1;
-  opacity: 10%;
-}
-
-.breadcrumb-wrap {
-  position: relative;
-  z-index: 1;
 }
 
 .txa-footer-1-area {

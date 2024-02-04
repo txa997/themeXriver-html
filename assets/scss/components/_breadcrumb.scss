@@ -3,20 +3,8 @@
 @use '../abstracts/variables' as *;
 
 .breadcrumb {
-    &-area {
-        padding-top: 290px;
-        padding-bottom: 250px;
-    }
     &-title {
-        font-size: 70px;
-        color: #fff;
-        font-family: var(--urbanist);
-        line-height: 1.14;
-        font-weight: 900;
-        margin-bottom: 30px;
-        @media #{$xl} {
-            font-size: 60px;
-        }
+        margin-bottom: 25px;
         @media #{$lg} {
             font-size: 55px;
         }
@@ -34,9 +22,10 @@
     &-list {
         & a,& span {
             font-weight: 600;
+            line-height: 28px;
             font-size: 20px;
             font-family: var(--urbanist);
-            color: #fff;
+            color: var(--txa-pr-1);
             text-decoration: none;
             display: inline-block;
         }
@@ -45,7 +34,7 @@
             position: relative;
             margin-right: 20px;
             &:hover {
-                color: var(--pr-ec4814);
+                color: var(--txa-pr-1);
             }
             &::after {
                 content: "\f103";
@@ -57,45 +46,6 @@
                 color: var(--pr-ec4814);
             }
         }
-        & span {
-            position: relative; 
-            text-transform: capitalize;
-            color: var(--pr-ec4814);
-            &::before {
-                position: absolute;
-                content: "";
-                width: 100%;
-                height: 1px;
-                background-color: var(--clr-common-white);
-                bottom: -2px;
-                left: 0;
-            }
-        }
     }
 }
 
-.breadcrumb-list {
-    display: inline-block;
-    position: relative;
-    padding: 12px 30px;
-    border: 1px solid #EC4813;
-    border-radius: 10px;
-    &::after {
-        content: "";
-        position: absolute;
-        background: #EC4813;
-        width: 100%;
-        height: 100%;
-        left: 0;
-        top: 0;
-        border-radius: 10px;
-        z-index: -1;
-        opacity: 10%;
-    }
-}
-
-
-.breadcrumb-wrap {
-    position: relative;
-    z-index: 1;
-}
