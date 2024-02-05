@@ -81,6 +81,10 @@
                 z-index: -1;
                 opacity: 1;
             }
+            i {
+                display: inline-block;
+                transition: 800ms var(--cube-1);
+            }
         }
         .number {
             font-size: 54px;
@@ -98,7 +102,13 @@
             text-transform: capitalize;
             color: #423F3F;
         }
-        
+        &:hover {
+            .main-icon {
+                i {
+                    transform: rotateY(180deg);
+                }
+            }
+        }
     }
 }
 
