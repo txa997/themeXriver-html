@@ -3,6 +3,9 @@
 @use '../abstracts/variables' as *;
 
 .breadcrumb {
+    &-area {
+        position: relative;
+    }
     &-title {
         margin-bottom: 25px;
         @media #{$lg} {
@@ -25,27 +28,81 @@
             line-height: 28px;
             font-size: 20px;
             font-family: var(--urbanist);
-            color: var(--txa-pr-1);
+            background: var(--txa-gd-1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
             text-decoration: none;
             display: inline-block;
+            transition: 400ms var(--cube-1);
         }
         & a {
             padding-right: 25px;
             position: relative;
-            margin-right: 20px;
+            margin-right: 15px;
+            transition: 400ms var(--cube-1);
             &:hover {
-                color: var(--txa-pr-1);
+                -webkit-text-fill-color: var(--txa-heading-1);
             }
             &::after {
-                content: "\f103";
+                content: "\f104";
                 position: absolute;
                 font-family: flaticon_txa !important;
-                right: -12px;
+                font-size: 14px;
+                right: -5px;
                 top: 53%;
                 transform: translateY(-50%);
-                color: var(--pr-ec4814);
+                background: var(--txa-gd-1);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
             }
         }
+    }
+    &-earth-position {
+        position: absolute;
+        right: 0;
+        bottom: 10%;
+        z-index: 1;
+        @media #{$lg,$md} {
+            width: 20%;
+        }
+        @media #{$xs} {
+            display: none;
+        }
+        .earth {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            z-index: -1;
+            transform: translate(-50%, -50%) rotateZ(0deg);
+            animation: earth 10s infinite linear;
+            opacity: .3;
+            @media #{$lg,$md,$xs} {
+                width: 53%;
+            }
+        }
+        .earth-circle {
+            animation: earth-circle 17s infinite ease-in-out;
+            opacity: .5;
+        }
+    }
+    
+}
+
+@keyframes earth {
+    0% {
+        transform: translate(-50%, -50%) rotateZ(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotateZ(360deg);
+    }
+}
+
+@keyframes earth-circle {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    100% {
+        transform: rotateX(360deg);
     }
 }
 

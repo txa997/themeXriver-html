@@ -26,6 +26,9 @@
     font-size: 18px;
     color: var(--txa-heading-1);
     margin-bottom: 0px;
+    &:is(.has-white) {
+        color: #fff;
+    }
 }
 
 .txa-subtitle-1 {
@@ -60,6 +63,9 @@
     display: inline-block;
     color: var(--txa-pr-1);
     margin-bottom: 18px;
+    &:is(.has-white) {
+        color: #fff;
+    }
 }
 
 .txa-title-1 {

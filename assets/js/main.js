@@ -177,6 +177,8 @@ boxes.forEach(img => {
 	});
 });
 
+
+
 // gsap-end
 
 
@@ -206,10 +208,7 @@ var txacategorie1 = new Swiper(".txa-categorie-1-active", {
 		prevEl: ".txa_c1_prev",
 	},
   });
-/*
-brand-logo-1
-====end====
-*/
+
 
 
 

@@ -2,11 +2,11 @@
 
 @font-face {
     font-family: "flaticon_txa";
-    src: url("../fonts/flaticon_txa.woff2?9ef29c03caddd0789515068a84c5de9d") format("woff2"),
-url("../fonts/flaticon_txa.woff?9ef29c03caddd0789515068a84c5de9d") format("woff"),
-url("../fonts/flaticon_txa.eot?9ef29c03caddd0789515068a84c5de9d#iefix") format("embedded-opentype"),
-url("../fonts/flaticon_txa.ttf?9ef29c03caddd0789515068a84c5de9d") format("truetype"),
-url("../fonts/flaticon_txa.svg?9ef29c03caddd0789515068a84c5de9d#flaticon_txa") format("svg")
+    src: url("../fonts/flaticon_txa.woff2?25aa36340ac49683fbf0c38931d1a8ff") format("woff2"),
+url("../fonts/flaticon_txa.woff?25aa36340ac49683fbf0c38931d1a8ff") format("woff"),
+url("../fonts/flaticon_txa.eot?25aa36340ac49683fbf0c38931d1a8ff#iefix") format("embedded-opentype"),
+url("../fonts/flaticon_txa.ttf?25aa36340ac49683fbf0c38931d1a8ff") format("truetype"),
+url("../fonts/flaticon_txa.svg?25aa36340ac49683fbf0c38931d1a8ff#flaticon_txa") format("svg")
 }
 
 i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
@@ -20,82 +20,114 @@ i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
     -moz-osx-font-smoothing: grayscale;
 }
 
-.flaticon-download-to-storage-drive:before {
+.flaticon-dots-menu:before {
     content: "\f101";
 }
-.flaticon-arrow-down-sign-to-navigate:before {
+.flaticon-download-to-storage-drive:before {
     content: "\f102";
 }
-.flaticon-search-interface-symbol:before {
+.flaticon-arrow-down-sign-to-navigate:before {
     content: "\f103";
 }
-.flaticon-straight-right-arrow:before {
+.flaticon-fast-forward-double-right-arrows-symbol:before {
     content: "\f104";
 }
-.flaticon-facebook:before {
+.flaticon-search-interface-symbol:before {
     content: "\f105";
 }
-.flaticon-user:before {
+.flaticon-list:before {
     content: "\f106";
 }
-.flaticon-star:before {
+.flaticon-viber:before {
     content: "\f107";
 }
-.flaticon-instagram:before {
+.flaticon-facebook:before {
     content: "\f108";
 }
-.flaticon-youtube:before {
+.flaticon-user:before {
     content: "\f109";
 }
-.flaticon-facebook-1:before {
+.flaticon-star:before {
     content: "\f10a";
 }
-.flaticon-down:before {
+.flaticon-instagram:before {
     content: "\f10b";
 }
-.flaticon-star-1:before {
+.flaticon-file:before {
     content: "\f10c";
 }
-.flaticon-down-arrow:before {
+.flaticon-wordpress:before {
     content: "\f10d";
 }
-.flaticon-search:before {
+.flaticon-rating:before {
     content: "\f10e";
 }
-.flaticon-linkedin:before {
+.flaticon-youtube:before {
     content: "\f10f";
 }
-.flaticon-grocery-store:before {
+.flaticon-handshake:before {
     content: "\f110";
 }
-.flaticon-linkedin-1:before {
+.flaticon-facebook-1:before {
     content: "\f111";
 }
-.flaticon-down-arrow-1:before {
+.flaticon-down:before {
     content: "\f112";
 }
-.flaticon-copy:before {
+.flaticon-more:before {
     content: "\f113";
 }
-.flaticon-left-arrow:before {
+.flaticon-star-1:before {
     content: "\f114";
 }
-.flaticon-calendar:before {
+.flaticon-down-arrow:before {
     content: "\f115";
 }
-.flaticon-businessman:before {
+.flaticon-search:before {
     content: "\f116";
 }
-.flaticon-time-is-money:before {
+.flaticon-linkedin:before {
     content: "\f117";
 }
-.flaticon-production:before {
+.flaticon-grocery-store:before {
     content: "\f118";
 }
-.flaticon-lauch:before {
+.flaticon-linkedin-1:before {
     content: "\f119";
 }
-.flaticon-twitter:before {
+.flaticon-search-1:before {
     content: "\f11a";
 }
-
+.flaticon-down-arrow-1:before {
+    content: "\f11b";
+}
+.flaticon-copy:before {
+    content: "\f11c";
+}
+.flaticon-left-arrow:before {
+    content: "\f11d";
+}
+.flaticon-calendar:before {
+    content: "\f11e";
+}
+.flaticon-right-arrow:before {
+    content: "\f11f";
+}
+.flaticon-businessman:before {
+    content: "\f120";
+}
+.flaticon-time-is-money:before {
+    content: "\f121";
+}
+.flaticon-back:before {
+    content: "\f122";
+}
+.flaticon-production:before {
+    content: "\f123";
+}
+.flaticon-lauch:before {
+    content: "\f124";
+}
+.flaticon-twitter:before {
+    content: "\f125";
+}

@@ -17,6 +17,12 @@
         @media #{$lg,$md,$xs} {
             grid-template-columns: 1fr 1fr;
         }
+        @media #{$xs} {
+            grid-template-columns: 1fr ;
+        }
+        @media #{$sm} {
+            grid-template-columns: 1fr 1fr;
+        }
     }
     &-item {
         display: flex;
@@ -24,10 +30,19 @@
         @media #{$xl} {
             gap: 30px;
         }
+        @media #{$xs} {
+            gap: 30px;
+        }
+        @media #{$sm} {
+            gap: 20px;
+        }
         &:nth-child(1) {
             .main-icon {
                 &::before {
-                    display: none;
+                    @media #{$over,$xxxl,$xxl,$xl} {
+                        display: none; 
+                    }
+
                 }
              }
         }
@@ -71,6 +86,12 @@
             font-size: 54px;
             line-height: 1;
             font-weight: 900;
+            @media #{$xs} {
+                font-size: 44px;
+            }
+            @media #{$sm} {
+                font-size: 54px;
+            }
         }
         .disc {
             font-size: 20px;

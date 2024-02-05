@@ -1,4 +1,5 @@
 @use '../abstracts/variables' as *;
+
 .txa-testimonial-1 {
      &-section-title {
         max-width: 900px;
@@ -152,9 +153,20 @@
             }
         }
     }
+    &:is(.has-2) {
+        .btn-postion-1 {
+            top: 50%;
+        }
     
+        .btn-position-2 {
+            top: 50%;
+        }
+    }
 }
 
 
+.txa-testimonial-2-area {
+    margin-top: -241px;
+}
 
 
