@@ -2070,7 +2070,7 @@ input:focus::placeholder, textarea:focus::placeholder {
   opacity: 0;
   visibility: hidden;
   transition: 600ms var(--cube-1);
-  z-index: 1;
+  z-index: 5;
 }
 .txa-categories-1-option li:not(:last-child) {
   margin-bottom: 15px;
