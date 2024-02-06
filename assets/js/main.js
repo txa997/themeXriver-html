@@ -182,6 +182,42 @@ boxes.forEach(img => {
 // gsap-end
 
 
+if($(".txa-item-view-toggle").length) {
+	var products = $(".txa-themes-page-item"),
+	allButton = $(".txa-item-view-toggle div"),
+	grid4 = $(".grid-view"),
+	grid3 = $(".grid-2x-view"),
+	listView = $(".list-view");
+
+	allButton.each(function() {
+		var $this = $(this);
+		$this.on("click", function(e) {
+			e.preventDefault();
+			$this.addClass("active").siblings().removeClass('active');
+			e.stopPropagation();
+		})
+	});
+
+	grid4.on("click", function(f) {
+		products.removeClass("list-view three-column");
+		products.addClass("default-column");
+		f.stopPropagation();
+	});
+
+	grid3.on("click", function(g) {
+		products.removeClass("default-column list-view");
+		products.addClass("three-column");
+		g.stopPropagation();
+	});
+
+	listView.on("click", function(h) {
+		products.removeClass("default-column three-column");
+		products.addClass("list-view");
+		h.stopPropagation();
+	});
+};
+
+
 document.addEventListener("mousemove" , parallax);
 function parallax(e){
 
