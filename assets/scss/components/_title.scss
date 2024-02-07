@@ -31,6 +31,18 @@
     }
 }
 
+.txa-para-2 {
+    font-family: var(--urbanist);
+    font-weight: 400;
+    line-height: 28px;
+    font-size: 18px;
+    color: var(--txa-heading-2);
+    margin-bottom: 0px;
+    &:is(.has-white) {
+        color: #fff;
+    }
+}
+
 .txa-subtitle-1 {
     font-family: var(--urbanist);
     text-transform: capitalize;
