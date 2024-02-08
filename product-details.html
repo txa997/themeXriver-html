@@ -511,17 +511,18 @@
 
                             <!-- item-comment -->
                             <div class="tab-pane fade" id="comment" role="tabpanel" aria-labelledby="comment-tab">
-                                                                
-                                <div class="txa-comment-form-wrap ">
+                                                         
+                                <!-- comment-form -->
+                                <div class="txa-comment-form-wrap mb-50">
                                     <h6 class="title txa-heading-2">Post a Comment</h6>
                                     <form class="txa-comment-form"  action="#">
                                         <input type="text" placeholder="full name" aria-label="name">
                                         <input type="email" placeholder="email address" aria-label="name">
-
-                                        <input type="checkbox" id="Save" aria-label="name">
-                                        <label for="Save">Save my name, email, and website in this browser for the next time I comment.</label>
+                                        <span class="check-item">
+                                            <input type="checkbox" id="Save" aria-label="name">
+                                            <label class="txa-para-2" for="Save">Save my name, email, and website in this browser for the next time I comment.</label>
+                                        </span>
                                         <textarea name="" id="" cols="30" rows="10" placeholder="Write your comments here...."></textarea>
-                
                                         <div class="btn-wrap">
                                             <button class="txa-pr-btn-1" type="button" >submit comment</button>
                                         </div>
@@ -529,21 +530,21 @@
                                     </form>
                                 </div>
 
-                                <!-- comments- -->
+                                <!-- single-comment -->
                                 <div class="txa-comment-box-wrap">
                                     <h6 class="title txa-heading-2">(02) Comment</h6>
 
-                                    <div class="comments-box-wrap mb-20">
-
+                                    <div class="txa-comment-box-single-item">
+                                        <!-- single-comment -->
                                         <div class="txa-comment-box-single">
                                             <div class="person-img img-cover">
                                                 <img src="assets/img/author/comment-author-1.png" alt="">
                                             </div>
                                             <div class="content-wrap">
-                                                <div class="inner-wrap">
+                                                <div class="inner-wrap mb-15">
                                                     <div class="title-wrap">
                                                         <h6 class="name txa-heading-2">Jane Cooper</h6>
-                                                        <p class="txa-para-2 date"><span>Nov 4, 2023</span> - 30 mint ago <span class="author-tag" >PURCHASED</span></p>
+                                                        <p class="txa-para-2 date"><span class="date-time">Nov 4, 2023</span> - 30 mint ago <span class="author-tag" >PURCHASED</span></p>
                                                     </div>
                                                     <a class="reply-btn txa-heading-2" href="#">reply</a>
                                                 </div>
@@ -551,6 +552,62 @@
                                             </div>
                                         </div>
 
+                                        <!-- reply-comment -->
+                                        <div class="txa-comment-box-single-item-child">
+                                            <div class="txa-comment-box-single">
+                                                <div class="person-img img-cover">
+                                                    <img src="assets/img/author/comment-author-2.png" alt="">
+                                                </div>
+                                                <div class="content-wrap">
+                                                    <div class="inner-wrap mb-15">
+                                                        <div class="title-wrap">
+                                                            <h6 class="name txa-heading-2">Jerome Bell</h6>
+                                                            <p class="txa-para-2 date"><span class="date-time">Nov 4, 2023</span> - 30 mint ago <span class="author-tag author" >PURCHASED</span></p>
+                                                        </div>
+                                                        <a class="reply-btn txa-heading-2" href="#">reply</a>
+                                                    </div>
+                                                    <p class="comment-text txa-para-2">Neque porro quisquam est, qui is dolor emr ipsum quia dolor sit amet the consec tetur is adipisci velit, sed Neque porro.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- single-comment -->
+                                    <div class="txa-comment-box-single-item">
+                                        <div class="txa-comment-box-single">
+                                            <div class="person-img img-cover">
+                                                <img src="assets/img/author/comment-author-3.png" alt="">
+                                            </div>
+                                            <div class="content-wrap">
+                                                <div class="inner-wrap mb-15">
+                                                    <div class="title-wrap">
+                                                        <h6 class="name txa-heading-2">Dianne Russell</h6>
+                                                        <p class="txa-para-2 date"><span class="date-time">Nov 4, 2023</span> - 30 mint ago <span class="author-tag" >PURCHASED</span></p>
+                                                    </div>
+                                                    <a class="reply-btn txa-heading-2" href="#">reply</a>
+                                                </div>
+                                                <p class="comment-text txa-para-2">Neque porro quisquam est, qui is dolor emr ipsum quia dolor sit amet the consec tetur is adipisci velit, sed Neque porro.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- single-comment -->
+                                    <div class="txa-comment-box-single-item">
+                                        <div class="txa-comment-box-single">
+                                            <div class="person-img img-cover">
+                                                <img src="assets/img/author/comment-author-4.png" alt="">
+                                            </div>
+                                            <div class="content-wrap">
+                                                <div class="inner-wrap mb-15">
+                                                    <div class="title-wrap">
+                                                        <h6 class="name txa-heading-2">Leslie Alexander</h6>
+                                                        <p class="txa-para-2 date"><span class="date-time">Nov 4, 2023</span> - 30 mint ago <span class="author-tag" >PURCHASED</span></p>
+                                                    </div>
+                                                    <a class="reply-btn txa-heading-2" href="#">reply</a>
+                                                </div>
+                                                <p class="comment-text txa-para-2">Neque porro quisquam est, qui is dolor emr ipsum quia dolor sit amet the consec tetur is adipisci velit, sed Neque porro.</p>
+                                            </div>
+                                        </div>
                                     </div>
 
                                 </div>
@@ -567,17 +624,17 @@
                                     <h4 class="txa-heading-2 title">reviews</h4>
 
                                     <!-- reviews-box -->
-                                    <div class="txa-product-details-reviews-box">
+                                    <div class="txa-product-details-reviews-box mb-20">
                                         <div class="txa-product-details-reviews-points">
                                             <h6 class="txa-heading-2 point">5.0</h6>
-                                            <div class="ratting">
-                                                <i class="flaticon-star-1"></i>
-                                                <i class="flaticon-star-1"></i>
-                                                <i class="flaticon-star-1"></i>
-                                                <i class="flaticon-star-1"></i>
-                                                <i class="flaticon-star-1"></i>
+                                            <div class="txa-rating-2 mb-20">
+                                                <i class="flaticon-star"></i>
+                                                <i class="flaticon-star"></i>
+                                                <i class="flaticon-star"></i>
+                                                <i class="flaticon-star"></i>
+                                                <i class="flaticon-star"></i>
                                             </div>
-                                            <p class="txa-para-2 average">Average of <span>4.6 reviews</span></p>
+                                            <p class="txa-para-2 average">Average of <b>4.6 reviews</b></p>
                                         </div>
 
                                         <div class="txa-product-details-reviews-progress-wrap">
@@ -614,7 +671,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="txa-product-details-reviews-single-wrap">
+                                    <div class="txa-product-details-reviews-single-wrap mb-30">
 
                                         <!-- single-rating -->
                                         <div class="txa-product-details-reviews-single">
@@ -688,6 +745,39 @@
                                             </div>
                                         </div>
 
+                                    </div>
+
+                                    <!-- comment-form -->
+                                    <div class="txa-comment-form-wrap">
+                                        <h6 class="title txa-heading-2">Add A Review</h6>
+                                        <p class="txa-para-2 disc">Your email address will not be published. Required fields are marked *</p>
+                                        
+                                        <!-- <div class="txa-give-rating-1 mb-15">
+                                            <input aria-label="name" type="radio" name="rate" id="rate-1">
+                                            <label for="rate-1" ><i class="flaticon-star"></i></label>
+                                            <input aria-label="name" type="radio" name="rate" id="rate-2">
+                                            <label for="rate-2" ><i class="flaticon-star"></i></label>
+                                            <input aria-label="name" type="radio" name="rate" id="rate-3">
+                                            <label for="rate-3" ><i class="flaticon-star"></i></label>
+                                            <input aria-label="name" type="radio" name="rate" id="rate-4">
+                                            <label for="rate-4" ><i class="flaticon-star"></i></label>
+                                            <input aria-label="name" type="radio" name="rate" id="rate-5">
+                                            <label for="rate-5" ><i class="flaticon-star"></i></label>
+                                        </div> -->
+
+                                        <form class="txa-comment-form"  action="#">
+                                            <input type="text" placeholder="full name" aria-label="name">
+                                            <input type="email" placeholder="email address" aria-label="name">
+                                            <textarea name="" id="" cols="30" rows="10" placeholder="Write your comments here...."></textarea>
+                                            <span class="check-item">
+                                                <input type="checkbox" id="Save" aria-label="name">
+                                                <label class="txa-para-2" for="Save">Save my name, email, and website in this browser for the next time I comment.</label>
+                                            </span>
+                                            <div class="btn-wrap">
+                                                <button class="txa-pr-btn-1" type="button" >submit comment</button>
+                                            </div>
+                    
+                                        </form>
                                     </div>
 
                                 </div>
@@ -885,13 +975,6 @@
                 </div>
             </div>
         </div>
-
-
-
-
-
-
-
 
         <!-- footer-start -->
         <div class="txa-footer-1-area">
