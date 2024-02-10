@@ -270,6 +270,77 @@ let txat1 = new Swiper('.txa-t1-active', {
 
   });
 
+
+
+
+
+/*
+art-details
+====start====
+*/
+
+let artthumbs = new Swiper('.txa-art-d-preview-img-active', {
+	spaceBetween: 15,
+	loop: true,
+	speed: 1000,
+	slidesPerView: 3,
+	rtl: false,
+	watchSlidesProgress: false,	
+	breakpoints: {
+		320: {
+		slidesPerView: 2,
+		},
+		576: {
+		slidesPerView: 3,
+		},
+		768: {
+		slidesPerView: 3,
+
+		},
+		992: {
+		slidesPerView: 3,
+		},
+		1200: {
+		slidesPerView: 3,
+		},
+	}
+});
+
+let artdetails = new Swiper('.txa-art-d-main-img-active', {
+	loop: true,
+	spaceBetween: 0,
+	rtl: false,
+	slidesPerView: 1,
+	autoplay: {
+		delay: 4000,
+	},
+	navigation: {
+		nextEl: ".art_details_next",
+		prevEl: ".art_details_prev",
+	},
+	thumbs: {
+		swiper: artthumbs,
+	},
+});
+
+
+// UPDATE: I was able to get this working again... Enjoy!
+
+var cursor = document.querySelector('.cursor');
+
+document.addEventListener('mousemove', function(e){
+  var x = e.clientX;
+  var y = e.clientY;
+  cursor.style.transform = `translate3d(calc(${e.clientX}px - 50%), calc(${e.clientY}px - 50%), 0)`
+});
+
+/*
+art-details
+====end====
+*/
+
+
+
 /*
 back-to-top
 =====start==== */
