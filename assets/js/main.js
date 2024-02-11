@@ -326,13 +326,19 @@ let artdetails = new Swiper('.txa-art-d-main-img-active', {
 
 // UPDATE: I was able to get this working again... Enjoy!
 
-var cursor = document.querySelector('.cursor');
+var element = document.querySelector('.cursor');
+if (element) {
+	var cursor = document.querySelector('.cursor');
 
-document.addEventListener('mousemove', function(e){
-  var x = e.clientX;
-  var y = e.clientY;
-  cursor.style.transform = `translate3d(calc(${e.clientX}px - 50%), calc(${e.clientY}px - 50%), 0)`
-});
+	document.addEventListener('mousemove', function(e){
+	  var x = e.clientX;
+	  var y = e.clientY;
+	  cursor.style.transform = `translate3d(calc(${e.clientX}px - 50%), calc(${e.clientY}px - 50%), 0)`
+	});
+	
+} 
+
+
 
 /*
 art-details
@@ -362,6 +368,54 @@ backtotop.on('click', function(e) {
 back-to-top
 =====end==== 
 */
+
+
+/*
+popup-img-activition
+====start====
+*/
+// $('.popup_img').magnificPopup({
+// 	type: 'image',
+// 	gallery: {
+// 		enabled: true,
+// 	},
+// });
+
+var element = document.querySelector('.popup-image');
+if (element) {
+	$('.popup-image').magnificPopup({
+		type: 'image',
+		mainClass: 'mfp-with-zoom', // this class is for CSS animation below
+	  
+		zoom: {
+		  enabled: true, // By default it's false, so don't forget to enable it
+	  
+		  duration: 500, // duration of the effect, in milliseconds
+		  easing: 'ease-in-out', // CSS transition easing function
+	  
+		  // The "opener" function should return the element from which popup will be zoomed in
+		  // and to which popup will be scaled down
+		  // By defailt it looks for an image tag:
+		  opener: function(openerElement) {
+			// openerElement is the element on which popup was initialized, in this case its <a> tag
+			// you don't need to add "opener" option if this code matches your needs, it's defailt one.
+			return openerElement.is('img') ? openerElement : openerElement.find('img');
+		  }
+		}
+	  
+	});
+	
+} 
+
+
+
+
+
+/*
+popup-img-activition
+====end====
+*/
+
 
 /*
 counter-activition
