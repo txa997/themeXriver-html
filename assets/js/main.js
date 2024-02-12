@@ -179,6 +179,7 @@ boxes.forEach(img => {
 
 
 
+
 // gsap-end
 
 
@@ -374,12 +375,7 @@ back-to-top
 popup-img-activition
 ====start====
 */
-// $('.popup_img').magnificPopup({
-// 	type: 'image',
-// 	gallery: {
-// 		enabled: true,
-// 	},
-// });
+
 
 var element = document.querySelector('.popup-image');
 if (element) {
@@ -406,10 +402,6 @@ if (element) {
 	});
 	
 } 
-
-
-
-
 
 /*
 popup-img-activition
