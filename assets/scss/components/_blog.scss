@@ -21,6 +21,7 @@
             height: 290px;
             border-radius: 10px;
             overflow: hidden;
+            box-shadow: 0 0 15px 0 rgb(0 0 0 / 8%);
         }
         .content-wrap {
             padding: 25px  30px;
@@ -70,6 +71,17 @@
             font-weight: 600;
             &:not(:last-child) {
                 padding-right: 40px;
+                position: relative;
+                &::after {
+                    position: absolute;
+                    content: "";
+                    width: 22px;
+                    height: 1px;
+                    background: #D3D1D1;
+                    right: 6px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
             }
             i {
                 display: inline-block;

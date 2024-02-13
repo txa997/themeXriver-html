@@ -347,6 +347,51 @@ art-details
 */
 
 
+// button-click-animation-start
+//   var myButton = document.getElementById("pr-btn-1");
+
+
+//   function addHighlightClass() {
+// 	myButton.classList.add("highlight");
+//   }
+
+//   function removeHighlightClass() {
+// 	myButton.classList.remove("highlight");
+//   }
+
+//   myButton.addEventListener("mousedown", addHighlightClass);
+
+//   myButton.addEventListener("mouseup", removeHighlightClass);
+
+//   myButton.addEventListener("mouseout", removeHighlightClass);
+
+
+var myButton = document.getElementById("pr-btn-1");
+
+function addHighlightClass() {
+    myButton.classList.add("highlight");
+}
+
+function removeHighlightClass() {
+    myButton.classList.remove("highlight");
+}
+
+function handleClickAndMouse() {
+    // Add any additional logic you want to execute on button click
+    console.log("Button clicked!");
+    removeHighlightClass(); // You can include this line if you want to remove highlight on click
+}
+
+myButton.addEventListener("mousedown", addHighlightClass);
+myButton.addEventListener("mouseup", removeHighlightClass);
+myButton.addEventListener("mouseout", removeHighlightClass);
+
+// Add click event listener
+myButton.addEventListener("click", handleClickAndMouse);
+
+
+// button-click-animation-end
+
 
 /*
 back-to-top
