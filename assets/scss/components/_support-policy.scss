@@ -1,0 +1,42 @@
+@use '../abstracts/variables' as *;
+
+.txa-support-policy {
+    &-page-title {
+        margin-bottom: 50px;
+    }
+    &-list{
+        &-single {
+            display: grid;
+            grid-template-columns: .4fr 1fr;
+            gap: 10px 20px;
+            @media #{$xs} {
+                grid-template-columns: 1fr;
+            }
+            &:not(:last-child) {
+                margin-bottom: 30px;
+            }
+        }
+        &-title {
+            font-size: 28px;
+            line-height: 1.28;
+            font-weight: 700;
+            @media #{$md} {
+                font-size: 24px;
+            }
+            @media #{$xs} {
+                font-size: 20px;
+            }
+            @media #{$sm} {
+                font-size: 22px;
+            }
+        }
+        &-disc {
+            line-height: 30px;
+            color: #595959;
+            &:not(:last-child) {
+                margin-bottom: 18px;
+            }
+        }
+    }
+}
+
