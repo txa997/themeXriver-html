@@ -366,28 +366,28 @@ art-details
 //   myButton.addEventListener("mouseout", removeHighlightClass);
 
 
-var myButton = document.getElementById("pr-btn-1");
+// var myButton = document.getElementById("pr-btn-1");
 
-function addHighlightClass() {
-    myButton.classList.add("highlight");
-}
+// function addHighlightClass() {
+//     myButton.classList.add("highlight");
+// }
 
-function removeHighlightClass() {
-    myButton.classList.remove("highlight");
-}
+// function removeHighlightClass() {
+//     myButton.classList.remove("highlight");
+// }
 
-function handleClickAndMouse() {
-    // Add any additional logic you want to execute on button click
-    console.log("Button clicked!");
-    removeHighlightClass(); // You can include this line if you want to remove highlight on click
-}
+// function handleClickAndMouse() {
+//     // Add any additional logic you want to execute on button click
+//     console.log("Button clicked!");
+//     removeHighlightClass(); // You can include this line if you want to remove highlight on click
+// }
 
-myButton.addEventListener("mousedown", addHighlightClass);
-myButton.addEventListener("mouseup", removeHighlightClass);
-myButton.addEventListener("mouseout", removeHighlightClass);
+// myButton.addEventListener("mousedown", addHighlightClass);
+// myButton.addEventListener("mouseup", removeHighlightClass);
+// myButton.addEventListener("mouseout", removeHighlightClass);
 
-// Add click event listener
-myButton.addEventListener("click", handleClickAndMouse);
+// // Add click event listener
+// myButton.addEventListener("click", handleClickAndMouse);
 
 
 // button-click-animation-end
@@ -451,6 +451,19 @@ if (element) {
 /*
 popup-img-activition
 ====end====
+*/
+
+/*
+nice-selector-activiton
+====start====
+*/
+var niceselect = document.querySelector(".nice-select");
+if (niceselect) {
+	$('.nice-select select').niceSelect();
+}
+/*
+nice-selector-activiton
+=====end==== 
 */
 
 
