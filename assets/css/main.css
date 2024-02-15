@@ -4697,9 +4697,18 @@ input:focus::placeholder, textarea:focus::placeholder {
   align-items: end;
   justify-content: end;
 }
+.txa-life-1-item-wrap .txa-life-1-item:hover img {
+  transform-origin: 50% 100%;
+  transform: rotateX(20deg);
+}
 .txa-life-1-item-wrap-2 {
   display: flex;
   gap: 30px;
+  justify-content: end;
+}
+.txa-life-1-item-wrap-2 .txa-life-1-item:hover img {
+  transform-origin: 50% 0%;
+  transform: rotateX(-20deg);
 }
 .txa-life-1-item {
   max-width: 480px;
@@ -4707,6 +4716,8 @@ input:focus::placeholder, textarea:focus::placeholder {
   overflow: hidden;
   border-radius: 20px;
   flex: 0 0 auto;
+  perspective: 2000px;
+  transform-style: preserve-3d;
 }
 @media only screen and (min-width: 1600px) and (max-width: 1799px), only screen and (min-width: 1400px) and (max-width: 1599px) {
   .txa-life-1-item {
@@ -4725,6 +4736,10 @@ input:focus::placeholder, textarea:focus::placeholder {
     max-width: 200px;
     height: 300px;
   }
+}
+.txa-life-1-item img {
+  transition: 400ms var(--cube-1);
+  border-radius: 20px;
 }
 .txa-life-1-item:nth-child(even) {
   max-width: 335px;
@@ -4747,6 +4762,9 @@ input:focus::placeholder, textarea:focus::placeholder {
     max-width: 170px;
     height: 200px;
   }
+}
+.txa-life-2-area {
+  background: linear-gradient(0deg, hsl(0, 0%, 100%) 0%, hsl(221, 100%, 95%) 100%);
 }
 
 .txa-hire-us-area {
@@ -8579,11 +8597,28 @@ input:focus::placeholder, textarea:focus::placeholder {
   padding-left: 50px;
   align-items: center;
 }
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  .txa-contact-us-wrap {
+    grid-template-columns: 1fr;
+    padding-left: 0px;
+  }
+}
 .txa-contact-us-form {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
   padding: 30px 0;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .txa-contact-us-form {
+    padding: 30px 20px;
+  }
+}
+@media (max-width: 767px) {
+  .txa-contact-us-form {
+    padding: 30px 20px;
+    grid-template-columns: 1fr;
+  }
 }
 .txa-contact-us-form .input-item:is(.has-full-width) {
   grid-column: 1/-1;
@@ -8624,11 +8659,39 @@ input:focus::placeholder, textarea:focus::placeholder {
   padding: 40px 40px;
   border-radius: 0 20px 20px 0;
 }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .txa-contact-us-info-wrap {
+    border-radius: 0 0 20px 20px;
+    padding: 40px 40px;
+  }
+}
+@media (max-width: 767px) {
+  .txa-contact-us-info-wrap {
+    border-radius: 0 0 20px 20px;
+    padding: 40px 15px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .txa-contact-us-info-wrap {
+    border-radius: 0 0 20px 20px;
+    padding: 40px 40px;
+  }
+}
 .txa-contact-us-info-wrap .txa-pr-btn-1 {
   border-radius: 10px;
   border: 1px solid #AD306D;
   font-size: 16px;
   font-weight: 700;
+}
+@media (max-width: 767px) {
+  .txa-contact-us-info-wrap .txa-pr-btn-1 {
+    padding: 21px 25px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .txa-contact-us-info-wrap .txa-pr-btn-1 {
+    padding: 21px 45px;
+  }
 }
 .txa-contact-us-info-wrap .txa-pr-btn-1::after {
   opacity: 0;
@@ -8654,15 +8717,35 @@ input:focus::placeholder, textarea:focus::placeholder {
 .txa-contact-us-info-wrap .btn-wrap {
   padding-top: 165px;
 }
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  .txa-contact-us-info-wrap .btn-wrap {
+    padding-top: 0px;
+  }
+}
 .txa-contact-us-info-title {
   font-size: 35px;
   line-height: 1.27;
   margin-bottom: 40px;
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  .txa-contact-us-info-title {
+    font-size: 30px;
+  }
+}
 .txa-contact-us-info-item {
   display: flex;
   align-items: center;
   gap: 15px;
+}
+@media (max-width: 767px) {
+  .txa-contact-us-info-item {
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .txa-contact-us-info-item {
+    flex-wrap: nowrap;
+  }
 }
 .txa-contact-us-info-item:not(:last-child) {
   margin-bottom: 30px;
@@ -8686,6 +8769,501 @@ input:focus::placeholder, textarea:focus::placeholder {
 .txa-contact-us-info-item-disc {
   line-height: 26px;
   color: #595959;
+}
+.txa-contact-us-info-item-disc a {
+  color: inherit;
+  word-wrap: break-word;
+}
+.txa-contact-us-info-item-disc a:hover {
+  color: var(--txa-pr-1);
+}
+.txa-contact-us-map {
+  width: 100%;
+  height: 635px;
+  overflow: hidden;
+}
+.txa-contact-us-map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.txa-faqs-page-area {
+  position: relative;
+}
+.txa-faqs-page-bg-shape-1 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  z-index: -1;
+}
+.txa-faqs-page-bg-shape-2 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  z-index: -1;
+}
+.txa-faqs-page-content {
+  display: flex;
+  flex-direction: column;
+  align-items: self-start;
+  justify-content: space-between;
+  gap: 50px;
+  height: 100%;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  .txa-faqs-page-content {
+    padding-bottom: 50px;
+  }
+}
+.txa-faqs-page-content .txa-pr-btn-1 {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 22px 45px;
+  border-radius: 10px;
+}
+.txa-faqs-page-section-title {
+  position: sticky;
+  top: 0;
+  padding-bottom: 120px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  .txa-faqs-page-section-title {
+    position: unset;
+    padding-bottom: 0px;
+  }
+}
+.txa-faqs-page-section-title .txa-title-2 {
+  margin-bottom: 25px;
+}
+
+.txa-faqs-page-accordion .accordion-item {
+  position: relative;
+  background: transparent;
+  border: none;
+}
+.txa-faqs-page-accordion .accordion-item .accordion-header {
+  outline: none;
+  box-shadow: none;
+  position: relative;
+  z-index: 1;
+}
+.txa-faqs-page-accordion .accordion-item .accordion-header .accordion-button {
+  padding: 25px 15px;
+  justify-content: space-between;
+  gap: 15px;
+  align-items: center;
+  outline: none;
+  box-shadow: none;
+  transition: 400ms var(--cube-1);
+  border: 1px dashed #C1C1C1;
+  border-radius: 10px 10px 10px 10px;
+}
+.txa-faqs-page-accordion .accordion-item .accordion-header .accordion-button .title {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.3;
+  transition: 400ms var(--cube-1);
+  margin-right: auto;
+}
+.txa-faqs-page-accordion .accordion-item .accordion-header .accordion-button .icon-2 {
+  font-size: 20px;
+  transform: translateY(3px);
+  transition: 400ms var(--cube-1);
+}
+.txa-faqs-page-accordion .accordion-item .accordion-header .accordion-button .icon {
+  font-size: 16px;
+  transform: translateY(3px);
+  transition: 400ms var(--cube-1);
+}
+.txa-faqs-page-accordion .accordion-item .accordion-header .accordion-button::after {
+  display: none;
+}
+.txa-faqs-page-accordion .accordion-item .accordion-header .accordion-button:is(:not(.collapsed)) {
+  background: var(--txa-gd-1);
+  border-radius: 10px 10px 0px 0px;
+  border: 1px solid transparent;
+}
+.txa-faqs-page-accordion .accordion-item .accordion-header .accordion-button:is(:not(.collapsed)) .title {
+  color: #fff;
+}
+.txa-faqs-page-accordion .accordion-item .accordion-header .accordion-button:is(:not(.collapsed)) .icon-2 {
+  color: #fff;
+}
+.txa-faqs-page-accordion .accordion-item .accordion-header .accordion-button:is(:not(.collapsed)) .icon {
+  transform: translateY(3px) rotate(90deg);
+  color: #fff;
+}
+.txa-faqs-page-accordion .accordion-item .accordion-body {
+  padding: 20px 20px;
+  background-color: #F8F3F7;
+  border-radius: 0px 0px 10px 10px;
+}
+.txa-faqs-page-accordion .accordion-item .accordion-body .disc {
+  line-height: 30px;
+  color: #595959;
+}
+
+.txa-career-1-section-title {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.txa-career-1-section-title .txa-title-2 {
+  margin-bottom: 25px;
+}
+
+.txa-career-1-offers-wrap {
+  padding: 0 90px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  .txa-career-1-offers-wrap {
+    padding: 0 0px;
+  }
+}
+.txa-career-1-offers-single {
+  border: 1px solid;
+  border-radius: 10px;
+  border-color: transparent;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.08);
+  padding: 30px 30px;
+  display: grid;
+  grid-template-columns: 1fr 0.4fr 0.4fr auto;
+  align-items: center;
+  gap: 30px;
+  transition: 500ms var(--cube-1);
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  .txa-career-1-offers-single {
+    grid-template-columns: 1fr;
+  }
+}
+.txa-career-1-offers-single:not(:last-child) {
+  margin-bottom: 20px;
+}
+.txa-career-1-offers-single .content-box {
+  text-align: center;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  .txa-career-1-offers-single .content-box {
+    text-align: left;
+  }
+}
+.txa-career-1-offers-single .content-box:not(:last-child) {
+  position: relative;
+}
+.txa-career-1-offers-single .content-box:not(:last-child)::after {
+  content: "";
+  width: 1px;
+  height: 80px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  background: radial-gradient(circle, hsl(0, 0%, 35%) 0%, hsl(0, 0%, 100%) 100%);
+  opacity: 0.5;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  .txa-career-1-offers-single .content-box:not(:last-child)::after {
+    display: none;
+  }
+}
+.txa-career-1-offers-single-title {
+  font-size: 28px;
+  line-height: 1.28;
+  margin-bottom: 15px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  .txa-career-1-offers-single-title {
+    font-size: 24px;
+  }
+}
+.txa-career-1-offers-single-subtle {
+  font-size: 16px;
+  font-weight: 500;
+  color: #A09F9F;
+  margin-bottom: 12px;
+}
+.txa-career-1-offers-single .disc {
+  font-size: 20px;
+  font-weight: 500;
+}
+.txa-career-1-offers-single-feature {
+  display: flex;
+  align-items: center;
+  gap: 10px 35px;
+}
+@media (max-width: 767px) {
+  .txa-career-1-offers-single-feature {
+    flex-wrap: wrap;
+  }
+}
+.txa-career-1-offers-single-feature .feature-item {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #595959;
+  line-height: 26px;
+}
+.txa-career-1-offers-single-feature .feature-item i {
+  display: inline-block;
+  background: var(--txa-gd-1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-right: 3px;
+  transform: translateY(2px);
+}
+.txa-career-1-offers-single .txa-pr-btn-1 {
+  font-weight: 700;
+  padding: 21px 39px;
+}
+.txa-career-1-offers-single .txa-pr-btn-1::after {
+  background: #595959;
+}
+.txa-career-1-offers-single:hover {
+  border-color: var(--txa-pr-1);
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);
+}
+
+.career-details-img {
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.career-details-title {
+  line-height: 1.2;
+  margin-bottom: 20px;
+  font-size: 50px;
+  margin-bottom: 40px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .career-details-title {
+    font-size: 45px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .career-details-title {
+    font-size: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .career-details-title {
+    font-size: 30px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .career-details-title {
+    font-size: 35px;
+  }
+}
+.career-details-subtitle {
+  font-weight: 700;
+  line-height: 1.41;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+@media (max-width: 767px) {
+  .career-details-subtitle {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .career-details-subtitle {
+    font-size: 22px;
+  }
+}
+.career-details-feature-list li {
+  font-size: 18px;
+  line-height: 28px;
+  color: #595959;
+}
+.career-details-feature-list li:not(:last-child) {
+  margin-bottom: 15px;
+}
+.career-details-feature-list li i {
+  background: var(--txa-gd-1);
+  display: inline-block;
+  line-height: 1;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-right: 3px;
+  transform: translateY(1px);
+}
+
+.career-details-sidebar {
+  background: #F3F3F3;
+  border-radius: 10px;
+}
+.career-details-sidebar .padding-wrap {
+  padding: 30px 40px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .career-details-sidebar .padding-wrap {
+    padding: 30px 20px;
+  }
+}
+@media (max-width: 767px) {
+  .career-details-sidebar .padding-wrap {
+    padding: 30px 20px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .career-details-sidebar .padding-wrap {
+    padding: 30px 40px;
+  }
+}
+.career-details-sidebar-title {
+  font-size: 26px;
+  text-align: center;
+  line-height: 1.46;
+  padding: 20px 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+}
+.career-details-sidebar-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding-bottom: 20px;
+  position: relative;
+}
+.career-details-sidebar-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+.career-details-sidebar-item::after {
+  content: "";
+  width: 100%;
+  height: 1.5px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: radial-gradient(circle, hsl(0, 0%, 35%) 0%, hsl(0, 0%, 100%) 100%);
+  opacity: 0.2;
+}
+.career-details-sidebar-item-title {
+  font-size: 18px;
+  line-height: 28px;
+}
+.career-details-sidebar-item-icon {
+  width: 52px;
+  height: 52px;
+  line-height: 57px;
+  background: #E9E7E7;
+  border-radius: 540%;
+  text-align: center;
+  font-size: 22px;
+  flex: 0 0 auto;
+}
+.career-details-sidebar-item-icon i {
+  line-height: 1;
+  display: inline-block;
+  background: var(--txa-gd-1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.career-details-sidebar .txa-pr-btn-1 {
+  font-weight: 700;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .career-details-sidebar .txa-pr-btn-1 {
+    padding: 21px 25px;
+  }
+}
+@media (max-width: 767px) {
+  .career-details-sidebar .txa-pr-btn-1 {
+    padding: 21px 25px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .career-details-sidebar .txa-pr-btn-1 {
+    padding: 21px 45px;
+  }
+}
+
+.txa-jobs-apply-section-title .txa-title-2 {
+  margin-bottom: 25px;
+}
+.txa-jobs-apply-section-title .txa-para-2 {
+  max-width: 690px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.txa-jobs-apply-form {
+  padding: 0 95px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  .txa-jobs-apply-form {
+    padding: 0 0px;
+  }
+}
+.txa-jobs-apply-form .txa-ticket-form {
+  background: #F7F7F7;
+  border-radius: 20px;
+  padding: 50px 40px;
+  gap: 20px 20px;
+}
+@media (max-width: 767px) {
+  .txa-jobs-apply-form .txa-ticket-form {
+    padding: 50px 15px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .txa-jobs-apply-form .txa-ticket-form {
+    padding: 50px 40px;
+  }
+}
+.txa-jobs-apply-form .txa-ticket-form .input-item .input-box, .txa-jobs-apply-form .txa-ticket-form .input-item textarea {
+  height: 62px;
+  background: #fff;
+  padding: 0 20px;
+}
+.txa-jobs-apply-form .txa-ticket-form .input-item textarea {
+  height: 185px;
+  padding: 15px 20px;
+}
+.txa-jobs-apply-form .txa-ticket-form .upload-file-btn input {
+  margin-bottom: 15px;
+}
+.txa-jobs-apply-form .txa-ticket-form .upload-file-btn ::file-selector-button {
+  border: none;
+  font: inherit;
+  -webkit-appearance: button;
+  background: #595959;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 30px;
+  padding: 12px 40px;
+  margin-right: 20px;
+  position: relative;
+  transition: 500ms var(--cube-1);
+  cursor: pointer;
+}
+.txa-jobs-apply-form .txa-ticket-form .upload-file-btn ::file-selector-button:hover {
+  background-color: var(--txa-pr-1);
+}
+.txa-jobs-apply-form .txa-ticket-form .upload-file-btn input[type=file i] {
+  color: var(--txa-heading-1);
+  font-weight: 500;
+  font-size: 16px;
+}
+.txa-jobs-apply-form .txa-ticket-form .upload-file-btn .file-allow {
+  font-size: 14px;
+  color: #595959;
+}
+.txa-jobs-apply-form .txa-ticket-form .check-item label::before {
+  border: 1px solid var(--txa-pr-1);
+}
+.txa-jobs-apply-form .txa-ticket-form .check-item label::after {
+  background: var(--txa-gd-1);
+}
+.txa-jobs-apply-form .txa-ticket-form .txa-pr-btn-1 {
+  justify-self: left;
+  border-radius: 30px;
+  font-weight: 700;
 }
 
 .txa-footer-1-area {

@@ -178,7 +178,48 @@ boxes.forEach(img => {
 });
 
 
+// marquee-animation-1-start
 
+var marqueeContent = document.querySelector('.txa-life-1-item-wrap');
+
+
+if (marqueeContent) {
+	const txaMarquee = gsap.timeline({ repeat: -1 });
+
+	txaMarquee.fromTo('.txa-life-1-item-wrap', { x: '100%' }, { x: '0%', duration: 20, ease: 'linear' });
+	
+	marqueeContent.addEventListener('mouseenter', () => {
+		txaMarquee.pause();
+	});
+	  
+	marqueeContent.addEventListener('mouseleave', () => {
+		txaMarquee.play();
+	});
+}
+
+
+
+// marquee-animation-1-end
+
+// marquee-animation-2-start
+var marqueeContent2 = document.querySelector('.txa-life-1-item-wrap-2');
+
+if (marqueeContent2) {
+	const txaMarquee2 = gsap.timeline({ repeat: -1 });
+
+	txaMarquee2.fromTo('.txa-life-1-item-wrap-2', { x: '0%' }, { x: '100%', duration: 20, ease: 'linear' });
+	
+	marqueeContent2.addEventListener('mouseenter', () => {
+		txaMarquee2.pause();
+	});
+	  
+	marqueeContent2.addEventListener('mouseleave', () => {
+		txaMarquee2.play();
+	});
+}
+
+
+// marquee-animation-2-end
 
 // gsap-end
 
@@ -465,6 +506,7 @@ if (niceselect) {
 nice-selector-activiton
 =====end==== 
 */
+
 
 
 /*

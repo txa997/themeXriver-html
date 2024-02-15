@@ -7,10 +7,30 @@
             gap: 30px;
             align-items: end;
             justify-content: end;
+
+            .txa-life-1-item {
+                &:hover {
+                    img {
+                        transform-origin: 50% 100%;
+                        transform: rotateX(20deg);
+                    }
+                }
+
+            }
         }
         &-item-wrap-2 {
             display: flex;
             gap: 30px;
+            justify-content: end;
+            .txa-life-1-item {
+                &:hover {
+                    img {
+                        transform-origin: 50% 0%;
+                        transform: rotateX(-20deg);
+                    }
+                }
+
+            }
         }
         &-item {
             max-width: 480px;
@@ -18,7 +38,8 @@
             overflow: hidden;
             border-radius: 20px;
             flex: 0 0 auto;
-
+            perspective: 2000px;
+            transform-style: preserve-3d;
             @media #{$xxxl,$xxl} {
                 max-width: 420px;
                 height: 500px;
@@ -33,6 +54,11 @@
                 max-width: 200px;
                 height: 300px;
             
+            }
+
+            img {
+                transition: 400ms var(--cube-1);
+                border-radius: 20px;
             }
 
             &:nth-child(even){
@@ -51,6 +77,11 @@
                     height: 200px;
                 }
             }
+        }
+    }
+    &-2 {
+        &-area {
+            background: linear-gradient(0deg, hsla(0, 0%, 100%, 1) 0%, hsla(221, 100%, 95%, 1) 100%);
         }
     }
 }
