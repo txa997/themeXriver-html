@@ -49,12 +49,11 @@
 
 
 .txa-login-reg-btn-1 {
-  .has-border {
+  &:is(.has-border)   {
     padding-left: 25px;
     border-left: 1px solid #E1E1E1;
   }
 }
-
 
 .txa-social-1 {
   gap: 5px;

@@ -76,7 +76,7 @@
                 content: "";
                 width: 0%;
                 height: 1px;
-                background-color: var(--txa-pr-1);
+                background-color: var(--txa-heading-1);
                 left: 50%;
                 bottom: 0;
                 transform: translateX(-50%);
@@ -86,8 +86,12 @@
             }
             &:hover {
                 letter-spacing: .4px;
+                color: var(--txa-heading-1);
                 &::before {
                     width: 100%;
+                }
+                &::after {
+                    width: 0%;
                 }
             }
         }

@@ -204,22 +204,17 @@
         }
 
     }
-
     .content-wrap {
         padding: 25px 22px;
     }
 
-    .txa-purchase-btn {
-        padding: 17px 50px;
-
-        @media #{$lg} {
-            padding: 17px 35px;
-        }
-        @media #{$xs} {
-            padding: 17px 30px;
-        }
-        @media #{$sm} {
-            padding: 17px 45px;
+    .item-btn {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        padding: 13px 50px;
+        &::after {
+            background: #595959;
         }
     }
 
@@ -260,11 +255,18 @@
                 }
             }
         }
-        .txa-purchase-btn {
-            letter-spacing: 0px;
+        .item-btn {
             cursor: not-allowed;
+            transform: scale(1);
+            &::before {
+                opacity: 0;
+            }
             &::after {
-                display: none;
+                background: #595959;
+                opacity: 1;
+            }
+            .txt {
+                animation: unset;
             }
         }
     }

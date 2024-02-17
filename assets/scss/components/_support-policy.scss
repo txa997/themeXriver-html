@@ -36,6 +36,31 @@
             &:not(:last-child) {
                 margin-bottom: 18px;
             }
+
+            a {
+                display: inline-block;
+                color: var(--txa-pr-1);
+                transition: 400ms var(--cube-1);
+                &:hover {
+                    color: #000;
+                }
+            }
+
+        }
+    }
+    &-list {
+        li {
+            font-size: 18px;
+            line-height: 30px;
+            color: #595959;
+            a {
+                display: inline-block;
+                color: var(--txa-pr-1);
+                transition: 400ms var(--cube-1);
+                &:hover {
+                    color: #000;
+                }
+            }
         }
     }
 }

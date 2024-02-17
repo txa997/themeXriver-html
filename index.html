@@ -18,7 +18,6 @@
      
     <body >
 
-
         <!-- header-start -->
         <header class="txa-header-1-area" >
 
@@ -49,11 +48,7 @@
                         <div class="txa-header-1-top-action-link d-md-flex align-items-center d-none">
 
                             <!-- freebie-button -->
-                            <a class="txa-btn-border-1" href="#" aria-label="themexriver Freebie">Freebie
-                                <svg xmlns="http://www.w3.org/2000/svg" width="535" height="250" viewBox="0 0 535 250" fill="none">
-                                    <path d="M534.461 152.764C518.901 81.6536 471.261 35.1136 396.801 31.4436C285.781 25.9636 148.541 117.434 54.7407 249.464H0.760742C102.831 99.4036 257.071 -5.86642 381.171 0.253582C469.111 4.60358 522.651 63.9336 534.461 152.764Z" fill="#F4255C"/>
-                                </svg>
-                            </a>
+                            <a class="txa-pr-btn-1 border-btn" href="#" aria-label="themexriver Freebie"><span class="txt">Freebie</span></a>
 
                             <!-- login-register-button -->
                             <div class="txa-login-reg-btn-1 has-border">
@@ -129,7 +124,6 @@
                                         </li>
                                     </ul>
                                 </li>
-                                
     
                                 <li class="dropdown">
                                     <a aria-label="name" href="#">pages</a>
@@ -150,8 +144,6 @@
                                     <a aria-label="name" href="#" >art collection</a>
                                     <span class="has-offer" >new</span>
                                 </li>
-
-
                                 
                                 <li class="dropdown">
                                     <a href="#">support</a>
@@ -199,8 +191,12 @@
                             </a>
 
                             <!-- mobile-menu -->
-                            <div class="txa-mobile-menu-1 d-lg-none" id="menuToggle">
-                                <i class="fad fa-bars"></i>
+                            <div class="txa-mobile-menu-1 d-lg-none " id="menuToggle">
+                                <div class="txa-bar-1">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
                             </div>
     
                         </div>
@@ -209,224 +205,158 @@
                 </div>
             </div>
 
-
         </header>
         <!-- header-end -->
 
         <!-- mobile-menu-start -->
-        <div class="fullpage-menu lenis lenis-smooth" >
-            <div class="fullpage-menu-inner">
-                <div class="menu-bg">
+        <div class="mobile-menu lenis lenis-smooth" >
+            <div class="mobile-menu-wrap">
+                <div class="mobile-menu-bg">
                     <span class="span1" ></span>
                     <span class="span2" ></span>
-                    <span class="span3" ></span>
                 </div>
-    
-                <div class="fullpage-menu-logo-wrap">
-                    <a href="index.html" class="menu-logo d-block" aria-label="brand-logo"  >
-                        <img src="assets/img/logo/logo-1.svg" alt="">
+
+                <div class="mobile-menu-logo-wrap">
+                    <a href="index.html" class="mobile-menu-logo d-block" aria-label="brand-logo"  >
+                        <img src="assets/img/logo/themexriver-logo-1.png" alt="themexriver">
                     </a>
-                    <i id="menuToggle2" class="fas fullpage-menu-close fa-times"></i>
+                    <div class="mobile-menu-close" id="menuToggle2">
+                        <i class="flaticon-cancel"></i>
+                    </div>
                 </div>
     
-                <div class="mobile-search-bar">
-                    <form action="#">
-                        <input type="text" name="search" placeholder="Keywords">
-                        <button type="button" aria-label="search" ><i class="fal fa-search"></i></button>
+                <div class="mobile-menu-search-bar">
+                    <form action="#" class="txa-search-form-1 mb-50" >
+                        <input type="text" aria-label="name" placeholder="Etc.. responsive Wordpress">
+                        <button class="txa-pr-btn-1 form-btn" type="button" aria-label="name" >
+                            <span class="txt">
+                                <i class="flaticon-search icon-1"></i>
+                                search
+                            </span>
+                        </button>
                     </form>
                 </div>
     
     
-                <div class="fullpage-content-wrap">
+                <div class="mobile-menu-content-wrap mb-50">
+                    <!-- action-link -->
+                    <div class="mobile-menu-action-link">
+
+                            <!-- cart-btn -->
+                            <a href="#" aria-label="name" class="txa-cart-btn-1">
+                                $0.00 
+                                <span class="icon">
+                                    <i class="flaticon-grocery-store icon-1"></i>
+                                    <i class="flaticon-grocery-store icon-2"></i>
+                                </span>
+                            </a>
+
+                            <!-- login-register-button -->
+                            <div class="txa-login-reg-btn-1">
+                                <a href="#" aria-label="themexriver login">login</a>
+                                <span>/</span>
+                                <a href="#" aria-label="themexriver register">register</a>
+                            </div>
+
+                            <!-- freebie-button -->
+                            <a class="txa-pr-btn-1 border-btn" href="#" aria-label="themexriver Freebie"><span class="txt">Freebie</span></a>
+                            <!-- reating -->
+                            <div class="txa-rating-1">
+                            <i class="flaticon-star"></i>
+                            <i class="flaticon-star"></i>
+                            <i class="flaticon-star"></i>
+                            <i class="flaticon-star"></i>
+                            <i class="flaticon-star"></i>
+                            <h4 class="txa-heading-1 title"><i class="flaticon-star"></i> trustpilot</h4>
+                        </div>
+
+                    </div>
     
                     <!-- mobile-menu-list -->
-                    <nav class="mobile-main-navigation  clearfix ul-li">
-                        <ul id="m-main-nav" class="nav navbar-nav clearfix">
+                    <div class="mobile-menu-navigation">
+                        <nav class="mobile-main-navigation  clearfix ul-li">
+                            <ul id="m-main-nav" class="nav navbar-nav clearfix">
+        
+                                <li class="dropdown">
+                                    <a aria-label="name" href="#">themes & templates</a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a aria-label="name" href="#">wordpress themes</a>
+                                        </li>
+                                        <li >
+                                            <a aria-label="name" href="#">html templates</a>
+                                        </li>
+                                        <li>
+                                            <a aria-label="name" href="#">PSD templates </a>
+                                        </li>
+                                        <li>
+                                            <a aria-label="name" href="#">figma templates</a>
+                                        </li>
+                                    </ul>
+                                </li>
     
-                            <li class="dropdown">
-                                <a href="!#">home</a>
-                                <ul class="dropdown-menu clearfix">
-                                    <li>
-                                        <a href="index.html">home one</a>
-                                    </li>
-                                    <li>
-                                        <a href="home-2.html">home two</a>
-                                    </li>
-                                    <li>
-                                        <a href="home-3.html">home three</a>
-                                    </li>
-                                    <li>
-                                        <a href="home-4.html">home four</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            
-                            <li class="dropdown">
-                                <a href="#">about</a>
-                                <ul class="dropdown-menu clearfix">
-                                    <li >
-                                        <a href="about-1.html">about one</a>
-                                    </li>
-                                    <li >
-                                        <a href="about-2.html">about two</a>
-                                    </li>
-                                    <li >
-                                        <a href="about-3.html">about three</a>
-                                    </li>
-                                </ul>
-                            </li>
+                                <li class="dropdown">
+                                    <a aria-label="name" href="#">pages</a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a aria-label="name" href="about.html">about us</a>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a aria-label="name" href="#">plugin 2</a>
+                                        </li>
+                                        <li>
+                                            <a aria-label="name" href="#">plugin 1</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                
+                                <li>
+                                    <a aria-label="name" href="#" >art collection</a>
+                                </li>
+                                
+                                <li class="dropdown">
+                                    <a href="#">support</a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a aria-label="name" href="#">support 1</a>
+                                        </li>
+                                        <li>
+                                            <a aria-label="name" href="#">support 2</a>
+                                        </li>
+                                        <li>
+                                            <a aria-label="name" href="#">support 3</a>
+                                        </li>
+                                    </ul>
+                                </li>
     
-                            <li class="dropdown">
-                                <a href="!#">projects</a>
-                                <ul class="dropdown-menu clearfix">
-                                    <li >
-                                        <a href="projects-1.html">projects one</a>
-                                    </li>
-                                    <li >
-                                        <a href="projects-2.html">projects two</a>
-                                    </li>
-                                    <li >
-                                        <a href="projects-details.html">projects details</a>
-                                    </li>
-                                   
-                                </ul>
-                            </li>
-    
-                            <li class="dropdown">
-                                <a href="!#">services</a>
-                                <ul class="dropdown-menu clearfix">
-                                    <li >
-                                        <a href="services-1.html">services one</a>
-                                    </li>
-                                    <li >
-                                        <a href="services-2.html">services two</a>
-                                    </li>
-                                    <li >
-                                        <a href="services-details.html">services details</a>
-                                    </li>
-                                </ul>
-                            </li>
-    
-                            <li class="dropdown">
-                                <a href="!#">career</a>
-                                <ul class="dropdown-menu clearfix">
-                                    <li >
-                                        <a href="career.html">career</a>
-                                    </li>
-                                    <li >
-                                        <a href="career-details.html">career details</a>
-                                    </li>
-                                    <li >
-                                        <a href="job-apply.html">job apply</a>
-                                    </li>
-                                   
-                                </ul>
-                            </li>
-    
-                            <li class="dropdown">
-                                <a href="!#">blog</a>
-                                <ul class="dropdown-menu clearfix">
-                                    <li >
-                                        <a href="blog-1.html">blog one</a>
-                                    </li>
-                                    <li >
-                                        <a href="blog-2.html">blog two</a>
-                                    </li>
-                                    <li >
-                                        <a href="blog-details.html">projects details</a>
-                                    </li>
-                                   
-                                </ul>
-                            </li>
-                            
-                            <li class="dropdown">
-                                <a href="!#">pages</a>
-                                <ul class="dropdown-menu clearfix">
-                                    <li class="dropdown">
-                                        <a href="!#">team</a>
-                                        <ul class="dropdown-menu clearfix">
-                                            <li >
-                                                <a href="team-1.html">team one</a>
-                                            </li>
-                                            <li >
-                                                <a href="team-2.html">team two</a>
-                                            </li>
-                                            <li >
-                                                <a href="team-details.html">team details</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li >
-                                        <a href="faqs.html">FAQs</a>
-                                    </li>
-                                    <li >
-                                        <a href="testimonial.html">testimonial</a>
-                                    </li>
-                                    <li >
-                                        <a href="our-clients.html">our clients</a>
-                                    </li>
-                                    <li >
-                                        <a href="pricing.html">price</a>
-                                    </li>
-                                    <li >
-                                        <a href="process.html">process</a>
-                                    </li>
-                                </ul>
-                            </li>
-    
-                            <li>
-                                <a href="contact.html">contact</a>
-                            </li>
-    
-                        </ul>
-                    </nav>
-    
-                    <div class="fullpage-menu-gellary">
-                        <a href="assets/img/gallery/g-img-1.jpg" aria-label="gallery img" class="item img-cover popup_img">
-                            <img src="assets/img/gallery/g-img-1.jpg" alt="">
+                                <li>
+                                    <a aria-label="name" href="#">hire us</a>
+                                </li>
+        
+                            </ul>
+                        </nav>
+                    </div>
+
+
+                </div>
+                
+                <div class="mobile-menu-socail-link">
+                    <div class="txa-social-1 align-items-center flex-wrap">
+                        <a href="https://www.facebook.com/themexriver/" target="_blank" aria-label="themexriver facebook">
+                            <i class="flaticon-facebook-1"></i>
                         </a>
-                        <a href="assets/img/gallery/g-img-2.jpg" aria-label="gallery img" class="item img-cover popup_img">
-                            <img src="assets/img/gallery/g-img-2.jpg" alt="">
+                        <a href="https://twitter.com/ThemeriverArt" target="_blank" aria-label="themexriver twitter">
+                            <i class="flaticon-twitter twitter"></i>
                         </a>
-                        <a href="assets/img/gallery/g-img-3.jpg" aria-label="gallery img" class="item img-cover popup_img">
-                            <img src="assets/img/gallery/g-img-3.jpg" alt="">
+                        <a href="https://www.instagram.com/themexriver/" target="_blank" aria-label="themexriver instagram">
+                            <i class="flaticon-instagram"></i>
                         </a>
-                        <a href="assets/img/gallery/g-img-4.jpg" aria-label="gallery img" class="item img-cover popup_img">
-                            <img src="assets/img/gallery/g-img-4.jpg" alt="">
+                        <a href="https://www.youtube.com/@themexriver" target="_blank" aria-label="themexriver youtube">
+                            <i class="flaticon-youtube"></i>
                         </a>
-                        <a href="assets/img/gallery/g-img-5.jpg" aria-label="gallery img" class="item img-cover popup_img">
-                            <img src="assets/img/gallery/g-img-5.jpg" alt="">
-                        </a>
-                        <a href="assets/img/gallery/g-img-6.jpg" aria-label="gallery img" class="item img-cover popup_img">
-                            <img src="assets/img/gallery/g-img-6.jpg" alt="">
-                        </a>
-    
                     </div>
                 </div>
-    
-                <ul class="full-page-socail-link text-center pt-50">
-                    <li>
-                        <a href="#">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fab fa-youtube"></i>
-                        </a>
-                    </li>
-                </ul>
-    
+
             </div>
         </div>
         <!-- mobile-menu-end -->
@@ -448,9 +378,11 @@
 
                     <form action="#" class="txa-search-form-1 mb-50" >
                         <input type="text" aria-label="name" placeholder="Etc.. responsive Wordpress">
-                        <button class="txa-form-1-btn" type="button" aria-label="name" >
-                            <i class="flaticon-search icon-1"></i>
-                            search
+                        <button class="txa-pr-btn-1 form-btn" type="button" aria-label="name" >
+                            <span class="txt">
+                                <i class="flaticon-search icon-1"></i>
+                                search
+                            </span>
                         </button>
                     </form>
 
@@ -490,7 +422,7 @@
                                 </div>
                             </div>
 
-                            <a href="#" aria-label="name" class="showcase-btn txa-heading-1">purchase now</a>
+                            <a href="plugin-page.html" aria-label="name" class="showcase-btn txa-heading-1">purchase now</a>
 
                         </div>
                     </div>
@@ -515,7 +447,7 @@
                                 </div>
                             </div>
 
-                            <a href="#" aria-label="name" class="showcase-btn txa-heading-1">purchase now</a>
+                            <a href="themes-page.html" aria-label="name" class="showcase-btn txa-heading-1">purchase now</a>
 
                         </div>
                     </div>
@@ -540,7 +472,7 @@
                                 </div>
                             </div>
 
-                            <a href="#" aria-label="name" class="showcase-btn txa-heading-1">purchase now</a>
+                            <a href="template-page.html" aria-label="name" class="showcase-btn txa-heading-1">purchase now</a>
 
                         </div>
                     </div>
@@ -589,7 +521,7 @@
                                 </div>
 
                                 <!-- all-btn -->
-                                <a href="#" aria-label="name"  class="txa-pr-btn-1">explore all templates</a>
+                                <a href="#" aria-label="name"  class="txa-pr-btn-1"><span class="txt">explore all templates</span></a>
 
                             </div>
                               
@@ -613,7 +545,7 @@
                                                         </div>
                                                         <div class="content-wrap">
                                                             <h3 class="txa-heading-1 title">
-                                                                <a href="#" aria-label="name">wordpress website 5000+ premium themes & plugins</a>
+                                                                <a href="product-details.html" aria-label="name">wordpress website 5000+ premium themes & plugins</a>
                                                             </h3>
                                                         </div>
                                                     </div>
@@ -627,7 +559,7 @@
                                                         </div>
                                                         <div class="content-wrap">
                                                             <h3 class="txa-heading-1 title">
-                                                                <a href="#" aria-label="name">plugin website 5000+ premium themes & plugins</a>
+                                                                <a href="product-details.html" aria-label="name">plugin website 5000+ premium themes & plugins</a>
                                                             </h3>
                                                         </div>
                                                     </div>
@@ -641,7 +573,7 @@
                                                         </div>
                                                         <div class="content-wrap">
                                                             <h3 class="txa-heading-1 title">
-                                                                <a href="#" aria-label="name">HTML website 5000+ premium themes & plugins</a>
+                                                                <a href="product-details.html" aria-label="name">HTML website 5000+ premium themes & plugins</a>
                                                             </h3>
                                                         </div>
                                                     </div>
@@ -684,7 +616,7 @@
                                                         </div>
                                                         <div class="content-wrap">
                                                             <h3 class="txa-heading-1 title">
-                                                                <a href="#" aria-label="name">wordpress website 5000+ premium themes & plugins</a>
+                                                                <a href="product-details.html" aria-label="name">wordpress website 5000+ premium themes & plugins</a>
                                                             </h3>
                                                         </div>
                                                     </div>
@@ -698,7 +630,7 @@
                                                         </div>
                                                         <div class="content-wrap">
                                                             <h3 class="txa-heading-1 title">
-                                                                <a href="#" aria-label="name">plugin website 5000+ premium themes & plugins</a>
+                                                                <a href="product-details.html" aria-label="name">plugin website 5000+ premium themes & plugins</a>
                                                             </h3>
                                                         </div>
                                                     </div>
@@ -712,7 +644,7 @@
                                                         </div>
                                                         <div class="content-wrap">
                                                             <h3 class="txa-heading-1 title">
-                                                                <a href="#" aria-label="name">HTML website 5000+ premium themes & plugins</a>
+                                                                <a href="product-details.html" aria-label="name">HTML website 5000+ premium themes & plugins</a>
                                                             </h3>
                                                         </div>
                                                     </div>
@@ -755,7 +687,7 @@
                                                         </div>
                                                         <div class="content-wrap">
                                                             <h3 class="txa-heading-1 title">
-                                                                <a href="#" aria-label="name">wordpress website 5000+ premium themes & plugins</a>
+                                                                <a href="product-details.html" aria-label="name">wordpress website 5000+ premium themes & plugins</a>
                                                             </h3>
                                                         </div>
                                                     </div>
@@ -769,7 +701,7 @@
                                                         </div>
                                                         <div class="content-wrap">
                                                             <h3 class="txa-heading-1 title">
-                                                                <a href="#" aria-label="name">plugin website 5000+ premium themes & plugins</a>
+                                                                <a href="product-details.html" aria-label="name">plugin website 5000+ premium themes & plugins</a>
                                                             </h3>
                                                         </div>
                                                     </div>
@@ -783,7 +715,7 @@
                                                         </div>
                                                         <div class="content-wrap">
                                                             <h3 class="txa-heading-1 title">
-                                                                <a href="#" aria-label="name">HTML website 5000+ premium themes & plugins</a>
+                                                                <a href="product-details.html" aria-label="name">HTML website 5000+ premium themes & plugins</a>
                                                             </h3>
                                                         </div>
                                                     </div>
@@ -826,7 +758,7 @@
                                                         </div>
                                                         <div class="content-wrap">
                                                             <h3 class="txa-heading-1 title">
-                                                                <a href="#" aria-label="name">wordpress website 5000+ premium themes & plugins</a>
+                                                                <a href="product-details.html" aria-label="name">wordpress website 5000+ premium themes & plugins</a>
                                                             </h3>
                                                         </div>
                                                     </div>
@@ -840,7 +772,7 @@
                                                         </div>
                                                         <div class="content-wrap">
                                                             <h3 class="txa-heading-1 title">
-                                                                <a href="#" aria-label="name">plugin website 5000+ premium themes & plugins</a>
+                                                                <a href="product-details.html" aria-label="name">plugin website 5000+ premium themes & plugins</a>
                                                             </h3>
                                                         </div>
                                                     </div>
@@ -854,7 +786,7 @@
                                                         </div>
                                                         <div class="content-wrap">
                                                             <h3 class="txa-heading-1 title">
-                                                                <a href="#" aria-label="name">HTML website 5000+ premium themes & plugins</a>
+                                                                <a href="product-details.html" aria-label="name">HTML website 5000+ premium themes & plugins</a>
                                                             </h3>
                                                         </div>
                                                     </div>
@@ -897,7 +829,7 @@
                                                         </div>
                                                         <div class="content-wrap">
                                                             <h3 class="txa-heading-1 title">
-                                                                <a href="#" aria-label="name">wordpress website 5000+ premium themes & plugins</a>
+                                                                <a href="product-details.html" aria-label="name">wordpress website 5000+ premium themes & plugins</a>
                                                             </h3>
                                                         </div>
                                                     </div>
@@ -911,7 +843,7 @@
                                                         </div>
                                                         <div class="content-wrap">
                                                             <h3 class="txa-heading-1 title">
-                                                                <a href="#" aria-label="name">plugin website 5000+ premium themes & plugins</a>
+                                                                <a href="product-details.html" aria-label="name">plugin website 5000+ premium themes & plugins</a>
                                                             </h3>
                                                         </div>
                                                     </div>
@@ -925,7 +857,7 @@
                                                         </div>
                                                         <div class="content-wrap">
                                                             <h3 class="txa-heading-1 title">
-                                                                <a href="#" aria-label="name">HTML website 5000+ premium themes & plugins</a>
+                                                                <a href="product-details.html" aria-label="name">HTML website 5000+ premium themes & plugins</a>
                                                             </h3>
                                                         </div>
                                                     </div>
@@ -968,7 +900,7 @@
                                                         </div>
                                                         <div class="content-wrap">
                                                             <h3 class="txa-heading-1 title">
-                                                                <a href="#" aria-label="name">wordpress website 5000+ premium themes & plugins</a>
+                                                                <a href="product-details.html" aria-label="name">wordpress website 5000+ premium themes & plugins</a>
                                                             </h3>
                                                         </div>
                                                     </div>
@@ -982,7 +914,7 @@
                                                         </div>
                                                         <div class="content-wrap">
                                                             <h3 class="txa-heading-1 title">
-                                                                <a href="#" aria-label="name">plugin website 5000+ premium themes & plugins</a>
+                                                                <a href="privacy-policy.html" aria-label="name">plugin website 5000+ premium themes & plugins</a>
                                                             </h3>
                                                         </div>
                                                     </div>
@@ -996,7 +928,7 @@
                                                         </div>
                                                         <div class="content-wrap">
                                                             <h3 class="txa-heading-1 title">
-                                                                <a href="#" aria-label="name">HTML website 5000+ premium themes & plugins</a>
+                                                                <a href="product-details.html" aria-label="name">HTML website 5000+ premium themes & plugins</a>
                                                             </h3>
                                                         </div>
                                                     </div>
@@ -1089,11 +1021,11 @@
                             <div class="txa-product-1-single">
                                 <div class="main-img img-cover">
                                     <img src="assets/img/product/product-img-1.png" alt="">
-                                    <a class="txa-product-1-single-demo-link" target="_blank" href="#" aria-label="name">view demo</a>
+                                    <a class="txa-product-1-single-demo-link txa-pr-btn-1" target="_blank" href="#" aria-label="name"><span class="txt">live preview</span></a>
                                 </div>
                                 <div class="content-wrap">
                                     <h5 class="txa-heading-1 title">
-                                        <a href="#" aria-label="name">Telnet - Broadband TV & Internet WordPress Theme</a>
+                                        <a href="product-details.html" aria-label="name">Telnet - Broadband TV & Internet WordPress Theme</a>
                                     </h5>
 
                                     <div class="txa-product-1-single-sales-wrap mb-30">
@@ -1109,11 +1041,7 @@
                                     </div>
 
                                     <div class="txa-product-1-single-btn-wrap d-flex align-items-center">
-                                        <a href="#" aria-label="name" class="txa-purchase-btn">purchase now
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="535" height="250" viewBox="0 0 535 250" fill="none">
-                                                <path d="M534.461 152.764C518.901 81.6536 471.261 35.1136 396.801 31.4436C285.781 25.9636 148.541 117.434 54.7407 249.464H0.760742C102.831 99.4036 257.071 -5.86642 381.171 0.253582C469.111 4.60358 522.651 63.9336 534.461 152.764Z" fill="#F4255C"></path>
-                                            </svg>
-                                        </a>
+                                        <a href="cart-page.html" aria-label="name" class="txa-product-1-single-btn txa-pr-btn-1"><span class="txt">purchase now</span></a>
                                         <h5 class="txa-product-1-single-price"><span>$59.00 -</span> $29.00</h5>
                                     </div>
                                 </div>
@@ -1123,11 +1051,13 @@
                             <div class="txa-product-1-single">
                                 <div class="main-img img-cover">
                                     <img src="assets/img/product/product-img-1.png" alt="">
-                                    <a class="txa-product-1-single-demo-link" target="_blank" href="#" aria-label="name">view demo</a>
+                                    <a class="txa-product-1-single-demo-link txa-pr-btn-1" target="_blank" href="#" aria-label="name"><span class="txt">live preview</span></a>
+                                    <span class="txa-product-1-single-new">New</span>
+                                    
                                 </div>
                                 <div class="content-wrap">
                                     <h5 class="txa-heading-1 title">
-                                        <a href="#" aria-label="name">Telnet - Broadband TV & Internet WordPress Theme</a>
+                                        <a href="product-details.html" aria-label="name">Telnet - Broadband TV & Internet WordPress Theme</a>
                                     </h5>
 
                                     <div class="txa-product-1-single-sales-wrap mb-30">
@@ -1143,11 +1073,7 @@
                                     </div>
 
                                     <div class="txa-product-1-single-btn-wrap d-flex align-items-center">
-                                        <a href="#" aria-label="name" class="txa-purchase-btn">purchase now
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="535" height="250" viewBox="0 0 535 250" fill="none">
-                                                <path d="M534.461 152.764C518.901 81.6536 471.261 35.1136 396.801 31.4436C285.781 25.9636 148.541 117.434 54.7407 249.464H0.760742C102.831 99.4036 257.071 -5.86642 381.171 0.253582C469.111 4.60358 522.651 63.9336 534.461 152.764Z" fill="#F4255C"></path>
-                                            </svg>
-                                        </a>
+                                        <a href="cart-page.html" aria-label="name" class="txa-product-1-single-btn txa-pr-btn-1"><span class="txt">purchase now</span></a>
                                         <h5 class="txa-product-1-single-price"><span>$59.00 -</span> $29.00</h5>
                                     </div>
                                 </div>
@@ -1157,11 +1083,12 @@
                             <div class="txa-product-1-single">
                                 <div class="main-img img-cover">
                                     <img src="assets/img/product/product-img-1.png" alt="">
-                                    <a class="txa-product-1-single-demo-link" target="_blank" href="#" aria-label="name">view demo</a>
+                                    <a class="txa-product-1-single-demo-link txa-pr-btn-1" target="_blank" href="#" aria-label="name"><span class="txt">live preview</span></a>
+                                    
                                 </div>
                                 <div class="content-wrap">
                                     <h5 class="txa-heading-1 title">
-                                        <a href="#" aria-label="name">Telnet - Broadband TV & Internet WordPress Theme</a>
+                                        <a href="product-details.html" aria-label="name">Telnet - Broadband TV & Internet WordPress Theme</a>
                                     </h5>
 
                                     <div class="txa-product-1-single-sales-wrap mb-30">
@@ -1177,11 +1104,7 @@
                                     </div>
 
                                     <div class="txa-product-1-single-btn-wrap d-flex align-items-center">
-                                        <a href="#" aria-label="name" class="txa-purchase-btn">purchase now
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="535" height="250" viewBox="0 0 535 250" fill="none">
-                                                <path d="M534.461 152.764C518.901 81.6536 471.261 35.1136 396.801 31.4436C285.781 25.9636 148.541 117.434 54.7407 249.464H0.760742C102.831 99.4036 257.071 -5.86642 381.171 0.253582C469.111 4.60358 522.651 63.9336 534.461 152.764Z" fill="#F4255C"></path>
-                                            </svg>
-                                        </a>
+                                        <a href="cart-page.html" aria-label="name" class="txa-product-1-single-btn txa-pr-btn-1"><span class="txt">purchase now</span></a>
                                         <h5 class="txa-product-1-single-price"><span>$59.00 -</span> $29.00</h5>
                                     </div>
                                 </div>
@@ -1191,11 +1114,12 @@
                             <div class="txa-product-1-single">
                                 <div class="main-img img-cover">
                                     <img src="assets/img/product/product-img-1.png" alt="">
-                                    <a class="txa-product-1-single-demo-link" target="_blank" href="#" aria-label="name">view demo</a>
+                                    <a class="txa-product-1-single-demo-link txa-pr-btn-1" target="_blank" href="#" aria-label="name"><span class="txt">live preview</span></a>
+                                    
                                 </div>
                                 <div class="content-wrap">
                                     <h5 class="txa-heading-1 title">
-                                        <a href="#" aria-label="name">Telnet - Broadband TV & Internet WordPress Theme</a>
+                                        <a href="product-details.html" aria-label="name">Telnet - Broadband TV & Internet WordPress Theme</a>
                                     </h5>
 
                                     <div class="txa-product-1-single-sales-wrap mb-30">
@@ -1211,11 +1135,7 @@
                                     </div>
 
                                     <div class="txa-product-1-single-btn-wrap d-flex align-items-center">
-                                        <a href="#" aria-label="name" class="txa-purchase-btn">purchase now
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="535" height="250" viewBox="0 0 535 250" fill="none">
-                                                <path d="M534.461 152.764C518.901 81.6536 471.261 35.1136 396.801 31.4436C285.781 25.9636 148.541 117.434 54.7407 249.464H0.760742C102.831 99.4036 257.071 -5.86642 381.171 0.253582C469.111 4.60358 522.651 63.9336 534.461 152.764Z" fill="#F4255C"></path>
-                                            </svg>
-                                        </a>
+                                        <a href="cart-page.html" aria-label="name" class="txa-product-1-single-btn txa-pr-btn-1"><span class="txt">purchase now</span></a>
                                         <h5 class="txa-product-1-single-price"><span>$59.00 -</span> $29.00</h5>
                                     </div>
                                 </div>
@@ -1225,11 +1145,12 @@
                             <div class="txa-product-1-single">
                                 <div class="main-img img-cover">
                                     <img src="assets/img/product/product-img-1.png" alt="">
-                                    <a class="txa-product-1-single-demo-link" target="_blank" href="#" aria-label="name">view demo</a>
+                                    <a class="txa-product-1-single-demo-link txa-pr-btn-1" target="_blank" href="#" aria-label="name"><span class="txt">live preview</span></a>
+                                    
                                 </div>
                                 <div class="content-wrap">
                                     <h5 class="txa-heading-1 title">
-                                        <a href="#" aria-label="name">Telnet - Broadband TV & Internet WordPress Theme</a>
+                                        <a href="product-details.html" aria-label="name">Telnet - Broadband TV & Internet WordPress Theme</a>
                                     </h5>
 
                                     <div class="txa-product-1-single-sales-wrap mb-30">
@@ -1245,11 +1166,7 @@
                                     </div>
 
                                     <div class="txa-product-1-single-btn-wrap d-flex align-items-center">
-                                        <a href="#" aria-label="name" class="txa-purchase-btn">purchase now
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="535" height="250" viewBox="0 0 535 250" fill="none">
-                                                <path d="M534.461 152.764C518.901 81.6536 471.261 35.1136 396.801 31.4436C285.781 25.9636 148.541 117.434 54.7407 249.464H0.760742C102.831 99.4036 257.071 -5.86642 381.171 0.253582C469.111 4.60358 522.651 63.9336 534.461 152.764Z" fill="#F4255C"></path>
-                                            </svg>
-                                        </a>
+                                        <a href="cart-page.html" aria-label="name" class="txa-product-1-single-btn txa-pr-btn-1"><span class="txt">purchase now</span></a>
                                         <h5 class="txa-product-1-single-price"><span>$59.00 -</span> $29.00</h5>
                                     </div>
                                 </div>
@@ -1259,11 +1176,12 @@
                             <div class="txa-product-1-single">
                                 <div class="main-img img-cover">
                                     <img src="assets/img/product/product-img-1.png" alt="">
-                                    <a class="txa-product-1-single-demo-link" target="_blank" href="#" aria-label="name">view demo</a>
+                                    <a class="txa-product-1-single-demo-link txa-pr-btn-1" target="_blank" href="#" aria-label="name"><span class="txt">live preview</span></a>
+                                    
                                 </div>
                                 <div class="content-wrap">
                                     <h5 class="txa-heading-1 title">
-                                        <a href="#" aria-label="name">Telnet - Broadband TV & Internet WordPress Theme</a>
+                                        <a href="product-details.html" aria-label="name">Telnet - Broadband TV & Internet WordPress Theme</a>
                                     </h5>
 
                                     <div class="txa-product-1-single-sales-wrap mb-30">
@@ -1279,11 +1197,7 @@
                                     </div>
 
                                     <div class="txa-product-1-single-btn-wrap d-flex align-items-center">
-                                        <a href="#" aria-label="name" class="txa-purchase-btn">purchase now
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="535" height="250" viewBox="0 0 535 250" fill="none">
-                                                <path d="M534.461 152.764C518.901 81.6536 471.261 35.1136 396.801 31.4436C285.781 25.9636 148.541 117.434 54.7407 249.464H0.760742C102.831 99.4036 257.071 -5.86642 381.171 0.253582C469.111 4.60358 522.651 63.9336 534.461 152.764Z" fill="#F4255C"></path>
-                                            </svg>
-                                        </a>
+                                        <a href="cart-page.html" aria-label="name" class="txa-product-1-single-btn txa-pr-btn-1"><span class="txt">purchase now</span></a>
                                         <h5 class="txa-product-1-single-price"><span>$59.00 -</span> $29.00</h5>
                                     </div>
                                 </div>
@@ -1293,11 +1207,12 @@
                             <div class="txa-product-1-single">
                                 <div class="main-img img-cover">
                                     <img src="assets/img/product/product-img-1.png" alt="">
-                                    <a class="txa-product-1-single-demo-link" target="_blank" href="#" aria-label="name">view demo</a>
+                                    <a class="txa-product-1-single-demo-link txa-pr-btn-1" target="_blank" href="#" aria-label="name"><span class="txt">live preview</span></a>
+                                    
                                 </div>
                                 <div class="content-wrap">
                                     <h5 class="txa-heading-1 title">
-                                        <a href="#" aria-label="name">Telnet - Broadband TV & Internet WordPress Theme</a>
+                                        <a href="product-details.html" aria-label="name">Telnet - Broadband TV & Internet WordPress Theme</a>
                                     </h5>
 
                                     <div class="txa-product-1-single-sales-wrap mb-30">
@@ -1313,11 +1228,7 @@
                                     </div>
 
                                     <div class="txa-product-1-single-btn-wrap d-flex align-items-center">
-                                        <a href="#" aria-label="name" class="txa-purchase-btn">purchase now
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="535" height="250" viewBox="0 0 535 250" fill="none">
-                                                <path d="M534.461 152.764C518.901 81.6536 471.261 35.1136 396.801 31.4436C285.781 25.9636 148.541 117.434 54.7407 249.464H0.760742C102.831 99.4036 257.071 -5.86642 381.171 0.253582C469.111 4.60358 522.651 63.9336 534.461 152.764Z" fill="#F4255C"></path>
-                                            </svg>
-                                        </a>
+                                        <a href="cart-page.html" aria-label="name" class="txa-product-1-single-btn txa-pr-btn-1"><span class="txt">purchase now</span></a>
                                         <h5 class="txa-product-1-single-price"><span>$59.00 -</span> $29.00</h5>
                                     </div>
                                 </div>
@@ -1327,11 +1238,12 @@
                             <div class="txa-product-1-single">
                                 <div class="main-img img-cover">
                                     <img src="assets/img/product/product-img-1.png" alt="">
-                                    <a class="txa-product-1-single-demo-link" target="_blank" href="#" aria-label="name">view demo</a>
+                                    <a class="txa-product-1-single-demo-link txa-pr-btn-1" target="_blank" href="#" aria-label="name"><span class="txt">live preview</span></a>
+                                    
                                 </div>
                                 <div class="content-wrap">
                                     <h5 class="txa-heading-1 title">
-                                        <a href="#" aria-label="name">Telnet - Broadband TV & Internet WordPress Theme</a>
+                                        <a href="product-details.html" aria-label="name">Telnet - Broadband TV & Internet WordPress Theme</a>
                                     </h5>
 
                                     <div class="txa-product-1-single-sales-wrap mb-30">
@@ -1347,11 +1259,7 @@
                                     </div>
 
                                     <div class="txa-product-1-single-btn-wrap d-flex align-items-center">
-                                        <a href="#" aria-label="name" class="txa-purchase-btn">purchase now
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="535" height="250" viewBox="0 0 535 250" fill="none">
-                                                <path d="M534.461 152.764C518.901 81.6536 471.261 35.1136 396.801 31.4436C285.781 25.9636 148.541 117.434 54.7407 249.464H0.760742C102.831 99.4036 257.071 -5.86642 381.171 0.253582C469.111 4.60358 522.651 63.9336 534.461 152.764Z" fill="#F4255C"></path>
-                                            </svg>
-                                        </a>
+                                        <a href="cart-page.html" aria-label="name" class="txa-product-1-single-btn txa-pr-btn-1"><span class="txt">purchase now</span></a>
                                         <h5 class="txa-product-1-single-price"><span>$59.00 -</span> $29.00</h5>
                                     </div>
                                 </div>
@@ -1359,7 +1267,7 @@
 
                             <!-- load more btn -->
                             <div class="txa-product-1-single-more text-center pt-30">
-                                <a href="#" aria-label="name" class="txa-pr-btn-1">load more</a>
+                                <a href="#" aria-label="name" class="txa-pr-btn-1"><span class="txt">load more</span></a>
                             </div>
 
                         </div>
@@ -1373,10 +1281,11 @@
                             <div class="txa-product-1-single">
                                 <div class="main-img img-cover">
                                     <img src="assets/img/product/product-img-1.png" alt="">
+                                    <a class="txa-product-1-single-demo-link txa-pr-btn-1" target="_blank" href="#" aria-label="name"><span class="txt">live preview</span></a>
                                 </div>
                                 <div class="content-wrap">
                                     <h5 class="txa-heading-1 title">
-                                        <a href="#" aria-label="name">Telnet - Broadband TV & Internet WordPress Theme</a>
+                                        <a href="product-details.html" aria-label="name">Telnet - Broadband TV & Internet WordPress Theme</a>
                                     </h5>
 
                                     <div class="txa-product-1-single-sales-wrap mb-30">
@@ -1392,11 +1301,7 @@
                                     </div>
 
                                     <div class="txa-product-1-single-btn-wrap d-flex align-items-center">
-                                        <a href="#" aria-label="name" class="txa-purchase-btn">purchase now
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="535" height="250" viewBox="0 0 535 250" fill="none">
-                                                <path d="M534.461 152.764C518.901 81.6536 471.261 35.1136 396.801 31.4436C285.781 25.9636 148.541 117.434 54.7407 249.464H0.760742C102.831 99.4036 257.071 -5.86642 381.171 0.253582C469.111 4.60358 522.651 63.9336 534.461 152.764Z" fill="#F4255C"></path>
-                                            </svg>
-                                        </a>
+                                        <a href="cart-page.html" aria-label="name" class="txa-product-1-single-btn txa-pr-btn-1"><span class="txt">purchase now</span></a>
                                         <h5 class="txa-product-1-single-price"><span>$59.00 -</span> $29.00</h5>
                                     </div>
                                 </div>
@@ -1406,10 +1311,13 @@
                             <div class="txa-product-1-single">
                                 <div class="main-img img-cover">
                                     <img src="assets/img/product/product-img-1.png" alt="">
+                                    <a class="txa-product-1-single-demo-link txa-pr-btn-1" target="_blank" href="#" aria-label="name"><span class="txt">live preview</span></a>
+                                    <span class="txa-product-1-single-new">New</span>
+                                    
                                 </div>
                                 <div class="content-wrap">
                                     <h5 class="txa-heading-1 title">
-                                        <a href="#" aria-label="name">Telnet - Broadband TV & Internet WordPress Theme</a>
+                                        <a href="product-details.html" aria-label="name">Telnet - Broadband TV & Internet WordPress Theme</a>
                                     </h5>
 
                                     <div class="txa-product-1-single-sales-wrap mb-30">
@@ -1425,11 +1333,7 @@
                                     </div>
 
                                     <div class="txa-product-1-single-btn-wrap d-flex align-items-center">
-                                        <a href="#" aria-label="name" class="txa-purchase-btn">purchase now
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="535" height="250" viewBox="0 0 535 250" fill="none">
-                                                <path d="M534.461 152.764C518.901 81.6536 471.261 35.1136 396.801 31.4436C285.781 25.9636 148.541 117.434 54.7407 249.464H0.760742C102.831 99.4036 257.071 -5.86642 381.171 0.253582C469.111 4.60358 522.651 63.9336 534.461 152.764Z" fill="#F4255C"></path>
-                                            </svg>
-                                        </a>
+                                        <a href="cart-page.html" aria-label="name" class="txa-product-1-single-btn txa-pr-btn-1"><span class="txt">purchase now</span></a>
                                         <h5 class="txa-product-1-single-price"><span>$59.00 -</span> $29.00</h5>
                                     </div>
                                 </div>
@@ -1439,10 +1343,12 @@
                             <div class="txa-product-1-single">
                                 <div class="main-img img-cover">
                                     <img src="assets/img/product/product-img-1.png" alt="">
+                                    <a class="txa-product-1-single-demo-link txa-pr-btn-1" target="_blank" href="#" aria-label="name"><span class="txt">live preview</span></a>
+                                    
                                 </div>
                                 <div class="content-wrap">
                                     <h5 class="txa-heading-1 title">
-                                        <a href="#" aria-label="name">Telnet - Broadband TV & Internet WordPress Theme</a>
+                                        <a href="product-details.html" aria-label="name">Telnet - Broadband TV & Internet WordPress Theme</a>
                                     </h5>
 
                                     <div class="txa-product-1-single-sales-wrap mb-30">
@@ -1458,11 +1364,7 @@
                                     </div>
 
                                     <div class="txa-product-1-single-btn-wrap d-flex align-items-center">
-                                        <a href="#" aria-label="name" class="txa-purchase-btn">purchase now
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="535" height="250" viewBox="0 0 535 250" fill="none">
-                                                <path d="M534.461 152.764C518.901 81.6536 471.261 35.1136 396.801 31.4436C285.781 25.9636 148.541 117.434 54.7407 249.464H0.760742C102.831 99.4036 257.071 -5.86642 381.171 0.253582C469.111 4.60358 522.651 63.9336 534.461 152.764Z" fill="#F4255C"></path>
-                                            </svg>
-                                        </a>
+                                        <a href="cart-page.html" aria-label="name" class="txa-product-1-single-btn txa-pr-btn-1"><span class="txt">purchase now</span></a>
                                         <h5 class="txa-product-1-single-price"><span>$59.00 -</span> $29.00</h5>
                                     </div>
                                 </div>
@@ -1472,10 +1374,12 @@
                             <div class="txa-product-1-single">
                                 <div class="main-img img-cover">
                                     <img src="assets/img/product/product-img-1.png" alt="">
+                                    <a class="txa-product-1-single-demo-link txa-pr-btn-1" target="_blank" href="#" aria-label="name"><span class="txt">live preview</span></a>
+                                    
                                 </div>
                                 <div class="content-wrap">
                                     <h5 class="txa-heading-1 title">
-                                        <a href="#" aria-label="name">Telnet - Broadband TV & Internet WordPress Theme</a>
+                                        <a href="product-details.html" aria-label="name">Telnet - Broadband TV & Internet WordPress Theme</a>
                                     </h5>
 
                                     <div class="txa-product-1-single-sales-wrap mb-30">
@@ -1491,11 +1395,7 @@
                                     </div>
 
                                     <div class="txa-product-1-single-btn-wrap d-flex align-items-center">
-                                        <a href="#" aria-label="name" class="txa-purchase-btn">purchase now
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="535" height="250" viewBox="0 0 535 250" fill="none">
-                                                <path d="M534.461 152.764C518.901 81.6536 471.261 35.1136 396.801 31.4436C285.781 25.9636 148.541 117.434 54.7407 249.464H0.760742C102.831 99.4036 257.071 -5.86642 381.171 0.253582C469.111 4.60358 522.651 63.9336 534.461 152.764Z" fill="#F4255C"></path>
-                                            </svg>
-                                        </a>
+                                        <a href="cart-page.html" aria-label="name" class="txa-product-1-single-btn txa-pr-btn-1"><span class="txt">purchase now</span></a>
                                         <h5 class="txa-product-1-single-price"><span>$59.00 -</span> $29.00</h5>
                                     </div>
                                 </div>
@@ -1505,10 +1405,12 @@
                             <div class="txa-product-1-single">
                                 <div class="main-img img-cover">
                                     <img src="assets/img/product/product-img-1.png" alt="">
+                                    <a class="txa-product-1-single-demo-link txa-pr-btn-1" target="_blank" href="#" aria-label="name"><span class="txt">live preview</span></a>
+                                    
                                 </div>
                                 <div class="content-wrap">
                                     <h5 class="txa-heading-1 title">
-                                        <a href="#" aria-label="name">Telnet - Broadband TV & Internet WordPress Theme</a>
+                                        <a href="product-details.html" aria-label="name">Telnet - Broadband TV & Internet WordPress Theme</a>
                                     </h5>
 
                                     <div class="txa-product-1-single-sales-wrap mb-30">
@@ -1524,11 +1426,7 @@
                                     </div>
 
                                     <div class="txa-product-1-single-btn-wrap d-flex align-items-center">
-                                        <a href="#" aria-label="name" class="txa-purchase-btn">purchase now
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="535" height="250" viewBox="0 0 535 250" fill="none">
-                                                <path d="M534.461 152.764C518.901 81.6536 471.261 35.1136 396.801 31.4436C285.781 25.9636 148.541 117.434 54.7407 249.464H0.760742C102.831 99.4036 257.071 -5.86642 381.171 0.253582C469.111 4.60358 522.651 63.9336 534.461 152.764Z" fill="#F4255C"></path>
-                                            </svg>
-                                        </a>
+                                        <a href="cart-page.html" aria-label="name" class="txa-product-1-single-btn txa-pr-btn-1"><span class="txt">purchase now</span></a>
                                         <h5 class="txa-product-1-single-price"><span>$59.00 -</span> $29.00</h5>
                                     </div>
                                 </div>
@@ -1538,10 +1436,12 @@
                             <div class="txa-product-1-single">
                                 <div class="main-img img-cover">
                                     <img src="assets/img/product/product-img-1.png" alt="">
+                                    <a class="txa-product-1-single-demo-link txa-pr-btn-1" target="_blank" href="#" aria-label="name"><span class="txt">live preview</span></a>
+                                    
                                 </div>
                                 <div class="content-wrap">
                                     <h5 class="txa-heading-1 title">
-                                        <a href="#" aria-label="name">Telnet - Broadband TV & Internet WordPress Theme</a>
+                                        <a href="product-details.html" aria-label="name">Telnet - Broadband TV & Internet WordPress Theme</a>
                                     </h5>
 
                                     <div class="txa-product-1-single-sales-wrap mb-30">
@@ -1557,11 +1457,7 @@
                                     </div>
 
                                     <div class="txa-product-1-single-btn-wrap d-flex align-items-center">
-                                        <a href="#" aria-label="name" class="txa-purchase-btn">purchase now
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="535" height="250" viewBox="0 0 535 250" fill="none">
-                                                <path d="M534.461 152.764C518.901 81.6536 471.261 35.1136 396.801 31.4436C285.781 25.9636 148.541 117.434 54.7407 249.464H0.760742C102.831 99.4036 257.071 -5.86642 381.171 0.253582C469.111 4.60358 522.651 63.9336 534.461 152.764Z" fill="#F4255C"></path>
-                                            </svg>
-                                        </a>
+                                        <a href="cart-page.html" aria-label="name" class="txa-product-1-single-btn txa-pr-btn-1"><span class="txt">purchase now</span></a>
                                         <h5 class="txa-product-1-single-price"><span>$59.00 -</span> $29.00</h5>
                                     </div>
                                 </div>
@@ -1571,10 +1467,12 @@
                             <div class="txa-product-1-single">
                                 <div class="main-img img-cover">
                                     <img src="assets/img/product/product-img-1.png" alt="">
+                                    <a class="txa-product-1-single-demo-link txa-pr-btn-1" target="_blank" href="#" aria-label="name"><span class="txt">live preview</span></a>
+                                    
                                 </div>
                                 <div class="content-wrap">
                                     <h5 class="txa-heading-1 title">
-                                        <a href="#" aria-label="name">Telnet - Broadband TV & Internet WordPress Theme</a>
+                                        <a href="product-details.html" aria-label="name">Telnet - Broadband TV & Internet WordPress Theme</a>
                                     </h5>
 
                                     <div class="txa-product-1-single-sales-wrap mb-30">
@@ -1590,11 +1488,7 @@
                                     </div>
 
                                     <div class="txa-product-1-single-btn-wrap d-flex align-items-center">
-                                        <a href="#" aria-label="name" class="txa-purchase-btn">purchase now
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="535" height="250" viewBox="0 0 535 250" fill="none">
-                                                <path d="M534.461 152.764C518.901 81.6536 471.261 35.1136 396.801 31.4436C285.781 25.9636 148.541 117.434 54.7407 249.464H0.760742C102.831 99.4036 257.071 -5.86642 381.171 0.253582C469.111 4.60358 522.651 63.9336 534.461 152.764Z" fill="#F4255C"></path>
-                                            </svg>
-                                        </a>
+                                        <a href="cart-page.html" aria-label="name" class="txa-product-1-single-btn txa-pr-btn-1"><span class="txt">purchase now</span></a>
                                         <h5 class="txa-product-1-single-price"><span>$59.00 -</span> $29.00</h5>
                                     </div>
                                 </div>
@@ -1604,10 +1498,12 @@
                             <div class="txa-product-1-single">
                                 <div class="main-img img-cover">
                                     <img src="assets/img/product/product-img-1.png" alt="">
+                                    <a class="txa-product-1-single-demo-link txa-pr-btn-1" target="_blank" href="#" aria-label="name"><span class="txt">live preview</span></a>
+                                    
                                 </div>
                                 <div class="content-wrap">
                                     <h5 class="txa-heading-1 title">
-                                        <a href="#" aria-label="name">Telnet - Broadband TV & Internet WordPress Theme</a>
+                                        <a href="product-details.html" aria-label="name">Telnet - Broadband TV & Internet WordPress Theme</a>
                                     </h5>
 
                                     <div class="txa-product-1-single-sales-wrap mb-30">
@@ -1623,22 +1519,15 @@
                                     </div>
 
                                     <div class="txa-product-1-single-btn-wrap d-flex align-items-center">
-                                        <a href="#" aria-label="name" class="txa-purchase-btn">purchase now
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="535" height="250" viewBox="0 0 535 250" fill="none">
-                                                <path d="M534.461 152.764C518.901 81.6536 471.261 35.1136 396.801 31.4436C285.781 25.9636 148.541 117.434 54.7407 249.464H0.760742C102.831 99.4036 257.071 -5.86642 381.171 0.253582C469.111 4.60358 522.651 63.9336 534.461 152.764Z" fill="#F4255C"></path>
-                                            </svg>
-                                        </a>
+                                        <a href="cart-page.html" aria-label="name" class="txa-product-1-single-btn txa-pr-btn-1"><span class="txt">purchase now</span></a>
                                         <h5 class="txa-product-1-single-price"><span>$59.00 -</span> $29.00</h5>
                                     </div>
                                 </div>
                             </div>
-
-
-
 
                             <!-- load more btn -->
                             <div class="txa-product-1-single-more text-center pt-30">
-                                <a href="#" aria-label="name" class="txa-pr-btn-1">load more</a>
+                                <a href="#" aria-label="name" class="txa-pr-btn-1"><span class="txt">load more</span></a>
                             </div>
 
                         </div>
@@ -1652,10 +1541,11 @@
                             <div class="txa-product-1-single">
                                 <div class="main-img img-cover">
                                     <img src="assets/img/product/product-img-1.png" alt="">
+                                    <a class="txa-product-1-single-demo-link txa-pr-btn-1" target="_blank" href="#" aria-label="name"><span class="txt">live preview</span></a>
                                 </div>
                                 <div class="content-wrap">
                                     <h5 class="txa-heading-1 title">
-                                        <a href="#" aria-label="name">Telnet - Broadband TV & Internet WordPress Theme</a>
+                                        <a href="product-details.html" aria-label="name">Telnet - Broadband TV & Internet WordPress Theme</a>
                                     </h5>
 
                                     <div class="txa-product-1-single-sales-wrap mb-30">
@@ -1671,11 +1561,7 @@
                                     </div>
 
                                     <div class="txa-product-1-single-btn-wrap d-flex align-items-center">
-                                        <a href="#" aria-label="name" class="txa-purchase-btn">purchase now
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="535" height="250" viewBox="0 0 535 250" fill="none">
-                                                <path d="M534.461 152.764C518.901 81.6536 471.261 35.1136 396.801 31.4436C285.781 25.9636 148.541 117.434 54.7407 249.464H0.760742C102.831 99.4036 257.071 -5.86642 381.171 0.253582C469.111 4.60358 522.651 63.9336 534.461 152.764Z" fill="#F4255C"></path>
-                                            </svg>
-                                        </a>
+                                        <a href="cart-page.html" aria-label="name" class="txa-product-1-single-btn txa-pr-btn-1"><span class="txt">purchase now</span></a>
                                         <h5 class="txa-product-1-single-price"><span>$59.00 -</span> $29.00</h5>
                                     </div>
                                 </div>
@@ -1685,10 +1571,13 @@
                             <div class="txa-product-1-single">
                                 <div class="main-img img-cover">
                                     <img src="assets/img/product/product-img-1.png" alt="">
+                                    <a class="txa-product-1-single-demo-link txa-pr-btn-1" target="_blank" href="#" aria-label="name"><span class="txt">live preview</span></a>
+                                    <span class="txa-product-1-single-new">New</span>
+                                    
                                 </div>
                                 <div class="content-wrap">
                                     <h5 class="txa-heading-1 title">
-                                        <a href="#" aria-label="name">Telnet - Broadband TV & Internet WordPress Theme</a>
+                                        <a href="product-details.html" aria-label="name">Telnet - Broadband TV & Internet WordPress Theme</a>
                                     </h5>
 
                                     <div class="txa-product-1-single-sales-wrap mb-30">
@@ -1704,11 +1593,7 @@
                                     </div>
 
                                     <div class="txa-product-1-single-btn-wrap d-flex align-items-center">
-                                        <a href="#" aria-label="name" class="txa-purchase-btn">purchase now
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="535" height="250" viewBox="0 0 535 250" fill="none">
-                                                <path d="M534.461 152.764C518.901 81.6536 471.261 35.1136 396.801 31.4436C285.781 25.9636 148.541 117.434 54.7407 249.464H0.760742C102.831 99.4036 257.071 -5.86642 381.171 0.253582C469.111 4.60358 522.651 63.9336 534.461 152.764Z" fill="#F4255C"></path>
-                                            </svg>
-                                        </a>
+                                        <a href="cart-page.html" aria-label="name" class="txa-product-1-single-btn txa-pr-btn-1"><span class="txt">purchase now</span></a>
                                         <h5 class="txa-product-1-single-price"><span>$59.00 -</span> $29.00</h5>
                                     </div>
                                 </div>
@@ -1718,10 +1603,12 @@
                             <div class="txa-product-1-single">
                                 <div class="main-img img-cover">
                                     <img src="assets/img/product/product-img-1.png" alt="">
+                                    <a class="txa-product-1-single-demo-link txa-pr-btn-1" target="_blank" href="#" aria-label="name"><span class="txt">live preview</span></a>
+                                    
                                 </div>
                                 <div class="content-wrap">
                                     <h5 class="txa-heading-1 title">
-                                        <a href="#" aria-label="name">Telnet - Broadband TV & Internet WordPress Theme</a>
+                                        <a href="product-details.html" aria-label="name">Telnet - Broadband TV & Internet WordPress Theme</a>
                                     </h5>
 
                                     <div class="txa-product-1-single-sales-wrap mb-30">
@@ -1737,11 +1624,7 @@
                                     </div>
 
                                     <div class="txa-product-1-single-btn-wrap d-flex align-items-center">
-                                        <a href="#" aria-label="name" class="txa-purchase-btn">purchase now
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="535" height="250" viewBox="0 0 535 250" fill="none">
-                                                <path d="M534.461 152.764C518.901 81.6536 471.261 35.1136 396.801 31.4436C285.781 25.9636 148.541 117.434 54.7407 249.464H0.760742C102.831 99.4036 257.071 -5.86642 381.171 0.253582C469.111 4.60358 522.651 63.9336 534.461 152.764Z" fill="#F4255C"></path>
-                                            </svg>
-                                        </a>
+                                        <a href="cart-page.html" aria-label="name" class="txa-product-1-single-btn txa-pr-btn-1"><span class="txt">purchase now</span></a>
                                         <h5 class="txa-product-1-single-price"><span>$59.00 -</span> $29.00</h5>
                                     </div>
                                 </div>
@@ -1751,10 +1634,12 @@
                             <div class="txa-product-1-single">
                                 <div class="main-img img-cover">
                                     <img src="assets/img/product/product-img-1.png" alt="">
+                                    <a class="txa-product-1-single-demo-link txa-pr-btn-1" target="_blank" href="#" aria-label="name"><span class="txt">live preview</span></a>
+                                    
                                 </div>
                                 <div class="content-wrap">
                                     <h5 class="txa-heading-1 title">
-                                        <a href="#" aria-label="name">Telnet - Broadband TV & Internet WordPress Theme</a>
+                                        <a href="product-details.html" aria-label="name">Telnet - Broadband TV & Internet WordPress Theme</a>
                                     </h5>
 
                                     <div class="txa-product-1-single-sales-wrap mb-30">
@@ -1770,11 +1655,7 @@
                                     </div>
 
                                     <div class="txa-product-1-single-btn-wrap d-flex align-items-center">
-                                        <a href="#" aria-label="name" class="txa-purchase-btn">purchase now
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="535" height="250" viewBox="0 0 535 250" fill="none">
-                                                <path d="M534.461 152.764C518.901 81.6536 471.261 35.1136 396.801 31.4436C285.781 25.9636 148.541 117.434 54.7407 249.464H0.760742C102.831 99.4036 257.071 -5.86642 381.171 0.253582C469.111 4.60358 522.651 63.9336 534.461 152.764Z" fill="#F4255C"></path>
-                                            </svg>
-                                        </a>
+                                        <a href="cart-page.html" aria-label="name" class="txa-product-1-single-btn txa-pr-btn-1"><span class="txt">purchase now</span></a>
                                         <h5 class="txa-product-1-single-price"><span>$59.00 -</span> $29.00</h5>
                                     </div>
                                 </div>
@@ -1784,10 +1665,12 @@
                             <div class="txa-product-1-single">
                                 <div class="main-img img-cover">
                                     <img src="assets/img/product/product-img-1.png" alt="">
+                                    <a class="txa-product-1-single-demo-link txa-pr-btn-1" target="_blank" href="#" aria-label="name"><span class="txt">live preview</span></a>
+                                    
                                 </div>
                                 <div class="content-wrap">
                                     <h5 class="txa-heading-1 title">
-                                        <a href="#" aria-label="name">Telnet - Broadband TV & Internet WordPress Theme</a>
+                                        <a href="product-details.html" aria-label="name">Telnet - Broadband TV & Internet WordPress Theme</a>
                                     </h5>
 
                                     <div class="txa-product-1-single-sales-wrap mb-30">
@@ -1803,11 +1686,7 @@
                                     </div>
 
                                     <div class="txa-product-1-single-btn-wrap d-flex align-items-center">
-                                        <a href="#" aria-label="name" class="txa-purchase-btn">purchase now
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="535" height="250" viewBox="0 0 535 250" fill="none">
-                                                <path d="M534.461 152.764C518.901 81.6536 471.261 35.1136 396.801 31.4436C285.781 25.9636 148.541 117.434 54.7407 249.464H0.760742C102.831 99.4036 257.071 -5.86642 381.171 0.253582C469.111 4.60358 522.651 63.9336 534.461 152.764Z" fill="#F4255C"></path>
-                                            </svg>
-                                        </a>
+                                        <a href="cart-page.html" aria-label="name" class="txa-product-1-single-btn txa-pr-btn-1"><span class="txt">purchase now</span></a>
                                         <h5 class="txa-product-1-single-price"><span>$59.00 -</span> $29.00</h5>
                                     </div>
                                 </div>
@@ -1817,10 +1696,12 @@
                             <div class="txa-product-1-single">
                                 <div class="main-img img-cover">
                                     <img src="assets/img/product/product-img-1.png" alt="">
+                                    <a class="txa-product-1-single-demo-link txa-pr-btn-1" target="_blank" href="#" aria-label="name"><span class="txt">live preview</span></a>
+                                    
                                 </div>
                                 <div class="content-wrap">
                                     <h5 class="txa-heading-1 title">
-                                        <a href="#" aria-label="name">Telnet - Broadband TV & Internet WordPress Theme</a>
+                                        <a href="product-details.html" aria-label="name">Telnet - Broadband TV & Internet WordPress Theme</a>
                                     </h5>
 
                                     <div class="txa-product-1-single-sales-wrap mb-30">
@@ -1836,11 +1717,7 @@
                                     </div>
 
                                     <div class="txa-product-1-single-btn-wrap d-flex align-items-center">
-                                        <a href="#" aria-label="name" class="txa-purchase-btn">purchase now
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="535" height="250" viewBox="0 0 535 250" fill="none">
-                                                <path d="M534.461 152.764C518.901 81.6536 471.261 35.1136 396.801 31.4436C285.781 25.9636 148.541 117.434 54.7407 249.464H0.760742C102.831 99.4036 257.071 -5.86642 381.171 0.253582C469.111 4.60358 522.651 63.9336 534.461 152.764Z" fill="#F4255C"></path>
-                                            </svg>
-                                        </a>
+                                        <a href="cart-page.html" aria-label="name" class="txa-product-1-single-btn txa-pr-btn-1"><span class="txt">purchase now</span></a>
                                         <h5 class="txa-product-1-single-price"><span>$59.00 -</span> $29.00</h5>
                                     </div>
                                 </div>
@@ -1850,10 +1727,12 @@
                             <div class="txa-product-1-single">
                                 <div class="main-img img-cover">
                                     <img src="assets/img/product/product-img-1.png" alt="">
+                                    <a class="txa-product-1-single-demo-link txa-pr-btn-1" target="_blank" href="#" aria-label="name"><span class="txt">live preview</span></a>
+                                    
                                 </div>
                                 <div class="content-wrap">
                                     <h5 class="txa-heading-1 title">
-                                        <a href="#" aria-label="name">Telnet - Broadband TV & Internet WordPress Theme</a>
+                                        <a href="product-details.html" aria-label="name">Telnet - Broadband TV & Internet WordPress Theme</a>
                                     </h5>
 
                                     <div class="txa-product-1-single-sales-wrap mb-30">
@@ -1869,11 +1748,7 @@
                                     </div>
 
                                     <div class="txa-product-1-single-btn-wrap d-flex align-items-center">
-                                        <a href="#" aria-label="name" class="txa-purchase-btn">purchase now
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="535" height="250" viewBox="0 0 535 250" fill="none">
-                                                <path d="M534.461 152.764C518.901 81.6536 471.261 35.1136 396.801 31.4436C285.781 25.9636 148.541 117.434 54.7407 249.464H0.760742C102.831 99.4036 257.071 -5.86642 381.171 0.253582C469.111 4.60358 522.651 63.9336 534.461 152.764Z" fill="#F4255C"></path>
-                                            </svg>
-                                        </a>
+                                        <a href="cart-page.html" aria-label="name" class="txa-product-1-single-btn txa-pr-btn-1"><span class="txt">purchase now</span></a>
                                         <h5 class="txa-product-1-single-price"><span>$59.00 -</span> $29.00</h5>
                                     </div>
                                 </div>
@@ -1883,10 +1758,12 @@
                             <div class="txa-product-1-single">
                                 <div class="main-img img-cover">
                                     <img src="assets/img/product/product-img-1.png" alt="">
+                                    <a class="txa-product-1-single-demo-link txa-pr-btn-1" target="_blank" href="#" aria-label="name"><span class="txt">live preview</span></a>
+                                    
                                 </div>
                                 <div class="content-wrap">
                                     <h5 class="txa-heading-1 title">
-                                        <a href="#" aria-label="name">Telnet - Broadband TV & Internet WordPress Theme</a>
+                                        <a href="product-details.html" aria-label="name">Telnet - Broadband TV & Internet WordPress Theme</a>
                                     </h5>
 
                                     <div class="txa-product-1-single-sales-wrap mb-30">
@@ -1902,22 +1779,15 @@
                                     </div>
 
                                     <div class="txa-product-1-single-btn-wrap d-flex align-items-center">
-                                        <a href="#" aria-label="name" class="txa-purchase-btn">purchase now
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="535" height="250" viewBox="0 0 535 250" fill="none">
-                                                <path d="M534.461 152.764C518.901 81.6536 471.261 35.1136 396.801 31.4436C285.781 25.9636 148.541 117.434 54.7407 249.464H0.760742C102.831 99.4036 257.071 -5.86642 381.171 0.253582C469.111 4.60358 522.651 63.9336 534.461 152.764Z" fill="#F4255C"></path>
-                                            </svg>
-                                        </a>
+                                        <a href="cart-page.html" aria-label="name" class="txa-product-1-single-btn txa-pr-btn-1"><span class="txt">purchase now</span></a>
                                         <h5 class="txa-product-1-single-price"><span>$59.00 -</span> $29.00</h5>
                                     </div>
                                 </div>
                             </div>
-
-
-
 
                             <!-- load more btn -->
                             <div class="txa-product-1-single-more text-center pt-30">
-                                <a href="#" aria-label="name" class="txa-pr-btn-1">load more</a>
+                                <a href="#" aria-label="name" class="txa-pr-btn-1"><span class="txt">load more</span></a>
                             </div>
 
                         </div>
@@ -1931,10 +1801,11 @@
                             <div class="txa-product-1-single">
                                 <div class="main-img img-cover">
                                     <img src="assets/img/product/product-img-1.png" alt="">
+                                    <a class="txa-product-1-single-demo-link txa-pr-btn-1" target="_blank" href="#" aria-label="name"><span class="txt">live preview</span></a>
                                 </div>
                                 <div class="content-wrap">
                                     <h5 class="txa-heading-1 title">
-                                        <a href="#" aria-label="name">Telnet - Broadband TV & Internet WordPress Theme</a>
+                                        <a href="product-details.html" aria-label="name">Telnet - Broadband TV & Internet WordPress Theme</a>
                                     </h5>
 
                                     <div class="txa-product-1-single-sales-wrap mb-30">
@@ -1950,11 +1821,7 @@
                                     </div>
 
                                     <div class="txa-product-1-single-btn-wrap d-flex align-items-center">
-                                        <a href="#" aria-label="name" class="txa-purchase-btn">purchase now
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="535" height="250" viewBox="0 0 535 250" fill="none">
-                                                <path d="M534.461 152.764C518.901 81.6536 471.261 35.1136 396.801 31.4436C285.781 25.9636 148.541 117.434 54.7407 249.464H0.760742C102.831 99.4036 257.071 -5.86642 381.171 0.253582C469.111 4.60358 522.651 63.9336 534.461 152.764Z" fill="#F4255C"></path>
-                                            </svg>
-                                        </a>
+                                        <a href="cart-page.html" aria-label="name" class="txa-product-1-single-btn txa-pr-btn-1"><span class="txt">purchase now</span></a>
                                         <h5 class="txa-product-1-single-price"><span>$59.00 -</span> $29.00</h5>
                                     </div>
                                 </div>
@@ -1964,10 +1831,13 @@
                             <div class="txa-product-1-single">
                                 <div class="main-img img-cover">
                                     <img src="assets/img/product/product-img-1.png" alt="">
+                                    <a class="txa-product-1-single-demo-link txa-pr-btn-1" target="_blank" href="#" aria-label="name"><span class="txt">live preview</span></a>
+                                    <span class="txa-product-1-single-new">New</span>
+                                    
                                 </div>
                                 <div class="content-wrap">
                                     <h5 class="txa-heading-1 title">
-                                        <a href="#" aria-label="name">Telnet - Broadband TV & Internet WordPress Theme</a>
+                                        <a href="product-details.html" aria-label="name">Telnet - Broadband TV & Internet WordPress Theme</a>
                                     </h5>
 
                                     <div class="txa-product-1-single-sales-wrap mb-30">
@@ -1983,11 +1853,7 @@
                                     </div>
 
                                     <div class="txa-product-1-single-btn-wrap d-flex align-items-center">
-                                        <a href="#" aria-label="name" class="txa-purchase-btn">purchase now
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="535" height="250" viewBox="0 0 535 250" fill="none">
-                                                <path d="M534.461 152.764C518.901 81.6536 471.261 35.1136 396.801 31.4436C285.781 25.9636 148.541 117.434 54.7407 249.464H0.760742C102.831 99.4036 257.071 -5.86642 381.171 0.253582C469.111 4.60358 522.651 63.9336 534.461 152.764Z" fill="#F4255C"></path>
-                                            </svg>
-                                        </a>
+                                        <a href="cart-page.html" aria-label="name" class="txa-product-1-single-btn txa-pr-btn-1"><span class="txt">purchase now</span></a>
                                         <h5 class="txa-product-1-single-price"><span>$59.00 -</span> $29.00</h5>
                                     </div>
                                 </div>
@@ -1997,10 +1863,12 @@
                             <div class="txa-product-1-single">
                                 <div class="main-img img-cover">
                                     <img src="assets/img/product/product-img-1.png" alt="">
+                                    <a class="txa-product-1-single-demo-link txa-pr-btn-1" target="_blank" href="#" aria-label="name"><span class="txt">live preview</span></a>
+                                    
                                 </div>
                                 <div class="content-wrap">
                                     <h5 class="txa-heading-1 title">
-                                        <a href="#" aria-label="name">Telnet - Broadband TV & Internet WordPress Theme</a>
+                                        <a href="product-details.html" aria-label="name">Telnet - Broadband TV & Internet WordPress Theme</a>
                                     </h5>
 
                                     <div class="txa-product-1-single-sales-wrap mb-30">
@@ -2016,11 +1884,7 @@
                                     </div>
 
                                     <div class="txa-product-1-single-btn-wrap d-flex align-items-center">
-                                        <a href="#" aria-label="name" class="txa-purchase-btn">purchase now
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="535" height="250" viewBox="0 0 535 250" fill="none">
-                                                <path d="M534.461 152.764C518.901 81.6536 471.261 35.1136 396.801 31.4436C285.781 25.9636 148.541 117.434 54.7407 249.464H0.760742C102.831 99.4036 257.071 -5.86642 381.171 0.253582C469.111 4.60358 522.651 63.9336 534.461 152.764Z" fill="#F4255C"></path>
-                                            </svg>
-                                        </a>
+                                        <a href="cart-page.html" aria-label="name" class="txa-product-1-single-btn txa-pr-btn-1"><span class="txt">purchase now</span></a>
                                         <h5 class="txa-product-1-single-price"><span>$59.00 -</span> $29.00</h5>
                                     </div>
                                 </div>
@@ -2030,10 +1894,12 @@
                             <div class="txa-product-1-single">
                                 <div class="main-img img-cover">
                                     <img src="assets/img/product/product-img-1.png" alt="">
+                                    <a class="txa-product-1-single-demo-link txa-pr-btn-1" target="_blank" href="#" aria-label="name"><span class="txt">live preview</span></a>
+                                    
                                 </div>
                                 <div class="content-wrap">
                                     <h5 class="txa-heading-1 title">
-                                        <a href="#" aria-label="name">Telnet - Broadband TV & Internet WordPress Theme</a>
+                                        <a href="product-details.html" aria-label="name">Telnet - Broadband TV & Internet WordPress Theme</a>
                                     </h5>
 
                                     <div class="txa-product-1-single-sales-wrap mb-30">
@@ -2049,11 +1915,7 @@
                                     </div>
 
                                     <div class="txa-product-1-single-btn-wrap d-flex align-items-center">
-                                        <a href="#" aria-label="name" class="txa-purchase-btn">purchase now
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="535" height="250" viewBox="0 0 535 250" fill="none">
-                                                <path d="M534.461 152.764C518.901 81.6536 471.261 35.1136 396.801 31.4436C285.781 25.9636 148.541 117.434 54.7407 249.464H0.760742C102.831 99.4036 257.071 -5.86642 381.171 0.253582C469.111 4.60358 522.651 63.9336 534.461 152.764Z" fill="#F4255C"></path>
-                                            </svg>
-                                        </a>
+                                        <a href="cart-page.html" aria-label="name" class="txa-product-1-single-btn txa-pr-btn-1"><span class="txt">purchase now</span></a>
                                         <h5 class="txa-product-1-single-price"><span>$59.00 -</span> $29.00</h5>
                                     </div>
                                 </div>
@@ -2063,10 +1925,12 @@
                             <div class="txa-product-1-single">
                                 <div class="main-img img-cover">
                                     <img src="assets/img/product/product-img-1.png" alt="">
+                                    <a class="txa-product-1-single-demo-link txa-pr-btn-1" target="_blank" href="#" aria-label="name"><span class="txt">live preview</span></a>
+                                    
                                 </div>
                                 <div class="content-wrap">
                                     <h5 class="txa-heading-1 title">
-                                        <a href="#" aria-label="name">Telnet - Broadband TV & Internet WordPress Theme</a>
+                                        <a href="product-details.html" aria-label="name">Telnet - Broadband TV & Internet WordPress Theme</a>
                                     </h5>
 
                                     <div class="txa-product-1-single-sales-wrap mb-30">
@@ -2082,11 +1946,7 @@
                                     </div>
 
                                     <div class="txa-product-1-single-btn-wrap d-flex align-items-center">
-                                        <a href="#" aria-label="name" class="txa-purchase-btn">purchase now
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="535" height="250" viewBox="0 0 535 250" fill="none">
-                                                <path d="M534.461 152.764C518.901 81.6536 471.261 35.1136 396.801 31.4436C285.781 25.9636 148.541 117.434 54.7407 249.464H0.760742C102.831 99.4036 257.071 -5.86642 381.171 0.253582C469.111 4.60358 522.651 63.9336 534.461 152.764Z" fill="#F4255C"></path>
-                                            </svg>
-                                        </a>
+                                        <a href="cart-page.html" aria-label="name" class="txa-product-1-single-btn txa-pr-btn-1"><span class="txt">purchase now</span></a>
                                         <h5 class="txa-product-1-single-price"><span>$59.00 -</span> $29.00</h5>
                                     </div>
                                 </div>
@@ -2096,10 +1956,12 @@
                             <div class="txa-product-1-single">
                                 <div class="main-img img-cover">
                                     <img src="assets/img/product/product-img-1.png" alt="">
+                                    <a class="txa-product-1-single-demo-link txa-pr-btn-1" target="_blank" href="#" aria-label="name"><span class="txt">live preview</span></a>
+                                    
                                 </div>
                                 <div class="content-wrap">
                                     <h5 class="txa-heading-1 title">
-                                        <a href="#" aria-label="name">Telnet - Broadband TV & Internet WordPress Theme</a>
+                                        <a href="product-details.html" aria-label="name">Telnet - Broadband TV & Internet WordPress Theme</a>
                                     </h5>
 
                                     <div class="txa-product-1-single-sales-wrap mb-30">
@@ -2115,11 +1977,7 @@
                                     </div>
 
                                     <div class="txa-product-1-single-btn-wrap d-flex align-items-center">
-                                        <a href="#" aria-label="name" class="txa-purchase-btn">purchase now
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="535" height="250" viewBox="0 0 535 250" fill="none">
-                                                <path d="M534.461 152.764C518.901 81.6536 471.261 35.1136 396.801 31.4436C285.781 25.9636 148.541 117.434 54.7407 249.464H0.760742C102.831 99.4036 257.071 -5.86642 381.171 0.253582C469.111 4.60358 522.651 63.9336 534.461 152.764Z" fill="#F4255C"></path>
-                                            </svg>
-                                        </a>
+                                        <a href="cart-page.html" aria-label="name" class="txa-product-1-single-btn txa-pr-btn-1"><span class="txt">purchase now</span></a>
                                         <h5 class="txa-product-1-single-price"><span>$59.00 -</span> $29.00</h5>
                                     </div>
                                 </div>
@@ -2129,10 +1987,12 @@
                             <div class="txa-product-1-single">
                                 <div class="main-img img-cover">
                                     <img src="assets/img/product/product-img-1.png" alt="">
+                                    <a class="txa-product-1-single-demo-link txa-pr-btn-1" target="_blank" href="#" aria-label="name"><span class="txt">live preview</span></a>
+                                    
                                 </div>
                                 <div class="content-wrap">
                                     <h5 class="txa-heading-1 title">
-                                        <a href="#" aria-label="name">Telnet - Broadband TV & Internet WordPress Theme</a>
+                                        <a href="product-details.html" aria-label="name">Telnet - Broadband TV & Internet WordPress Theme</a>
                                     </h5>
 
                                     <div class="txa-product-1-single-sales-wrap mb-30">
@@ -2148,11 +2008,7 @@
                                     </div>
 
                                     <div class="txa-product-1-single-btn-wrap d-flex align-items-center">
-                                        <a href="#" aria-label="name" class="txa-purchase-btn">purchase now
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="535" height="250" viewBox="0 0 535 250" fill="none">
-                                                <path d="M534.461 152.764C518.901 81.6536 471.261 35.1136 396.801 31.4436C285.781 25.9636 148.541 117.434 54.7407 249.464H0.760742C102.831 99.4036 257.071 -5.86642 381.171 0.253582C469.111 4.60358 522.651 63.9336 534.461 152.764Z" fill="#F4255C"></path>
-                                            </svg>
-                                        </a>
+                                        <a href="cart-page.html" aria-label="name" class="txa-product-1-single-btn txa-pr-btn-1"><span class="txt">purchase now</span></a>
                                         <h5 class="txa-product-1-single-price"><span>$59.00 -</span> $29.00</h5>
                                     </div>
                                 </div>
@@ -2162,10 +2018,12 @@
                             <div class="txa-product-1-single">
                                 <div class="main-img img-cover">
                                     <img src="assets/img/product/product-img-1.png" alt="">
+                                    <a class="txa-product-1-single-demo-link txa-pr-btn-1" target="_blank" href="#" aria-label="name"><span class="txt">live preview</span></a>
+                                    
                                 </div>
                                 <div class="content-wrap">
                                     <h5 class="txa-heading-1 title">
-                                        <a href="#" aria-label="name">Telnet - Broadband TV & Internet WordPress Theme</a>
+                                        <a href="product-details.html" aria-label="name">Telnet - Broadband TV & Internet WordPress Theme</a>
                                     </h5>
 
                                     <div class="txa-product-1-single-sales-wrap mb-30">
@@ -2181,25 +2039,18 @@
                                     </div>
 
                                     <div class="txa-product-1-single-btn-wrap d-flex align-items-center">
-                                        <a href="#" aria-label="name" class="txa-purchase-btn">purchase now
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="535" height="250" viewBox="0 0 535 250" fill="none">
-                                                <path d="M534.461 152.764C518.901 81.6536 471.261 35.1136 396.801 31.4436C285.781 25.9636 148.541 117.434 54.7407 249.464H0.760742C102.831 99.4036 257.071 -5.86642 381.171 0.253582C469.111 4.60358 522.651 63.9336 534.461 152.764Z" fill="#F4255C"></path>
-                                            </svg>
-                                        </a>
+                                        <a href="cart-page.html" aria-label="name" class="txa-product-1-single-btn txa-pr-btn-1"><span class="txt">purchase now</span></a>
                                         <h5 class="txa-product-1-single-price"><span>$59.00 -</span> $29.00</h5>
                                     </div>
                                 </div>
                             </div>
-
-
-
 
                             <!-- load more btn -->
                             <div class="txa-product-1-single-more text-center pt-30">
-                                <a href="#" aria-label="name" class="txa-pr-btn-1">load more</a>
+                                <a href="#" aria-label="name" class="txa-pr-btn-1"><span class="txt">load more</span></a>
                             </div>
 
-                        </div>       
+                        </div>    
                     </div>
 
                 </div>
@@ -2266,7 +2117,7 @@
                 </div>
 
                 <div class="txa-about-1-btn text-center">
-                    <a href="#" aria-label="name" class="txa-pr-btn-1">explore all templates</a>
+                    <a href="#" aria-label="name" class="txa-pr-btn-1"><span class="txt">explore all templates</span></a>
                 </div>
 
             </div>
@@ -2675,7 +2526,7 @@
         
                             <form action="#" class="txa-search-form-1 has-newsletter">
                                 <input type="text" aria-label="name" placeholder="email address">
-                                <button class="txa-form-1-btn" type="button" aria-label="name">subscribe</button>
+                                <button class="txa-pr-btn-1 form-btn" type="button" aria-label="name"><span class="txt">subscribe</span></button>
                             </form>
                             
                         </div>

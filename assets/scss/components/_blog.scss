@@ -55,12 +55,21 @@
                 background-repeat: no-repeat;
                 background-position: bottom;
                 transition: 400ms var(--cube-1);
+                overflow: hidden;
+                -webkit-line-clamp: 2;
+                line-clamp: 2;
+                -webkit-box-orient: vertical;
             }
             &:hover {
                 color: var(--txa-pr-1);
                 a {
                     background-size: 100% 1px;
                 }
+            }
+        }
+        &:hover {
+            .main-img {
+                animation: shake 1000ms linear;
             }
         }
     }

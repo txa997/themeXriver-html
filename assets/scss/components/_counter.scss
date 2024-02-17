@@ -105,7 +105,7 @@
         &:hover {
             .main-icon {
                 i {
-                    transform: rotateY(180deg);
+                    animation: shake 200ms 2 linear;
                 }
             }
         }

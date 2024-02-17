@@ -61,7 +61,7 @@
     &-earth-position {
         position: absolute;
         right: 0;
-        bottom: 10%;
+        bottom: 20%;
         z-index: 1;
         @media #{$lg,$md} {
             width: 20%;

@@ -167,12 +167,15 @@
 .txa-counter-1 {
     &-wrap {
         gap: 15px 45px;
-        display: flex;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
         align-items: center;
         flex: 0 0 auto;
         @media #{$xs} {
-            flex-wrap: wrap;
-            flex: unset;
+            grid-template-columns: 1fr 1fr;
+        }
+        @media #{$sm} {
+            grid-template-columns: 1fr 1fr 1fr;
         }
     }
     &-item {
@@ -200,7 +203,7 @@
             background: #373a41;
             padding-right: 150px;
         }
-        .txa-form-1-btn {
+        .form-btn {
             text-transform: capitalize;
             padding: 0 25px;
             @media #{$xs} {

@@ -129,7 +129,11 @@
                 -webkit-text-fill-color: transparent;
             }
         }
-
+        &:hover {
+            .career-details-sidebar-item-icon i {
+                animation: shake 200ms 2 linear;
+            }
+        }
     }
     
     .txa-pr-btn-1 {

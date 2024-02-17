@@ -89,7 +89,7 @@
         &:hover {
             .icon {
                 i {
-                    transform: rotateY(180deg);
+                    animation: shake 200ms 2 linear;
                 }
             }
         }
@@ -242,7 +242,7 @@
     &:hover {
         .txa-call-icon-1 {
             i {
-                transform: rotateY(180deg);
+                animation: shake 200ms 2 linear;
             }
         }
     }
