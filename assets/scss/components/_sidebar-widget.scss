@@ -172,7 +172,7 @@
             &::before {
                 content: "";
                 background-color: #fff;
-                border: 2px solid var(--txa-pr-1);
+                border: 2px solid #BABABA;
                 border-radius: 50%;
                 cursor: pointer;
                 height: 20px;
@@ -207,6 +207,9 @@
             &:checked + label {
                 .number {
                     color: #6C0157;
+                }
+                &::before {
+                    border-color: var(--txa-pr-1);
                 }
                 &:after {
                     opacity: 1;
@@ -380,7 +383,7 @@
         width: 100%;
         padding: 21px 10px;
         &::after {
-            display: none;
+           background: #fff;
         }
         .txt {
             display: inline-block;
@@ -391,7 +394,7 @@
         }
         &:hover {
             .txt {
-                animation: toggle-item 1s var(--cube-1);
+                -webkit-text-fill-color: #fff;
             }
         }
     }

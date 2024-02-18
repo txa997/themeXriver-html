@@ -104,7 +104,7 @@
             &:hover {
                 .icon {
                     i {
-                        animation: toggle-item 1s var(--cube-1);
+                        animation: shake 200ms 2 linear;
                     }
                 }
             }
@@ -211,6 +211,7 @@
         i {
             display: inline-block;
             transition: 400ms var(--cube-1);
+            line-height: 1;
         }
     }
 
@@ -244,19 +245,15 @@
         }
     }
     &-btn {
-        display: inline-block;
-        text-align: center;
-        font-family: var(--urbanist);
-        text-transform: capitalize;
+        border: 1px solid var(--txa-pr-1);
         font-weight: 700;
-        font-size: 18px;
-        border: 1.5px solid var(--txa-pr-1);
-        padding: 10px 34px;
-        border-radius: 40px;
-        transition: 500ms var(--cube-1);
-        overflow: hidden;
-        position: relative;
-        z-index: 1;
+        padding: 15px 35px;
+        &::after {
+            opacity: 0;
+        }
+        &::before {
+            opacity: 0;
+        }
         .txt {
             display: inline-block;
             background: var(--txa-gd-1);
@@ -264,37 +261,22 @@
             -webkit-text-fill-color: transparent;
             transition: 500ms var(--cube-1);
         }
-    
-        &::after {
-            content: "";
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            top: 0;
-            left: 0;
-            background: var(--txa-gd-1);
-            transform: scale(2);
-            transition: 500ms var(--cube-1);
-            z-index: -1;
-            opacity: 0;
-        }
         &:hover {
             border-color: transparent;
+            &::before {
+                opacity: 1;
+            }
             .txt {
-                animation: toggle-item 1s var(--cube-1);
                 -webkit-text-fill-color: #fff;
             }
-            &::after {
-                opacity: 1;
-                transform: scale(1);
-            }
+
         }
     }
 
     &:hover {
         .icon {
             i {
-                animation: toggle-item 1s var(--cube-1);
+                animation: shake 200ms 2 linear;
             }
         }
     }

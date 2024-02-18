@@ -156,8 +156,11 @@
         .txa-product-1-single-price {
             color: #fff;
         }
-        .txa-purchase-btn {
-            padding: 17px 25px;
+        .item-btn {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 24px;
+            padding: 13px 33px;
         }
     }
 
@@ -201,18 +204,18 @@
         }
         .txa-hire-package-single-btn {
             border: none;
-            transition: 600ms var(--cube-1);
+            &::after {
+                opacity: 1;
+                
+            }
+            &::before {
+                opacity: 1;
+                
+            }
             .txt {
                 -webkit-text-fill-color: #fff;
             }
-            &::after {
-                opacity: 1;
-            }
             &:hover {
-                background-color: #fff;
-                .txt {
-                    -webkit-text-fill-color: transparent;
-                }
                 &::after {
                     opacity: 0;
                 }
@@ -228,6 +231,7 @@
         .txa-pr-btn-1 {
             width: 100%;
             text-align: center;
+            font-weight: 800;
         }
     }
     &-title {

@@ -12,9 +12,10 @@
     }
     &-item {
         &-content {
-           
+           padding-left: 20px;
             @media #{$md,$xs} {
                 padding-top: 50px;
+                padding-left: 0px;
             }
             .disc {
                 margin-bottom: 25px;
@@ -280,8 +281,31 @@
             }
         }
     }
-
-
+    .txa-art-details-img-slider-btn {
+        .btn-postion-1 {
+            left: 0px;
+            opacity: 0;
+            transition: 400ms var(--cube-1);
+        }
+        .btn-position-2 {
+            right: 0px;
+            opacity: 0;
+            transition: 400ms var(--cube-1);
+        }
+        
+    }
+    &:hover {
+        .txa-art-details-img-slider-btn {
+            .btn-postion-1 {
+                left: 15px;
+                opacity: 1;
+            }
+            .btn-position-2 {
+                right: 15px;
+                opacity: 1;
+            }
+        }  
+    }
 }
 .cursor {
     display: none;

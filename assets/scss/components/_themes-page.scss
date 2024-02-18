@@ -27,7 +27,6 @@
                 display: grid;
                 grid-template-columns: 1fr 1.2fr;
                 align-items: center;
-
                 @media #{$xs} {
                     display: unset;
                 }
@@ -52,23 +51,38 @@
                     }
                 }
                 &-sales-wrap {
-                    padding: 0 10px;
-                    max-width: 300px;
+                    max-width: 340px;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    border-radius: 35px;
+                    @media #{$lg} {
+                        grid-template-columns: auto 1fr;
+                    }
+                    @media #{$xs} {
+                        grid-template-columns: auto auto;
+                        padding-left: 10px;
+                        padding-right: 10px;
+                    }
+                    @media #{$sm} {
+                        grid-template-columns: auto 1fr;
+                        padding-left: 20px;
+                        padding-right: 20px;
+                    }
                     .txa-sales-1 {
-                        padding: 15px 5px;
+                        padding: 10px 0px;
+                        
                     }
                 }
                 &-btn-wrap {
                     gap: 10px;
                 }
-                .txa-purchase-btn {
-                    padding: 17px 20px;
-                }
                 &-price {
-                    @media #{$lg} {
-                        font-size: 20px;
-                        span {
-                            font-size: 16px;
+                    @media #{$lg,$md,$xs} {
+                        font-size: 18px;
+                    }
+                    span {
+                        @media #{$lg,$md,$xs} {
+                            font-size: 14px;
                         }
                     }
                 }
@@ -77,6 +91,7 @@
     }
 
     &:is(.three-column) {
+        gap: 30px 20px;
         grid-template-columns: 1fr 1fr 1fr;
 
         @media #{$xl,$lg,$md} {
@@ -101,19 +116,28 @@
                     margin-bottom: 15px;
                 }
                 &-sales-wrap {
-                    padding: 0 10px;
+                    grid-template-columns: auto 1fr;
+                    padding-left: 15px;
+                    padding-right: 15px;
+                    @media #{$xl} {
+                        grid-template-columns: auto .7fr;
+                    }
+                    @media #{$xs} {
+                        grid-template-columns: auto auto;
+                    }
+                    @media #{$sm} {
+                        grid-template-columns: auto .5fr;
+                    }
                     .txa-sales-1 {
-                        padding: 15px 5px;
+                        font-size: 16px;
                     }
                 }
                 &-btn-wrap {
                     gap: 10px;
                 }
-                .txa-purchase-btn {
-                    padding: 17px 20px;
-                    @media #{$lg} {
-                        padding: 17px 15px;
-                    }
+                &-btn {
+                    font-size: 14px;
+                    padding: 13px 25px;
                 }
                 &-price {
                     font-size: 18px;
@@ -122,6 +146,7 @@
                     }
 
                 }
+
             }
         }
     }
@@ -132,24 +157,22 @@
                 border-radius: 12px;
             }
             &-sales-wrap {
+                grid-template-columns: auto 0.7fr;
+            }
+            &-btn-wrap {
                 @media #{$md} {
-                    gap: 10px;
-                }
-                .txa-sales-1 {
-                    @media #{$md} {
-                        padding: 15px 5px; 
-                    }
-         
+                    gap: 0px;
                 }
             }
-            &-price {
+            &-sales-wrap {
                 @media #{$md} {
-                    font-size: 20px;
+                    grid-template-columns: auto .9fr;
                 }
-                span {
-                    @media #{$md} {
-                        font-size: 16px;
-                    }
+                @media #{$xs} {
+                    grid-template-columns: auto auto;
+                }
+                @media #{$sm} {
+                    grid-template-columns: auto .7fr;
                 }
             }
         }

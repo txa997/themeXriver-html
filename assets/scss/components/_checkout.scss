@@ -56,9 +56,13 @@
         line-height: 1.33;
         margin-bottom: 30px;
         display: block;
-        color: #fff;
+        color: rgb(255 255 255 / 80%);
         @media #{$lg,$md} {
             font-size: 26px;
+        }
+
+        b {
+            color: #fff;
         }
     }
 
@@ -68,6 +72,7 @@
         text-align: center;
         border: none;
         outline: none;
+        font-weight: 800;
     }
     
     .check-item {
@@ -98,7 +103,7 @@
                 border: none;
                 border-radius: 50%;
                 content: "";
-                background: #fff;
+                background: var(--txa-gd-1);
                 height: 10px;
                 width: 10px;
                 left: 6px;
@@ -121,6 +126,9 @@
             &:checked + label {
                 .number {
                     color: #6C0157;
+                }
+                &::before {
+                    border-color: var(--txa-pr-1);
                 }
                 &:after {
                     opacity: 1;
