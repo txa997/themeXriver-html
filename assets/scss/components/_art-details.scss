@@ -171,7 +171,7 @@
         }
         i {
             color: #fff;
-            animation: toggle-item 1s var(--cube-1);
+            animation: toggle-item .3s var(--cube-2);
         }
     }
 }
@@ -218,7 +218,7 @@
             transition: 500ms var(--cube-1);
             i {
                 display: inline-block;
-                transition: 500ms var(--cube-1);
+                transition: 300ms var(--cube-2);
                 line-height: 1;
             }
         }

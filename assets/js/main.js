@@ -131,6 +131,68 @@ if (menuToggle2) {
 // mobile-menu-toggle-end
 
 
+// mobile-categories-toggle-start
+
+
+if ($(window).width() <= 575) {
+
+	var categoriesTgogle = document.getElementById("categories-1")
+	var categoriesTgogle2 = document.getElementById("categories-close")
+	
+	if (categoriesTgogle2) {
+	
+		var categoriesBar = gsap.timeline();
+		categoriesBar.reverse();
+		var categoriesbgline = gsap.timeline({ paused: true });
+		
+		categoriesbgline.to('.mobile-categories' , {
+			duration: 0,
+			display: "block",
+			ease: 'Expo.easeInOut'
+		});
+		categoriesbgline.to('.mobile-categories-bg span' , {
+			duration: .5,
+			height: "100%",
+			stagger: 0.1,
+			ease: 'Expo.easeInOut'
+		});
+		categoriesbgline.from('.mobile-categories-content' , {
+			duration: .2,
+			y: -100,
+			opacity: 0,
+			ease: 'Expo.easeInOut'
+		});
+		categoriesbgline.to('.mobile-categories-close' , {
+			duration: 0,
+			x: 0,
+			rotate: 0,
+			opacity: 1,
+			ease: 'Expo.easeInOut'
+		}, "<");
+		categoriesbgline.from('.mobile-categories-navigation' , {
+			opacity: 0,
+			x: -50,
+			ease: 'Expo.easeInOut'
+		});
+		
+		
+		categoriesbgline.reverse();
+		categoriesTgogle.addEventListener('click', function(){
+			// menuBar.reversed(!menuBar.reversed());
+			categoriesbgline.reversed(!categoriesbgline.reversed());
+		});
+		categoriesTgogle2.addEventListener('click', function(){
+			// menuBar.reversed(!menuBar.reversed());
+			categoriesbgline.reversed(!categoriesbgline.reversed());
+		});
+	}
+ }
+
+
+
+// mobile-categories-toggle-end
+
+
 
 
 var tl = gsap.timeline({

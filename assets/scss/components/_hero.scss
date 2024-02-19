@@ -133,10 +133,12 @@
         @media #{$xs} {
             padding-left: 40px;
             padding-right: 40px;
+            margin-bottom: 15px;
         }
         @media #{$sm} {
             padding-left: 60px;
             padding-right: 230px;
+            margin-bottom: 0px;
         }
     }
     .form-btn {

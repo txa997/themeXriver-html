@@ -25,8 +25,11 @@
         .txa-product-1 {
             &-single {
                 display: grid;
-                grid-template-columns: 1fr 1.2fr;
+                grid-template-columns: 1.1fr 1fr;
                 align-items: center;
+                @media #{$lg} {
+                    grid-template-columns: 1fr 1.2fr;
+                }
                 @media #{$xs} {
                     display: unset;
                 }
@@ -270,7 +273,7 @@
                 opacity: 1;
             }
             i {
-                animation: toggle-item 1s var(--cube-1);
+                animation: toggle-item .3s var(--cube-2);
             }
         }
         &:is(.active) {
@@ -279,7 +282,7 @@
                 opacity: 1;
             }
             i {
-                animation: toggle-item 1s var(--cube-1);
+                animation: toggle-item .3s var(--cube-2);
             }
         }
     }

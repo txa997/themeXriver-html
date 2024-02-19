@@ -153,11 +153,8 @@
             border-radius: 10px;
             text-align: center;
             padding: 27px 10px;
-            background: #5B33B6;
-            
             &::after {
-                opacity: 0;
-                transform: scale(1);
+                background: #5B33B6;
             }
             .txt {
                 display: inline-block;
@@ -169,10 +166,7 @@
 
             &:hover {
                 .txt {         
-                    animation: toggle-item 1s var(--cube-1);
-                }
-                &::after {
-                    opacity: 1;
+                    animation: toggle-item .3s var(--cube-2);
                 }
             }
         }

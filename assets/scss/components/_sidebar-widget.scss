@@ -50,6 +50,41 @@
         border-radius: 10px;
         &-btn {
             padding: 25px 25px;
+            .txa-pr-btn-1 {
+                width: 100%;
+                text-align: center;
+                font-weight: 800;
+                border: 1px solid #ECD6E2;
+                color: #595959;
+                &::after {
+                    opacity: 0;
+                }
+                &::before {
+                    opacity: 0;
+                }
+                &:is(.has-active) {
+                    color: #fff;
+                    &::after {
+                        opacity: 1;
+                    }
+                    &::before {
+                        opacity: 1;
+                    }    
+                    &:hover {
+                        &::after {
+                            opacity: 0;
+                        }
+                    }
+                }
+
+                &:hover {
+                    border-color: transparent;
+                    color: #fff;
+                    &::after {
+                        opacity: 1;
+                    }
+                }
+            }
         }
     }
     &-2 {
@@ -379,18 +414,23 @@
     padding: 40px 25px;
 
     .txa-pr-btn-1 {
-        background: #fff;
         width: 100%;
         padding: 21px 10px;
+
         &::after {
-           background: #fff;
+            background: #fff;
         }
+
+        &::before {
+            background: var(--txa-heading-2);
+        }
+
         .txt {
             display: inline-block;
             background: var(--txa-gd-1);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            transition: 600ms var(--cube-1);
+            transition: 400ms var(--cube-1);
         }
         &:hover {
             .txt {

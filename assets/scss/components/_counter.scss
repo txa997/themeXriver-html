@@ -57,13 +57,14 @@
             color: #fff;
             position: relative;
             flex: 0 0 auto;
+            z-index: 1;
             &::after {
                 content: "";
-                width: 130%;
+                width: 122%;
                 height: 120%;
                 position: absolute;
                 top: 50%;
-                left: 50%;
+                left: 36px;
                 transform: translate(-50% , -50%);
                 background: linear-gradient(90deg, rgba(127,57,127,0) 0%, rgba(127,57,127,1) 70%, rgba(127,57,127,1) 100%);
                 z-index: -1;
@@ -76,7 +77,7 @@
                 height: 170%;
                 position: absolute;
                 top: -6px;
-                left: -10px;
+                left: -12px;
                 border-left: 1px dashed #cc2b5e;
                 z-index: 1;
                 opacity: 1;

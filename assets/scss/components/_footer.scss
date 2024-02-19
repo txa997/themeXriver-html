@@ -202,6 +202,7 @@
             padding: 0 30px;
             background: #373a41;
             padding-right: 150px;
+
         }
         .form-btn {
             text-transform: capitalize;
@@ -241,7 +242,7 @@
                 bottom: -5px;
                 left: 50%;
                 transform: translateX(-50%);
-                transition: 400ms var(--cube-1);
+                transition: 300ms var(--cube-2);
             }
             &:hover {
                 color: var(--txa-pr-1);

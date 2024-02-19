@@ -40,6 +40,7 @@
             padding: 8px 11px;
             letter-spacing: -.2px;
             margin-bottom: 12px;
+            font-weight: 500;
         }
         .title {
             font-size: 27px;
@@ -69,7 +70,7 @@
         }
         &:hover {
             .main-img {
-                animation: shake 1000ms linear;
+                animation: shake 700ms linear;
             }
         }
     }

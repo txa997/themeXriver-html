@@ -29,13 +29,22 @@
             background-color: #fff;
             width: 60%;
             @media #{$xs} {
+              width: 100%;
+            }
+            @media #{$sm} {
               width: 80%;
             }
           }
           &:nth-child(2) {
             background-color: #ebebeb;
             width: 40%;
-            
+            @media #{$xs} {
+              display: none;
+            }
+            @media #{$sm} {
+              width: 40%;
+              display: block;
+            }
           }
       }
     }
@@ -153,8 +162,6 @@
 
 }
 
-
-
 // fullpage-menu-end
 
 
@@ -248,3 +255,103 @@
   }
   
   // mobile-menu-css-end
+
+
+  
+// mobile-categories-css-start
+
+.mobile-categories {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 9;
+  display: none;
+  ::-webkit-scrollbar {
+      display: none;
+  }
+  &-bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    display: flex;
+    span {
+        flex-wrap: wrap;
+        display: block;
+        height: 0%;
+        background-color: #fffafa;
+        width: 100%;
+    }
+  }
+  &-wrap {
+    height: 100%;
+    padding: 60px 40px;
+    overflow-y: scroll;
+    
+  }
+  &-close {
+    font-size: 24px;
+    line-height: 1;
+    padding-right: 6px;
+    transition: 400ms;
+    i {
+      line-height: 1;
+    }
+    &:hover {
+      color: var(--txa-pr-1);
+    }
+  }
+
+  &-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+    .title {
+      font-size: 26px;
+      font-weight: 900;
+      color: #000;
+      position: relative;
+      text-transform: uppercase;
+      background: var(--txa-gd-1);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+      @media #{$xs} {
+        font-size: 22px;
+      }
+
+      @media #{$sm} {
+        font-size: 26px;
+      }
+
+      &::after {
+        content: "";
+        width: 60px;
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        height: 1px;
+        background: var(--txa-gd-1);
+      }
+      &::before {
+        content: "";
+        width: 80px;
+        position: absolute;
+        bottom: 0px;
+        left: 0;
+        height: 1px;
+        background: var(--txa-gd-1);
+      }
+    }
+  }
+  .mobile-main-navigation .navbar-nav li a {
+    border-bottom: 1px solid #00000014;
+  }
+}
+// mobile-categories-css-end
+

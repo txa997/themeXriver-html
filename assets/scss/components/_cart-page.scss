@@ -223,6 +223,58 @@
         }
     }
 
+    .txa-product-1-single {
+        background: transparent;
+        border: none;
+        box-shadow: none;
+        outline: none;
+        border-radius: 0;
+        display: grid;
+        grid-template-columns: .7fr 1fr;
+        align-items: center;
+        gap: 20px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        padding-bottom: 30px;
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+
+        .content-wrap {
+            padding: 0;
+        }
+
+        .main-img {
+            border-radius: 12px;
+            &::after {
+                display: none;
+            }
+        }
+
+        .title {
+            font-size: 20px;
+            line-height: 1.41;
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 10px;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            line-clamp: 1;
+            -webkit-box-orient: vertical;
+        }
+
+        .txa-rating-2 .text {
+            color: #ffffffd6;
+        }
+
+        &-price {
+            font-size: 18px;
+            color: #fff;
+            font-weight: 500;
+        }
+
+    }
+
 }
 
 
@@ -312,7 +364,7 @@
                 background: rgb(229 20 0 / 100%);
                 color: #fff;
                 i {
-                    animation: toggle-item 1s var(--cube-1);
+                    animation: toggle-item .3s var(--cube-2);
                 }
             }
         }
@@ -342,7 +394,50 @@
                 margin-left: auto;
             }
         }
+        .txa-product-1-single {
+            background: transparent;
+            border: none;
+            box-shadow: none;
+            display: grid;
+            grid-template-columns: .4fr 1fr auto;
+            gap: 15px;
+            align-items: center;
+            padding-bottom: 30px;
+            border-bottom: 1px solid rgba(30, 28, 28, 0.2);
+            border-radius: 0;
+            &:not(:last-child) {
+                margin-bottom: 30px;
+            }
 
+            .main-img {
+                border-radius: 5px;
+                &::after {
+                    display: none;
+                }
+            }
+            .content-wrap {
+                padding: 0;
+            }
+            .title {
+                font-size: 20px;
+                line-height: 30px;
+                font-weight: 600;
+                margin-bottom: 10px;
+                display: -webkit-box;
+                -webkit-line-clamp: 1;
+                line-clamp: 1;
+                -webkit-box-orient: vertical;
+            }
+            &-price {
+                font-size: 20px;
+                line-height: 30px;
+                font-weight: 600;
+                display: block;
+                background: var(--txa-gd-1);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
     }
     &-total-price {
         font-size: 30px;

@@ -34,6 +34,7 @@
             -webkit-text-fill-color: transparent;
             text-decoration: none;
             display: inline-block;
+            text-transform: capitalize;
             transition: 400ms var(--cube-1);
         }
         & a {

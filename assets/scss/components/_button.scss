@@ -55,7 +55,7 @@
       color: var(--txa-heading-1);
       display: inline-block;
       font-size: 15px;
-      transition: 400ms var(--cube-1);
+      transition: 300ms var(--cube-2);
       &:hover {
         color: var(--txa-pr-1);
         transform: translateY(-2px);
@@ -148,13 +148,12 @@
     font-weight: 800;
     font-size: 15px;
     line-height: 1;
-    transition: 400ms var(--cube-1);
+    transition: 100ms var(--cube-1);
     i {
         display: inline-block;
         font-size: 22px;
         margin-left: 3px;
-        transition: 400ms var(--cube-1);
-        transition: 500ms var(--cube-1);
+        transition: 400ms var(--cube-2);
     }
     .icon {
         position: relative;
@@ -165,7 +164,7 @@
             top: 50%;
             left: -70%;
             transform: translate(-50%,-50%);
-            transition: 500ms var(--cube-1);
+            transition: 400ms var(--cube-2);
         }
     }
     &:hover {
@@ -200,7 +199,7 @@
     position: relative;
     z-index: 1;
     overflow: hidden;
-    transition: 400ms var(--cube-1);
+    transition: 300ms var(--cube-1);
     &::after {
         content: "";
         background: var(--txa-gd-1);
@@ -211,7 +210,7 @@
         position: absolute;
         z-index: -1;
         transform-origin: left;
-        transition: 800ms var(--cube-1);
+        transition: 300ms var(--cube-1);
     }
     &::before {
         content: "";
@@ -223,11 +222,11 @@
         position: absolute;
         z-index: -1;
         transform-origin: left;
-        transition: 800ms var(--cube-1);
+        transition: 300ms var(--cube-1);
     }
     .txt {
         display: inline-block;
-        transition: 600ms var(--cube-1);
+        transition: 300ms var(--cube-1);
     }
     &:hover {
         color: #fff;
@@ -236,7 +235,7 @@
             opacity: 0;
         }
         .txt {
-            animation: pr-btn-1 .5s var(--cube-1);
+            animation: pr-btn-1 300ms var(--cube-2);
         }
     }
 

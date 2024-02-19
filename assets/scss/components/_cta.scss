@@ -74,7 +74,7 @@
                     bottom: 0;
                     left: 50%;
                     transform: translateX(-50%);
-                    transition: 400ms var(--cube-1);
+                    transition: 300ms var(--cube-2);
                 }
                 &::before {
                     content: "";
@@ -85,7 +85,7 @@
                     bottom: 0px;
                     left: 50%;
                     transform: translateX(-50%);
-                    transition: 400ms var(--cube-1);
+                    transition: 300ms var(--cube-2);
                     z-index: 1;
                 }
                 &:hover {
