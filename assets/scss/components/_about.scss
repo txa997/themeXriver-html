@@ -99,7 +99,44 @@
         margin-left: auto;
         margin-right: auto;
     }
+    &-img-wrap {
+        position: relative;
+        &:is(.active) {
+            .txa-about-1-img-2 {
+                left: 0;
+                transform:  rotate(0deg);
+                transition-delay: transform 5s ;
+            }
+        }
+    }
+    &-img-1 {
+        max-width: 810px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 12px;
+        border: 12px solid #D2E4FF;
+        position: relative;
+        z-index: 2;
+        box-shadow: 0px 50px 50px 0 rgb(0 0 0 / 7%);
+        img {
+            border-radius: 12px;
+        }
+        
+    }
+    &-img-2 {
+        position: absolute;
+        bottom: 0;
+        left: 0%;
+        // transition: 1000ms var(--cube-2);
+    }
+    
+    &-img-3 {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
 }
+
 
 // about-1-end
 

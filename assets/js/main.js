@@ -243,6 +243,39 @@ boxes.forEach(img => {
 	});
 });
 
+gsap.utils.toArray('.chy-footer-4-il-img').forEach((el, index) => { 
+	let chyScl = gsap.timeline({
+	  scrollTrigger: {
+		trigger: el,
+		scrub: 2,
+		start: "top 80%",
+		end: "top 70%",
+		toggleActions: "play none none reverse",
+		 markers: false
+	  }
+	})
+	
+	chyScl
+	.set(el, {transformOrigin: 'center center'})
+	.fromTo(el, { xPercent: -100  }, { xPercent:0 , duration: 1, immediateRender: false})
+  })
+
+
+var abimg1 = gsap.timeline({
+
+	scrollTrigger: {
+	  animation: abimg1,
+	  trigger: ".txa-about-1-img-2",
+	  start: "top 90%",
+	  end: "top -50%",
+	  toggleActions: "play reverse play reverse",
+	  markers: true
+	}
+	});
+	abimg1.from( ".txa-about-1-img-2" , { xPercent: 50,  duration:.5 } )
+		  .from( ".txa-about-1-img-2" , { rotateZ: 20 } , ".1" )
+
+
 
 // marquee-animation-1-start
 
@@ -447,57 +480,10 @@ if (element) {
 } 
 
 
-
 /*
 art-details
 ====end====
 */
-
-
-// button-click-animation-start
-//   var myButton = document.getElementById("pr-btn-1");
-
-
-//   function addHighlightClass() {
-// 	myButton.classList.add("highlight");
-//   }
-
-//   function removeHighlightClass() {
-// 	myButton.classList.remove("highlight");
-//   }
-
-//   myButton.addEventListener("mousedown", addHighlightClass);
-
-//   myButton.addEventListener("mouseup", removeHighlightClass);
-
-//   myButton.addEventListener("mouseout", removeHighlightClass);
-
-
-// var myButton = document.getElementById("pr-btn-1");
-
-// function addHighlightClass() {
-//     myButton.classList.add("highlight");
-// }
-
-// function removeHighlightClass() {
-//     myButton.classList.remove("highlight");
-// }
-
-// function handleClickAndMouse() {
-//     // Add any additional logic you want to execute on button click
-//     console.log("Button clicked!");
-//     removeHighlightClass(); // You can include this line if you want to remove highlight on click
-// }
-
-// myButton.addEventListener("mousedown", addHighlightClass);
-// myButton.addEventListener("mouseup", removeHighlightClass);
-// myButton.addEventListener("mouseout", removeHighlightClass);
-
-// // Add click event listener
-// myButton.addEventListener("click", handleClickAndMouse);
-
-
-// button-click-animation-end
 
 
 /*
