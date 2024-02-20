@@ -361,6 +361,7 @@
         flex: 0 0 auto;
         transition: 400ms var(--cube-1);
         overflow: hidden;
+        cursor: pointer;
         &::after {
             content: "";
             width: 100%;
@@ -399,7 +400,7 @@
         }
         &:hover {
             i {
-                animation: toggle-item 1s var(--cube-1);
+                animation: toggle-item .3s var(--cube-2);
             }
 
         }

@@ -49,6 +49,7 @@
             line-height: 22px;
             text-transform: uppercase;
             color: var(--txa-heading-1);
+            margin-bottom: 5px;
             span {
                 color: red;
             }            
@@ -58,7 +59,7 @@
             border: none;
             border-bottom: 1px solid rgb(84 86 97 / 20%);
             font-size: 18px;
-            color: #545661;
+            color: #545661b3;
             text-transform: capitalize;
             line-height: 28px;
             padding: 10px 0;
@@ -146,7 +147,7 @@
         }
         &-item {
             display: flex;
-            align-items: center;
+            align-items: self-start;
             gap: 15px;
 
             @media #{$xs} {
@@ -171,6 +172,10 @@
                 font-size: 25px;
                 color: #fff;
                 flex: 0 0 auto;
+                i {
+                    display: inline-block;
+                    line-height: 1;
+                }
             }
             &-title {
                 font-size: 20px;
@@ -185,6 +190,13 @@
                     word-wrap: break-word;
                     &:hover {
                         color: var(--txa-pr-1);
+                    }
+                }
+            }
+            &:hover {
+                .icon {
+                    i {
+                        animation: shake 200ms 2 linear;
                     }
                 }
             }

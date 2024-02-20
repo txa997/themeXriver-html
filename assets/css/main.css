@@ -3690,6 +3690,12 @@ input:focus::placeholder, textarea:focus::placeholder {
   transform: translate(-50%, -50%) scale(1);
   opacity: 1;
 }
+.txa-product-1-single:is(.has-plugin) .main-img {
+  transition: 300ms var(--cube-2);
+}
+.txa-product-1-single:is(.has-plugin) .main-img::after {
+  display: none;
+}
 .txa-product-1-single:is(.has-plugin) .content-wrap {
   padding: 20px 20px;
 }
@@ -3718,6 +3724,9 @@ input:focus::placeholder, textarea:focus::placeholder {
   .txa-product-1-single:is(.has-plugin) .txa-product-1-single-btn {
     padding: 13px 30px;
   }
+}
+.txa-product-1-single:is(.has-plugin):hover .main-img {
+  transform: scale(105%);
 }
 
 .txa-sales-1 {
@@ -5700,6 +5709,7 @@ input:focus::placeholder, textarea:focus::placeholder {
   flex: 0 0 auto;
   transition: 400ms var(--cube-1);
   overflow: hidden;
+  cursor: pointer;
 }
 .txa-item-pagination li::after {
   content: "";
@@ -5738,7 +5748,7 @@ input:focus::placeholder, textarea:focus::placeholder {
   display: inline-block;
 }
 .txa-item-pagination-btn:hover i {
-  animation: toggle-item 1s var(--cube-1);
+  animation: toggle-item 0.3s var(--cube-2);
 }
 
 #preloader {
@@ -8345,7 +8355,7 @@ input:focus::placeholder, textarea:focus::placeholder {
   color: #595959;
 }
 .txa-sidebar-purchase li:hover .icon i {
-  animation: toggle-item 1s var(--cube-1);
+  animation: toggle-item 0.3s var(--cube-2);
 }
 
 .txa-sidebar-rating {
@@ -8900,6 +8910,7 @@ input:focus::placeholder, textarea:focus::placeholder {
   line-height: 22px;
   text-transform: uppercase;
   color: var(--txa-heading-1);
+  margin-bottom: 5px;
 }
 .txa-contact-us-form .label-text span {
   color: red;
@@ -8909,7 +8920,7 @@ input:focus::placeholder, textarea:focus::placeholder {
   border: none;
   border-bottom: 1px solid rgba(84, 86, 97, 0.2);
   font-size: 18px;
-  color: #545661;
+  color: rgba(84, 86, 97, 0.7019607843);
   text-transform: capitalize;
   line-height: 28px;
   padding: 10px 0;
@@ -9005,7 +9016,7 @@ input:focus::placeholder, textarea:focus::placeholder {
 }
 .txa-contact-us-info-item {
   display: flex;
-  align-items: center;
+  align-items: self-start;
   gap: 15px;
 }
 @media (max-width: 767px) {
@@ -9032,6 +9043,10 @@ input:focus::placeholder, textarea:focus::placeholder {
   color: #fff;
   flex: 0 0 auto;
 }
+.txa-contact-us-info-item .icon i {
+  display: inline-block;
+  line-height: 1;
+}
 .txa-contact-us-info-item-title {
   font-size: 20px;
   margin-bottom: 6px;
@@ -9047,6 +9062,9 @@ input:focus::placeholder, textarea:focus::placeholder {
 }
 .txa-contact-us-info-item-disc a:hover {
   color: var(--txa-pr-1);
+}
+.txa-contact-us-info-item:hover .icon i {
+  animation: shake 200ms 2 linear;
 }
 .txa-contact-us-map {
   width: 100%;

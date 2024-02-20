@@ -321,7 +321,12 @@
         }
 
         &:is(.has-plugin) {
-            
+            .main-img {
+                &::after {
+                    display: none;
+                }
+                transition: 300ms var(--cube-2);
+            }
             .content-wrap {
                 padding: 20px 20px;
                 @media #{$md} {
@@ -343,6 +348,13 @@
                     padding: 13px 30px;
                 }
             }
+
+            &:hover {
+                .main-img {
+                    transform: scale(105%);
+                }
+            }
+
         }
     }
 }
