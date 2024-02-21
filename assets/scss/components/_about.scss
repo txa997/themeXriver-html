@@ -202,6 +202,8 @@
         }
     }
     &-img {
+        position: relative;
+        z-index: 2;
         margin-right: -48%;
         height: 545px;
         @media #{$over} {

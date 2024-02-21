@@ -3962,6 +3962,8 @@ input:focus::placeholder, textarea:focus::placeholder {
   margin-bottom: 20px;
 }
 .txa-about-2-img {
+  position: relative;
+  z-index: 2;
   margin-right: -48%;
   height: 545px;
 }
@@ -8656,6 +8658,12 @@ input:focus::placeholder, textarea:focus::placeholder {
 .txa-team-area {
   background-color: #FAF2FF;
   position: relative;
+  margin-top: -100px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  .txa-team-area {
+    margin-top: 0px;
+  }
 }
 .txa-team-section-title {
   display: grid;
@@ -8751,6 +8759,13 @@ img.txa-team-bg-shape-2 {
   }
   100% {
     transform: scale3d(100%, 100%, 100%);
+  }
+}
+@media (max-width: 767px) {
+  .txa-team-membar {
+    max-width: 296px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 .txa-team-membar-img {
