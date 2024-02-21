@@ -5,19 +5,20 @@
     --black-color: #000000;
     --white-color: #fff;
 
-    --txa-pr-1: #cc2b5e;
+    --txa-pr-1: #f000ff;
+    --txa-sd-1: #6400ed;
 
     --txa-heading-1: #141414;
     --txa-heading-2: #1E1C1C;
 
 
-    --txa-gd-1: linear-gradient( 36deg, rgb(204,43,94) 0%, rgb(117,58,136) 100%);
-
-
+    --txa-gd-1: linear-gradient( 36deg, #6400ed 0%, #f000ff 100%);
 
 
     --cube-1: cubic-bezier(.23,1,.32,1);
     --cube-2: cubic-bezier(0.31, -0.105, 0.43, 1.4);
+
+
 }
 
 // Responsive Variables
