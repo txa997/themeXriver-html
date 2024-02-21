@@ -266,16 +266,68 @@ var abimg1 = gsap.timeline({
 	scrollTrigger: {
 	  animation: abimg1,
 	  trigger: ".txa-about-1-img-2",
-	  start: "top 90%",
+	  start: "top 85%",
 	  end: "top -50%",
 	  toggleActions: "play reverse play reverse",
-	  markers: true
+	  markers: false
 	}
 	});
-	abimg1.from( ".txa-about-1-img-2" , { xPercent: 50,  duration:.5 } )
+	abimg1.from( ".txa-about-1-img-2" , { xPercent: 50,  duration:1 , ease: "power4.out" } )
 		  .from( ".txa-about-1-img-2" , { rotateZ: 20 } , ".1" )
+		  .from( ".txa-about-1-img-3" , { xPercent: -50,  duration:1 , ease: "power4.out"} , "<" )
 
 
+
+var team1 = gsap.timeline({
+
+		scrollTrigger: {
+		animation: team1,
+		trigger: ".txa-team-membar",
+		start: "top 80%",
+		end: "top -50%",
+		toggleActions: "play none play reverse",
+		markers: false,
+		stagger: 0.2
+		}
+	});
+	team1.from( ".txa-team-membar" , { opacity:0 ,  duration:.3 , stagger: 0.1 } )
+		 .from( ".txa-team-membar-img-wrap" , { transform: "rotate3d(1, 1, 1, 90deg)",  duration:.7 , stagger: 0.2 }, "<" )
+		 .from( ".txa-team-membar-img .main-img" , { yPercent: 100,  duration:.7 , stagger: 0.2 } , ".1" )
+		
+
+
+// // Create a GSAP timeline template for individual animations
+// function createMemberAnimation(member) {
+// 	var tl = gsap.timeline();
+// 	tl.from(member, { opacity: 0, duration: 0.3 });
+// 	tl.from(member.querySelector(".txa-team-membar-img-wrap"), { transform: "rotate3d(1, 1, 1, 90deg)", duration: 0.5 }, "<");
+// 	tl.from(member.querySelector(".txa-team-membar-img .main-img"), { yPercent: 100, duration: 0.3 }, "<");
+// 	return tl;
+//   }
+  
+//   // Select all elements with the class "txa-team-membar"
+//   var teamMembers = document.querySelectorAll(".txa-team-membar");
+  
+//   // Loop through each team member
+//   teamMembers.forEach(function(member) {
+// 	var memberAnimation = createMemberAnimation(member);
+  
+// 	// Create a GSAP timeline for each member's animation
+// 	var tl = gsap.timeline({
+// 	  scrollTrigger: {
+// 		trigger: member,
+// 		start: "top 85%",
+// 		end: "top -50%",
+// 		toggleActions: "play none play reverse",
+// 		markers: true,
+// 		stagger: 0.5
+// 	  }
+// 	});
+  
+// 	// Add the member's animation to the timeline
+// 	tl.add(memberAnimation);
+//   });
+		 
 
 // marquee-animation-1-start
 

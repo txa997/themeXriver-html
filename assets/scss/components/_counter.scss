@@ -92,10 +92,10 @@
             line-height: 1;
             font-weight: 900;
             @media #{$xs} {
-                font-size: 44px;
+                font-size: 30px;
             }
             @media #{$sm} {
-                font-size: 54px;
+                font-size: 40px;
             }
         }
         .disc {

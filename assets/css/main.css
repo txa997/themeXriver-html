@@ -3878,6 +3878,11 @@ input:focus::placeholder, textarea:focus::placeholder {
   z-index: 2;
   box-shadow: 0px 50px 50px 0 rgba(0, 0, 0, 0.07);
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .txa-about-1-img-1 {
+    max-width: 520px;
+  }
+}
 .txa-about-1-img-1 img {
   border-radius: 12px;
 }
@@ -3885,11 +3890,22 @@ input:focus::placeholder, textarea:focus::placeholder {
   position: absolute;
   bottom: 0;
   left: 0%;
+  transition: all 0s cubic-bezier(0.82, 0.16, 0.43, 1.49) 0s;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  .txa-about-1-img-2 {
+    display: none;
+  }
 }
 .txa-about-1-img-3 {
   position: absolute;
   right: 0;
   bottom: 0;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  .txa-about-1-img-3 {
+    display: none;
+  }
 }
 
 .txa-about-2-section-title {
@@ -4799,12 +4815,12 @@ input:focus::placeholder, textarea:focus::placeholder {
 }
 @media (max-width: 767px) {
   .txa-counter-2-item .number {
-    font-size: 44px;
+    font-size: 30px;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .txa-counter-2-item .number {
-    font-size: 54px;
+    font-size: 40px;
   }
 }
 .txa-counter-2-item .disc {
@@ -8635,6 +8651,153 @@ input:focus::placeholder, textarea:focus::placeholder {
 .txa-contact-form .txa-pr-btn-1 {
   border: none;
   outline: none;
+}
+
+.txa-team-area {
+  background-color: #FAF2FF;
+  position: relative;
+}
+.txa-team-section-title {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  justify-items: start;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  .txa-team-section-title {
+    grid-template-columns: 1fr;
+  }
+}
+.txa-team-section-title .txa-subtitle-3 {
+  grid-column: 1/-1;
+  gap: 0 20px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  .txa-team-section-title .txa-title-2 {
+    margin-bottom: 30px;
+  }
+}
+
+img.txa-team-bg-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  animation: team-bg-line 20s infinite ease-in-out;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  img.txa-team-bg-line {
+    animation: team-bg-line 40s infinite ease-in-out;
+  }
+}
+
+img.txa-team-bg-shape-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: left top;
+  animation: team-bg-shape-1 30s infinite ease-in-out;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  img.txa-team-bg-shape-1 {
+    width: 40%;
+  }
+}
+
+img.txa-team-bg-shape-2 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transform-origin: right bottom;
+  animation: team-bg-shape-1 30s infinite ease-in-out;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  img.txa-team-bg-shape-2 {
+    width: 40%;
+  }
+}
+
+@keyframes team-bg-shape-1 {
+  0% {
+    transform: scale3d(100%, 100%, 100%);
+  }
+  25% {
+    transform: scale3d(90%, 110%, 100%);
+  }
+  50% {
+    transform: scale3d(110%, 90%, 100%);
+  }
+  75% {
+    transform: scale3d(100%, 120%, 100%);
+  }
+  100% {
+    transform: scale3d(100%, 100%, 100%);
+  }
+}
+@keyframes team-bg-line {
+  0% {
+    transform: scale3d(100%, 100%, 100%);
+  }
+  25% {
+    transform: scale3d(100%, 130%, 100%);
+  }
+  50% {
+    transform: scale3d(150%, 100%, 100%);
+  }
+  75% {
+    transform: scale3d(100%, 130%, 100%);
+  }
+  100% {
+    transform: scale3d(100%, 100%, 100%);
+  }
+}
+.txa-team-membar-img {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  overflow: hidden;
+  border-radius: 0 0 170px 160px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.txa-team-membar-img-wrap {
+  position: relative;
+}
+.txa-team-membar-img-shape {
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+}
+.txa-team-membar-img-shape .img-shape-2 {
+  position: absolute;
+  left: 0;
+  top: 3px;
+  width: 100%;
+  height: 100%;
+}
+.txa-team-membar-img-shape .img-shape-1 {
+  position: relative;
+  z-index: 1;
+}
+.txa-team-membar-name {
+  font-size: 22px;
+  margin-bottom: 4px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  .txa-team-membar-name {
+    font-size: 20px;
+  }
+}
+.txa-team-membar-bio {
+  font-size: 18px;
+  font-weight: 600;
+  display: inline-block;
+  background: var(--txa-gd-1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 30px;
 }
 
 .txa-ticket-form-wrap {
