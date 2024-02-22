@@ -18,6 +18,7 @@
      
     <body >
 
+
         <!-- header-start -->
         <header class="txa-header-1-area" >
 
@@ -42,7 +43,7 @@
                         </div>
 
                         <a class="txa-logo-1" href="index.html" aria-label="themexriver" >
-                            <img src="assets/img/logo/themexriver-logo-1.png" alt="themexriver">
+                            <img src="assets/img/logo/themexriver-logo-1.svg" alt="themexriver">
                         </a>
 
                         <div class="txa-header-1-top-action-link d-md-flex align-items-center d-none">
@@ -52,9 +53,9 @@
 
                             <!-- login-register-button -->
                             <div class="txa-login-reg-btn-1 has-border">
-                                <a href="#" aria-label="themexriver login" >login</a>
+                                <a href="login.html" aria-label="themexriver login" >login</a>
                                 <span>/</span>
-                                <a href="#" aria-label="themexriver register" >register</a>
+                                <a href="singup.html" aria-label="themexriver register" >register</a>
                             </div>
 
                         </div>
@@ -69,19 +70,20 @@
                     <div class="txa-header-1-bottom-wrap d-flex align-items-center justify-content-between" >
                         
                         <!-- categories -->
-                        <div class="txa-categories-1">
+                        <div class="txa-categories-1" id="categories-1">
                             <div class="txa-bar-1">
                                 <span></span>
                                 <span></span>
                                 <span></span>
                             </div>
                             <a  href="#" aria-label="name" class="title" >categories <i class="flaticon-down"></i></a>
-                            <nav class="main-navigation d-none d-lg-block">
+                            <nav class="main-navigation d-none d-sm-block">
                                 <ul id="main-nav" class="nav navbar-nav">
     
                                     <li class="dropdown">
                                         <a aria-label="name" href="#">
                                             <span data-hover="Blog">Blog</span>
+                                            <i class="flaticon-right-arrow"></i>
                                         </a>
     
                                         <ul class="dropdown-menu">
@@ -106,6 +108,7 @@
                                     <li class="dropdown">
                                         <a aria-label="name" href="#">
                                             <span data-hover="Business">Business</span>
+                                            <i class="flaticon-right-arrow"></i>
                                         </a>
                                         <ul class="dropdown-menu">
                                             <li>
@@ -129,6 +132,7 @@
                                     <li class="dropdown">
                                         <a aria-label="name" href="#">
                                             <span data-hover="Portfolio">Portfolio</span>
+                                            <i class="flaticon-right-arrow"></i>
                                         </a>
                                         <ul class="dropdown-menu">
                                             <li>
@@ -152,6 +156,7 @@
                                     <li class="dropdown">
                                         <a aria-label="name" href="#">
                                             <span data-hover="E-commerce">E-commerce</span>
+                                            <i class="flaticon-right-arrow"></i>
                                         </a>
                                         <ul class="dropdown-menu">
                                             <li>
@@ -175,6 +180,7 @@
                                     <li class="dropdown">
                                         <a aria-label="name" href="#">
                                             <span data-hover="Magazine">Magazine</span>
+                                            <i class="flaticon-right-arrow"></i>
                                         </a>
                                         <ul class="dropdown-menu">
                                             <li>
@@ -198,6 +204,7 @@
                                     <li class="dropdown">
                                         <a aria-label="name" href="#">
                                             <span data-hover="Photography">Photography</span>
+                                            <i class="flaticon-right-arrow"></i>
                                         </a>
                                         <ul class="dropdown-menu">
                                             <li>
@@ -221,6 +228,7 @@
                                     <li class="dropdown">
                                         <a aria-label="name" href="#">
                                             <span data-hover="Corporate">Corporate</span>
+                                            <i class="flaticon-right-arrow"></i>
                                         </a>
                                         <ul class="dropdown-menu">
                                             <li>
@@ -254,7 +262,8 @@
                                     <span class="has-offer" >popular</span>
 
                                     <a aria-label="name" href="#">
-                                        <span data-hover="wordpress themes">themes & templates</span>
+                                        <span data-hover="themes & templates">themes & templates</span>
+                                        <i class="flaticon-down"></i>
                                     </a>
 
                                     <ul class="dropdown-menu">
@@ -281,37 +290,10 @@
                                     </ul>
                                 </li>
     
-                                <li class="dropdown">
-                                    <a aria-label="name" href="#">
-                                        <span data-hover="pages">pages</span>
+                                <li>
+                                    <a aria-label="name" href="plugin-page.html">
+                                        <span data-hover="plugins">plugins</span>
                                     </a>
-                                    <ul class="dropdown-menu">
-                                        <li>
-                                            <a aria-label="name" href="about.html">
-                                                <span data-hover="blog">about</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a aria-label="name" href="blog.html">
-                                                <span data-hover="blog">blog</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a aria-label="name" href="career.html">
-                                                <span data-hover="career">career</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a aria-label="name" href="contact-us.html">
-                                                <span data-hover="contact us">contact us</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a aria-label="name" href="faqs.html">
-                                                <span data-hover="faqs">faqs</span>
-                                            </a>
-                                        </li>
-                                    </ul>
                                 </li>
                                 
                                 <li>
@@ -325,7 +307,25 @@
                                 <li >
                                     <a href="ticket.html">
                                         <span data-hover="support">support</span>
+                                        <i class="flaticon-down"></i>
                                     </a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a aria-label="name" href="contact-us.html">
+                                                <span data-hover="contact us">contact us</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a aria-label="name" href="support-contact.html">
+                                                <span data-hover="support contact">support contact</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a aria-label="name" href="ticket.html">
+                                                <span data-hover="Ticket Support">Ticket Support</span>
+                                            </a>
+                                        </li>
+                                    </ul>
                                 </li>
     
                                 <li>
@@ -352,7 +352,7 @@
                             </div>
     
                             <!-- cart-btn -->
-                            <a href="cart-page.html" aria-label="name" class="txa-cart-btn-1">
+                            <a href="theme-cart.html" aria-label="name" class="txa-cart-btn-1">
                                 $0.00 
                                 <span class="icon" >
                                     <i class="flaticon-grocery-store icon-1"></i>
@@ -388,7 +388,7 @@
 
                 <div class="mobile-menu-logo-wrap">
                     <a href="index.html" class="mobile-menu-logo d-block" aria-label="brand-logo"  >
-                        <img src="assets/img/logo/themexriver-logo-1.png" alt="themexriver">
+                        <img src="assets/img/logo/themexriver-logo-1.svg" alt="themexriver">
                     </a>
                     <div class="mobile-menu-close" id="menuToggle2">
                         <i class="flaticon-cancel"></i>
@@ -449,7 +449,7 @@
 
                                 <li class="dropdown">
                                     <a aria-label="name" href="#">
-                                        <span data-hover="wordpress themes">themes & templates</span>
+                                        <span data-hover="themes & templates">themes & templates</span>
                                     </a>
 
                                     <ul class="dropdown-menu">
@@ -476,37 +476,10 @@
                                     </ul>
                                 </li>
     
-                                <li class="dropdown">
-                                    <a aria-label="name" href="#">
-                                        <span data-hover="pages">pages</span>
+                                <li>
+                                    <a aria-label="name" href="plugin-page.html">
+                                        <span data-hover="plugins">plugins</span>
                                     </a>
-                                    <ul class="dropdown-menu">
-                                        <li>
-                                            <a aria-label="name" href="about.html">
-                                                <span data-hover="about">about</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a aria-label="name" href="blog.html">
-                                                <span data-hover="blog">blog</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a aria-label="name" href="career.html">
-                                                <span data-hover="career">career</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a aria-label="name" href="contact-us.html">
-                                                <span data-hover="contact us">contact us</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a aria-label="name" href="faqs.html">
-                                                <span data-hover="faqs">faqs</span>
-                                            </a>
-                                        </li>
-                                    </ul>
                                 </li>
                                 
                                 <li>
@@ -516,10 +489,27 @@
                            
                                 </li>
                                 
-                                <li >
+                                <li class="dropdown" >
                                     <a href="ticket.html">
                                         <span data-hover="support">support</span>
                                     </a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a aria-label="name" href="contact-us.html">
+                                                <span data-hover="contact us">contact us</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a aria-label="name" href="support-contact.html">
+                                                <span data-hover="support contact">support contact</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a aria-label="name" href="ticket.html">
+                                                <span data-hover="Ticket Support">Ticket Support</span>
+                                            </a>
+                                        </li>
+                                    </ul>
                                 </li>
     
                                 <li>
@@ -554,6 +544,195 @@
             </div>
         </div>
         <!-- mobile-menu-end -->
+
+        <!-- mobile-categories-start -->
+        <div class="mobile-categories lenis lenis-smooth" >
+            <div class="mobile-categories-wrap">
+                <div class="mobile-categories-bg">
+                    <span class="span1" ></span>
+                    <span class="span2" ></span>
+                </div>
+
+                <div class="mobile-categories-content mb-40">
+                    <h4 class="txa-heading-2 title">categories list</h4>
+                    <div class="mobile-categories-close" id="categories-close">
+                        <i class="flaticon-cancel"></i>
+                    </div>
+                </div>
+    
+                <div class="mobile-categories-navigation">
+                    <nav class="mobile-main-navigation  clearfix ul-li">
+                        <ul id="main-nav" class="nav navbar-nav">
+
+                            <li class="dropdown">
+                                <a aria-label="name" href="#">
+                                    <span data-hover="Blog">Blog</span>
+                                </a>
+
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a aria-label="name" href="#">
+                                            <span data-hover="categories 1">categories 1</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a aria-label="name" href="#">
+                                            <span data-hover="categories 2">categories 2</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a aria-label="name" href="#">
+                                            <span data-hover="categories 3">categories 3</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown">
+                                <a aria-label="name" href="#">
+                                    <span data-hover="Business">Business</span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a aria-label="name" href="#">
+                                            <span data-hover="categories 1">categories 1</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a aria-label="name" href="#">
+                                            <span data-hover="categories 2">categories 2</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a aria-label="name" href="#">
+                                            <span data-hover="categories 3">categories 3</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown">
+                                <a aria-label="name" href="#">
+                                    <span data-hover="Portfolio">Portfolio</span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a aria-label="name" href="#">
+                                            <span data-hover="categories 1">categories 1</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a aria-label="name" href="#">
+                                            <span data-hover="categories 2">categories 2</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a aria-label="name" href="#">
+                                            <span data-hover="categories 3">categories 3</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown">
+                                <a aria-label="name" href="#">
+                                    <span data-hover="E-commerce">E-commerce</span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a aria-label="name" href="#">
+                                            <span data-hover="categories 1">categories 1</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a aria-label="name" href="#">
+                                            <span data-hover="categories 2">categories 2</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a aria-label="name" href="#">
+                                            <span data-hover="categories 3">categories 3</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown">
+                                <a aria-label="name" href="#">
+                                    <span data-hover="Magazine">Magazine</span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a aria-label="name" href="#">
+                                            <span data-hover="categories 1">categories 1</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a aria-label="name" href="#">
+                                            <span data-hover="categories 2">categories 2</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a aria-label="name" href="#">
+                                            <span data-hover="categories 3">categories 3</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown">
+                                <a aria-label="name" href="#">
+                                    <span data-hover="Photography">Photography</span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a aria-label="name" href="#">
+                                            <span data-hover="categories 1">categories 1</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a aria-label="name" href="#">
+                                            <span data-hover="categories 2">categories 2</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a aria-label="name" href="#">
+                                            <span data-hover="categories 3">categories 3</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown">
+                                <a aria-label="name" href="#">
+                                    <span data-hover="Corporate">Corporate</span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a aria-label="name" href="#">
+                                            <span data-hover="categories 1">categories 1</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a aria-label="name" href="#">
+                                            <span data-hover="categories 2">categories 2</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a aria-label="name" href="#">
+                                            <span data-hover="categories 3">categories 3</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- mobile-categories-end -->
 
 		<!-- breadcrumb-area-start -->
 		<div class="breadcrumb-area bg-default  pt-125 pb-145 fix" data-background="assets/img/breadcrumb/breadcrumb-img-1.jpg">
@@ -909,8 +1088,8 @@
                                             <input type="email" placeholder="email address" aria-label="name">
                                             <textarea name="" id="" cols="30" rows="10" placeholder="Write your comments here...."></textarea>
                                             <span class="check-item">
-                                                <input type="checkbox" id="Save" aria-label="name">
-                                                <label class="txa-para-2" for="Save">Save my name, email, and website in this browser for the next time I comment.</label>
+                                                <input type="checkbox" id="Save2" aria-label="name">
+                                                <label class="txa-para-2" for="Save2">Save my name, email, and website in this browser for the next time I comment.</label>
                                             </span>
                                             <div class="btn-wrap">
                                                 <button class="txa-pr-btn-1" type="button" ><span class="txt">submit comment</span></button>
@@ -949,10 +1128,11 @@
                                 <!-- purchase-btn -->
                                 <div class="txa-sidebar-widget-purchase-btn">
                                     <h4 class="txa-heading-2 txa-regular-price"><span>Regular Price</span>$19.00</h4>
-                                    <a href="theme-cart.html" aria-label="name" class="txa-pr-btn-1 has-active mb-15"><span class="txt">Purchase Now</span></a>
-                                    <a href="#" aria-label="name" class="txa-pr-btn-1 mb-15"><span class="txt">Live Demo</span></a>
+                                    <a href="theme-cart.html" aria-label="name" class="txa-pr-btn-1 has-active "><span class="txt">Purchase Now</span></a>
+                                    <button type="button" aria-label="name" class="txa-pr-btn-1 mb-30"><span class="txt">add to cart</span></button>
+                                    <a href="#" aria-label="name" class="txa-pr-btn-1 "><span class="txt">Live Demo</span></a>
                                     <a href="#" aria-label="name" class="txa-pr-btn-1"><span class="txt">Documentation</span></a>
-                                    <a href="#" aria-label="name" class="txa-pr-btn-1"><span class="txt">add to cart</span></a>
+                                 
                                 </div>
                             </div>
 
@@ -1136,7 +1316,7 @@
                                 <a href="blog.html" aria-label="nane" >blog</a>
                             </li>
                             <li>
-                                <a href="terms.html" aria-label="nane" >affiliates</a>
+                                <a href="affiliates.html" aria-label="nane" >affiliates</a>
                             </li>
                             <li>
                                 <a href="hire-us.html" aria-label="nane" >pricing</a>
@@ -1167,7 +1347,13 @@
                                     <a href="about.html" aria-label="nane" >about</a>
                                 </li>
                                 <li>
-                                    <a href="contact-us.html" aria-label="nane" >contact form</a>
+                                    <a href="career.html" aria-label="nane" >career</a>
+                                </li>
+                                <li>
+                                    <a href="hire-us.html" aria-label="nane" >hire us</a>
+                                </li>
+                                <li>
+                                    <a href="faqs.html" aria-label="nane" >FAQ"s</a>
                                 </li>
                             </ul>
                         </div>
@@ -1187,7 +1373,7 @@
                                     <a href="template-page.html" aria-label="nane" >HTML templates</a>
                                 </li>
                                 <li>
-                                    <a href="#" aria-label="nane" >helix framework</a>
+                                    <a href="plugin-page.html" aria-label="nane" >Plugins</a>
                                 </li>
                             </ul>
                         </div>
@@ -1198,13 +1384,13 @@
         
                             <ul class="txa-footer-1-menu">
                                 <li>
-                                    <a href="#" aria-label="nane" >documentation</a>
+                                    <a href="ducomentation.html" aria-label="nane" >documentation</a>
                                 </li>
                                 <li>
                                     <a href="ticket.html" aria-label="nane" >forums</a>
                                 </li>
                                 <li>
-                                    <a href="faqs.html" aria-label="nane" >FAQs</a>
+                                    <a href="contact-us.html" aria-label="nane" >contact us</a>
                                 </li>
                                 <li>
                                     <a href="support-policy.html" aria-label="nane" >support policy</a>
@@ -1262,7 +1448,7 @@
 
                     <!-- single-widget -->
                     <a href="#" aria-label="name" class="footer-logo" >
-                        <img src="assets/img/logo/themexriver-logo-1.png" alt="">
+                        <img src="assets/img/logo/themexriver-logo-1.svg" alt="">
                     </a>
     
                     <p class="txa-para-1 about-disc">Discover thousands of easy to customize themes, templates & CMS products, made by world-class developers.</p>
@@ -1308,7 +1494,10 @@
 
         <div class="scroll-top">
             <div class="scroll-top-wrap">
-                <i  class="icon-1 fal fa-long-arrow-up"></i>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="injected-svg" data-src="https://static.elfsight.com/icons/app-back-to-top-arrow-3.svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="m7.997 10 3.515-3.79a.672.672 0 0 1 .89-.076l.086.075L16 10l-3 .001V18h-2v-7.999L7.997 10z"></path></svg>
+                <span class="text">
+                    to top
+                </span>
             </div>
         </div>
         

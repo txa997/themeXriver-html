@@ -12,13 +12,13 @@
 		<!-- CSS here -->
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="assets/css/swiper.min.css">
+        <link rel="stylesheet" href="assets/css/nice-select.css">
         <link rel="stylesheet" href="assets/css/magnific-popup.css">
         <link rel="stylesheet" href="assets/css/flaticon_txa.css">
         <link rel="stylesheet" href="assets/css/main.css">
     </head>
      
     <body >
-
 
 
         <!-- header-start -->
@@ -742,11 +742,10 @@
 				<div class="row">
 					<div class="col-xxl-12">
 						<div class="breadcrumb-wrap text-center">
-							<h2 class="breadcrumb-title txa-heading-2" >checkout</h2>
+							<h2 class="breadcrumb-title txa-heading-2" >login your accounts</h2>
 							<div class="breadcrumb-list" >
 								<a href="index.html">Home</a>
-								<a href="art-collection.html">themes</a>
-								<span>checkout</span>
+								<span>login</span>
 							</div>
 						</div>
 					</div>
@@ -761,92 +760,44 @@
 		</div>
 		<!-- breadcrumb-area-end -->
 
-        <!-- art-details-start -->
-        <div class="txa-cart-page-area pt-130 pb-100 fix">
-            <div class="container txa-container-1 z-index-3">
-                <div class="row  flex-lg-row-reverse">
-                    <!-- right-shopping -->
-                    <div class="col-lg-6">
-                        <div class="txa-cart-page-right">
-                            <div class="txa-shopping-wrap">
-                                <h4 class="txa-heading-2 txa-shopping-title">Shopping Cart</h4>
-    
-                                <div class="txa-shopping-item mb-30">
-                                    <!-- single-item -->
-                                    <div class="txa-art-collection-item">
-                                        <div class="main-img">
-                                            <img src="assets/img//art-collection/art-collection.png" alt="">
-                                        </div>
-                                        <div class="content-wrap">
-                                            <h4 class="txa-heading-2 title">
-                                                <a href="#" aria-label="name">Vector Illustration</a>
-                                            </h4>
-                                            <h5 class="txa-product-1-single-price">$29.00</h5>
-                                        </div>
-                                        <button class="item-detele-btn" type="button" aria-label="name" ><i class="flaticon-delete-1"></i></button>
-                                    </div>
-                                    <!-- single-item -->
-                                    <div class="txa-art-collection-item">
-                                        <div class="main-img">
-                                            <img src="assets/img//art-collection/art-collection.png" alt="">
-                                        </div>
-                                        <div class="content-wrap">
-                                            <h4 class="txa-heading-2 title">
-                                                <a href="#" aria-label="name">Vector Illustration</a>
-                                            </h4>
-                                            <h5 class="txa-product-1-single-price">$29.00</h5>
-                                        </div>
-                                        <button class="item-detele-btn" type="button" aria-label="name" ><i class="flaticon-delete-1"></i></button>
-                                    </div>
-                                </div>
-    
-                                <h4 class="txa-heading-2 txa-shopping-total-price ">total: <span>$4,198.00</span></h4>
+        <!-- login-form-start -->
+        <div class="txa-login-form-area pt-130 pb-130">
+            <div class="container txa-container-1">
+                <div class="txa-login-form-content">
+                    <h4 class="txa-login-form-title txa-heading-2">log into your account</h4>
+
+                    <!-- form -->
+                    <div class="txa-login-form mb-20">
+                        <form action="#" class="txa-ticket-form" >
+                            <div class="input-item">
+                                <label class="label-text" for="email">Email Address <span>*</span></label>
+                                <input class="input-box" type="email" aria-label="name" id="email" placeholder="email address">
                             </div>
-                        </div>
-                    </div>                    
-                    <!-- left-addition -->
-                    <div class="col-lg-6">
-                        <div class="txa-cart-page-left">
-                            <div class="txa-purchase-wrap">
-
-                                <h3 class="txa-heading-2 txa-purchase-title">Complete Your Purchase</h3>
-                                <p class="txa-para-2 disc">Complete Your Purchase</p>
-                                <div class="txa-purchase-payment-option-img mb-40">
-                                    <img src="assets/img/bg/payment-option-1.png" alt="">
-                                    <img src="assets/img/bg/payment-option-2.png" alt="">
-                                    <img src="assets/img/bg/payment-option-3.png" alt="">
-                                    <img src="assets/img/bg/payment-option-4.png" alt="">
-                                    <img src="assets/img/bg/payment-option-5.png" alt="">
-                                    <img src="assets/img/bg/payment-option-6.png" alt="">
-                                </div>
-                                <form action="#" class="txa-purchase-form">
-
-                                    <label for="email">Email Address <span>*</span></label>
-                                    <input type="email" aria-label="name" id="email" placeholder="Email Address">
-
-                                    <label for="fname">First Name <span>*</span></label>
-                                    <input type="text" id="fname" aria-label="name" placeholder="First Name">
-
-                                    <label for="lname">Last Name <span>*</span></label>
-                                    <input type="text" id="lname" aria-label="name" placeholder="Last Name">
-
-                                    <span class="check-item mb-30">
-                                        <input type="checkbox" id="Save" aria-label="name">
-                                        <label class="txa-para-2" for="Save">Accept Terms & Conditions</label>
-                                    </span>
-
-                                    <span class="total-price">Purchase Total: <b>$4,198.00</b></span>
-
-                                    <button class="txa-pr-btn-1" type="button" aria-label="name" ><span class="txt">Purchase Now</span></button>
-                                </form>
+                            
+                            <div class="input-item">
+                                <label class="label-text" for="password">password <span>*</span></label>
+                                <input class="input-box" type="password" aria-label="name" id="password" placeholder="password">
                             </div>
-                        </div>
+    
+                            <div class="input-item has-full-width">
+                                <span class="check-item">
+                                    <input type="checkbox" id="Save" aria-label="name">
+                                    <label class="txa-para-2" for="Save">Remember Me</label>
+                                </span>
+                            </div>
+    
+                            <div class="input-item has-full-width">
+                                <button class="txa-pr-btn-1" type="button" aria-label="name" ><span class="txt">Log In</span></button>
+                            </div>
+                        </form>
                     </div>
-                </div>
+                    
+                    <a href="#" aria-label="name" class="txa-login-form-lost-pass" >Lost your password?</a>
 
+                </div>
             </div>
         </div>
-        <!-- art-details-end -->
+        <!-- login-form-end -->
 
         <!-- footer-start -->
         <div class="txa-footer-1-area">
@@ -1064,6 +1015,7 @@
         
 		<!-- JS here -->
         <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/nice-select.min.js"></script>
         <script src="assets/js/bootstrap.bundle.min.js"></script>
         <script src="assets/js/swiper-bundle.min.js"></script>
         <script src="assets/js/gsap.min.js"></script>

@@ -74,6 +74,12 @@
                 color: var(--txa-heading-1);
                 font-weight: 500;
                 font-size: 16px;
+                @media #{$xs} {
+                    font-size: 12px;
+                }
+                @media #{$sm} {
+                    font-size: 16px;
+                }
             }
             .file-allow {
                 font-size: 14px;

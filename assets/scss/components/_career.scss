@@ -107,8 +107,16 @@
         .txa-pr-btn-1 {
             font-weight: 700;
             padding: 21px 39px;
-            &::after {
+            &::before {
                 background: #595959;
+            }
+            &::after {
+                opacity: 0;
+            }
+            &:Hover {
+                &::after {
+                    opacity: 1;
+                }
             }
         }
         &:hover {

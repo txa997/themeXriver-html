@@ -109,15 +109,11 @@
           }
         }
         .form-btn {
-          border-radius: 0 5px 5px 0;
-          padding: 0 15px;
+          border-radius: 5px;
+          padding: 12px 15px;
+          top: 9px;
           @media #{$xs} {
-            height: 50px;
-            border-radius: 5px;
-          }
-          @media #{$sm} {
-            height: 60px;
-            border-radius: 0 5px 5px 0;
+            right: 0;
           }
         }
       }

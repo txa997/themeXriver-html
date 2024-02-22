@@ -6,6 +6,29 @@
     &-area {
         position: relative;
     }
+    &-img {
+        position: relative;
+        &-animation {
+            display: none;
+            width: 300px;
+            height: 300px;
+            background: var(--txa-gd-1);
+            border-radius: 50%;
+            mix-blend-mode: multiply;
+            position: absolute;
+            top: 0;
+            left: 0;
+            filter: blur(60px);
+            opacity: .3;
+            // transition: 500ms;
+        }
+        &:hover {
+            .breadcrumb-img-animation {
+                display: block;
+            }
+        }
+    }
+
     &-title {
         margin-bottom: 25px;
         font-size: 60px;
@@ -46,7 +69,7 @@
                 -webkit-text-fill-color: var(--txa-heading-1);
             }
             &::after {
-                content: "\f104";
+                content: "\f109";
                 position: absolute;
                 font-family: flaticon_txa !important;
                 font-size: 14px;

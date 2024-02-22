@@ -136,6 +136,7 @@
             }
         }
         &-list {
+            
             li {
                 font-size: 18px;
                 line-height: 30px;
@@ -151,6 +152,14 @@
                     line-height: 1;
                     transform: translateY(2px);
                     color: #0761DA;
+                }
+            }
+
+            &:is(.has-unactive) {
+                li {
+                    i {
+                        color: #FA394B;
+                    }
                 }
             }
         }

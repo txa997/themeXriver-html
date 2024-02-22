@@ -537,6 +537,22 @@ art-details
 ====end====
 */
 
+// art-collection-start
+
+var element2 = document.querySelector('.cursor2');
+if (element2) {
+	var cursor2 = document.querySelector('.cursor2');
+
+	document.addEventListener('mousemove', function(e){
+	  var x = e.clientX;
+	  var y = e.clientY;
+	  cursor2.style.transform = `translate3d(calc(${e.clientX}px - 50%), calc(${e.clientY}px - 50%), 0)`
+	});
+	
+} 
+
+// art-collection-start
+
 
 /*
 back-to-top

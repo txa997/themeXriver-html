@@ -82,8 +82,11 @@
             @media #{$xl,$lg} {
                 font-size: 28px;
             }
-            @media #{$md,$xs} {
+            @media #{$md} {
                 font-size: 24px;
+            }
+            @media #{$xs} {
+                font-size: 22px;
             }
         }
         &:hover {

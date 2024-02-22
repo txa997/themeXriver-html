@@ -121,7 +121,7 @@ input:focus::placeholder, textarea:focus::placeholder {
         
     /* Handle */
     ::-webkit-scrollbar-thumb {
-    background: var(--gtb-pr-1);
+    background: linear-gradient( 36deg, #6400ed 0%, #f000ff 100%);
     border-radius: 30px;
     }
 }
