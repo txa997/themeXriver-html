@@ -1,5 +1,7 @@
 @use '../abstracts/variables' as *;
 
+// support-policy-css-start
+
 .txa-support-policy {
     &-page-title {
         margin-bottom: 50px;
@@ -33,6 +35,8 @@
         &-disc {
             line-height: 30px;
             color: #595959;
+            word-break: break-all;
+
             &:not(:last-child) {
                 margin-bottom: 18px;
             }
@@ -62,6 +66,28 @@
                 }
             }
         }
+
+        &:is(.has-copyright) {
+
+            li {
+                position: relative;
+                margin-bottom: 15px;
+                padding-left: 16px;
+            
+                &::after {
+                    content: "";
+                    width: 6px;
+                    height: 6px;
+                    background: var(--txa-gd-1);
+                    position: absolute;
+                    top: 12px;
+                    left: 0;
+                    border-radius: 50%;
+                }
+            }
+        }
     }
 }
 
+
+// support-policy-css-end

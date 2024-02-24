@@ -1,5 +1,7 @@
 @use '../abstracts/variables' as *;
 
+// counter-css-start
+
 .txa-counter-2 {
     &-section-title {
         max-width: 870px;
@@ -131,3 +133,7 @@
     display: inline-block;
     margin-right: 20px; /* Adjust the spacing between marquee items */
   }
+
+
+
+// counter-css-end

@@ -247,50 +247,6 @@
 
 // pr-btn-1-css-end
 
-// border-btn-1-css-start
-// .txa-border-btn-1 {
-//     display: block;
-//     width: 100%;
-//     font-family: var(--urbanist);
-//     text-transform: capitalize;
-//     font-weight: 600;
-//     line-height: 1;
-//     font-size: 18px;
-//     background: transparent;
-//     color: #595959;
-//     padding: 20px 10px;
-//     border-radius: 40px;
-//     text-align: center;
-//     border: 1px solid #E9D6E3;
-//     position: relative;
-//     z-index: 1;
-//     transition: 400ms var(--cube-1);
-//     overflow: hidden;
-//     &::after {
-//         content: "";
-//         background: var(--txa-gd-1);
-//         width: 100%;
-//         height: 100%;
-//         top: 0;
-//         left: 0;
-//         position: absolute;
-//         z-index: -1;
-//         transform-origin: center;
-//         transform: scale(5);
-//         opacity: 0;
-//         transition:  600ms var(--cube-1);
-//     }
-//     &:hover {
-//         color: #fff;
-//         letter-spacing: -.4px;
-//         &::after {
-//             opacity: 1;
-//             transform: scale(1);
-//         }
-//     }
-// }
-// border-btn-1-css-end
-
 
 
 @keyframes shake {

@@ -1,5 +1,7 @@
 @use '../abstracts/variables' as *;
 
+// hero-css-start
+
 .txa-hero-1 {
     &-area {
         position: relative;
@@ -11,7 +13,7 @@
     }
 }
 
-span.txa-hero-1-bg-circle-1 {
+.txa-hero-1-bg-circle-1 {
     display: block;
     width: 300px;
     height: 300px;
@@ -26,7 +28,7 @@ span.txa-hero-1-bg-circle-1 {
     opacity: .7;
 }
 
-span.txa-hero-1-bg-circle-2 {
+.txa-hero-1-bg-circle-2 {
     display: block;
     width: 300px;
     height: 300px;
@@ -41,7 +43,7 @@ span.txa-hero-1-bg-circle-2 {
     opacity: .7;
 }
 
-span.txa-hero-1-bg-circle-3 {
+.txa-hero-1-bg-circle-3 {
     display: block;
     width: 300px;
     height: 300px;
@@ -109,10 +111,10 @@ span.txa-hero-1-bg-circle-3 {
 
     .il-img-1 {
         position: absolute;
-        left: 15vw;
-        top: 10%;
+        left: 13vw;
+        top: 8%;
         @media #{$lg} {
-            left: 10vw;
+            left: 8vw;
         }
         @media #{$md,$xs} {
             display: none;
@@ -121,10 +123,10 @@ span.txa-hero-1-bg-circle-3 {
     
     .il-img-2 {
         position: absolute;
-        right: 10vw;
-        top: 16%;
+        right: 8vw;
+        top: 13%;
         @media #{$lg} {
-            right: 7vw;
+            right: 6vw;
         }
         @media #{$md,$xs} {
             display: none;
@@ -133,8 +135,8 @@ span.txa-hero-1-bg-circle-3 {
     
     .il-img-3 {
         position: absolute;
-        left: 9vw;
-        top: 46%;
+        left: 6vw;
+        top: 44%;
         @media #{$lg} {
             left: 0vw;
         }
@@ -145,10 +147,11 @@ span.txa-hero-1-bg-circle-3 {
     
     .il-img-4 {
         position: absolute;
-        right: 6vw;
-        bottom: 34%;
+        right: 3vw;
+        bottom: 38%;
         @media #{$lg} {
             right: 0vw;
+            bottom: 48%;
         }
         @media #{$md,$xs} {
             display: none;
@@ -158,8 +161,8 @@ span.txa-hero-1-bg-circle-3 {
     .il-img-5 {
         transform-origin: top right ;
         position: absolute;
-        right: 8vw;
-        bottom: 18%;
+        right: 5vw;
+        bottom: 15%;
         animation: heroil 4s var(--cube-1) infinite;
         @media #{$lg} {
             right: 0vw;
@@ -429,4 +432,4 @@ span.txa-hero-1-bg-circle-3 {
     
 }
 
-
+// hero-css-end

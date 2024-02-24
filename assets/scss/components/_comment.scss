@@ -1,6 +1,7 @@
 @use '../abstracts/variables' as *;
 
-// comment-form-css-start
+// comment-css-start
+
 .txa-comment-form {
     &-wrap {
         box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.08);
@@ -112,7 +113,7 @@
     }
 }
 
-// comment-form-css-end
+// comment-css-end
 
 // comments-single
 
@@ -254,3 +255,5 @@
         }
     }
 }
+
+// comments-single-css-end

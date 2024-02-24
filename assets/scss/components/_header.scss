@@ -2,19 +2,6 @@
 
 // header-1-start
 
-.sticky-header {
-  position: fixed;
-  z-index: 2;
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  transition: 1s var(--cub-1);
-  &:is(.sticky) {
-    transform: translateY(-100%);
-    transition: 1s var(--cub-1);
-  }
-}
 
 .txa-header-1-area {
   position: relative;

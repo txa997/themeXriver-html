@@ -1,5 +1,7 @@
 @use '../abstracts/variables' as *;
 
+// feature-css-start
+
 .txa-feature-1 {
     &-area {
         background: linear-gradient( 180deg, rgb(217,229,255) 0%, rgb(236,242,255) 52%, rgb(255,255,255) 100%);
@@ -97,3 +99,5 @@
         }
     }
 }
+
+// feature-css-end

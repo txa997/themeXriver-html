@@ -1,5 +1,7 @@
 @use '../abstracts/variables' as *;
 
+// product-details-css-start
+
 .txa-product-details {
     &-content {
         margin-bottom: 110px;
@@ -401,3 +403,5 @@
         justify-content: center;
     }
 }
+
+// product-details-css-end

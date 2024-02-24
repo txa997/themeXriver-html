@@ -1,6 +1,7 @@
 
 @use '../abstracts/variables' as *;
 
+// art-details-css-start
 
 .txa-art-details {
     &-left {
@@ -184,13 +185,7 @@
 .txa-art-details-img-slider {
     position: relative;
     &-btn {
-        // @media #{$lg,$md,$xs} {
-        //     display: flex;
-        //     justify-content: center;
-        //     align-items: center;
-        //     gap: 30px;
-        //     margin-top: 30px;
-        // }
+
         .btn-postion-1 {
             position: absolute;
             top: 50%;
@@ -352,3 +347,5 @@
     color: var(--txa-pr-1);
   }
   
+
+// art-details-css-end

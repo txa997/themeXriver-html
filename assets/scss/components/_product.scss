@@ -1,5 +1,7 @@
 @use '../abstracts/variables' as *;
 
+// product-css-start
+
 .txa-product-1 {
     &-area {
         background: linear-gradient( 180deg, rgb(217,229,255) 0%, rgb(236,242,255) 52%, rgb(255,255,255) 100%);
@@ -411,3 +413,4 @@
     }
 }
 
+// product-css-end

@@ -1,5 +1,7 @@
 @use '../abstracts/variables' as *;
 
+// team-css-start
+
 .txa-team {
     &-area {
         background-color: #FAF2FF;
@@ -166,3 +168,5 @@ img.txa-team-bg-shape-2 {
         line-height: 30px;
     }
 }
+
+// team-css-end

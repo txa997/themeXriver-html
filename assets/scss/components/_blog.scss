@@ -1,5 +1,7 @@
 @use '../abstracts/variables' as *;
 
+// blog-css-start
+
 .txa-blog-1 {
     &-wrap {
         display: grid;
@@ -103,3 +105,5 @@
     }
     
 }
+
+// blog-css-end

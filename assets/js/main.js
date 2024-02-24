@@ -1,14 +1,7 @@
 /*
 
-Template Name:  example
-Description:  example
 Author: themexriver
 Version: 1.0
-
-====javascript indexing======
-
-preloader
-
 
 */
 
@@ -31,17 +24,6 @@ preloader
 // });
   
 
-
-// search-popup-start
-$('.search_btn_toggle').on('click', function() {
-	$('.overlay, .search_1_popup_active').addClass('active');
-});
-$('.overlay, .search_1_popup_close').on('click', function() {
-	$('.search_1_popup_active').removeClass('active');
-	$('.overlay').removeClass('active');
-})
-// search-popup-end
-
 // mobile-menu-start
 if($('.mobile-main-navigation li.dropdown ul').length){
 	$('.mobile-main-navigation li.dropdown').append('<div class="dropdown-btn"><i class="flaticon-right-arrow"></i></div>');
@@ -49,9 +31,11 @@ if($('.mobile-main-navigation li.dropdown ul').length){
 		$(this).prev('ul').slideToggle(500);
 	});
 }
+
 $(".dropdown-btn").on("click", function () {
 	$(this).toggleClass("toggle-open");
 });
+
 // mobile-menu-end
 
 
@@ -64,6 +48,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 var menuToggle = document.getElementById("menuToggle")
 var menuToggle2 = document.getElementById("menuToggle2")
+var menuToggleLi = document.querySelectorAll('a');
 
 if (menuToggle2) {
 
@@ -116,15 +101,18 @@ if (menuToggle2) {
 		ease: 'Expo.easeInOut'
 	}, "<");
 	
-	
 	menubgline.reverse();
+
 	menuToggle.addEventListener('click', function(){
-		// menuBar.reversed(!menuBar.reversed());
 		menubgline.reversed(!menubgline.reversed());
 	});
 	menuToggle2.addEventListener('click', function(){
-		// menuBar.reversed(!menuBar.reversed());
 		menubgline.reversed(!menubgline.reversed());
+	});
+	menuToggleLi.forEach(function (item) {
+		item.addEventListener('click', function () {
+			menubgline.reversed(!menubgline.reversed());
+		});
 	});
 }
 
@@ -132,7 +120,6 @@ if (menuToggle2) {
 
 
 // mobile-categories-toggle-start
-
 
 if ($(window).width() <= 575) {
 
@@ -192,9 +179,6 @@ if ($(window).width() <= 575) {
 
 // mobile-categories-toggle-end
 
-
-
-
 var tl = gsap.timeline({
 	repeat: -1,
   });
@@ -225,7 +209,6 @@ var tl = gsap.timeline({
 	opacity: 0,
 	duration: .5
   })
-
 
 
 const boxes = gsap.utils.toArray('.txa-showcase-1-item-img');
@@ -260,7 +243,6 @@ gsap.utils.toArray('.chy-footer-4-il-img').forEach((el, index) => {
 	.fromTo(el, { xPercent: -100  }, { xPercent:0 , duration: 1, immediateRender: false})
   })
 
-
 var abimg1 = gsap.timeline({
 
 	scrollTrigger: {
@@ -275,7 +257,6 @@ var abimg1 = gsap.timeline({
 	abimg1.from( ".txa-about-1-img-2" , { xPercent: 50,  duration:1 , ease: "power4.out" } )
 		  .from( ".txa-about-1-img-2" , { rotateZ: 20 } , ".1" )
 		  .from( ".txa-about-1-img-3" , { xPercent: -50,  duration:1 , ease: "power4.out"} , "<" )
-
 
 
 var team1 = gsap.timeline({
@@ -293,40 +274,6 @@ var team1 = gsap.timeline({
 	team1.from( ".txa-team-membar" , { opacity:0 ,  duration:.3 , stagger: 0.1 } )
 		 .from( ".txa-team-membar-img-wrap" , { transform: "rotate3d(1, 1, 1, 90deg)",  duration:.7 , stagger: 0.2 }, "<" )
 		 .from( ".txa-team-membar-img .main-img" , { yPercent: 100,  duration:.7 , stagger: 0.2 } , ".1" )
-		
-
-
-// // Create a GSAP timeline template for individual animations
-// function createMemberAnimation(member) {
-// 	var tl = gsap.timeline();
-// 	tl.from(member, { opacity: 0, duration: 0.3 });
-// 	tl.from(member.querySelector(".txa-team-membar-img-wrap"), { transform: "rotate3d(1, 1, 1, 90deg)", duration: 0.5 }, "<");
-// 	tl.from(member.querySelector(".txa-team-membar-img .main-img"), { yPercent: 100, duration: 0.3 }, "<");
-// 	return tl;
-//   }
-  
-//   // Select all elements with the class "txa-team-membar"
-//   var teamMembers = document.querySelectorAll(".txa-team-membar");
-  
-//   // Loop through each team member
-//   teamMembers.forEach(function(member) {
-// 	var memberAnimation = createMemberAnimation(member);
-  
-// 	// Create a GSAP timeline for each member's animation
-// 	var tl = gsap.timeline({
-// 	  scrollTrigger: {
-// 		trigger: member,
-// 		start: "top 85%",
-// 		end: "top -50%",
-// 		toggleActions: "play none play reverse",
-// 		markers: true,
-// 		stagger: 0.5
-// 	  }
-// 	});
-  
-// 	// Add the member's animation to the timeline
-// 	tl.add(memberAnimation);
-//   });
 		 
 
 // marquee-animation-1-start
@@ -348,8 +295,6 @@ if (marqueeContent) {
 	});
 }
 
-
-
 // marquee-animation-1-end
 
 // marquee-animation-2-start
@@ -369,11 +314,12 @@ if (marqueeContent2) {
 	});
 }
 
-
 // marquee-animation-2-end
 
 // gsap-end
 
+
+// theme-page-view-toggle-start
 
 if($(".txa-item-view-toggle").length) {
 	var products = $(".txa-themes-page-item"),
@@ -410,6 +356,10 @@ if($(".txa-item-view-toggle").length) {
 	});
 };
 
+// theme-page-view-toggle-start
+
+
+// hover-parallax-start
 
 document.addEventListener("mousemove" , parallax);
 function parallax(e){
@@ -425,6 +375,9 @@ function parallax(e){
 
 }
 
+// hover-parallax-start
+
+// categorie-slider-start
 
 var txacategorie1 = new Swiper(".txa-categorie-1-active", {
     loop: true,
@@ -436,10 +389,12 @@ var txacategorie1 = new Swiper(".txa-categorie-1-active", {
 		nextEl: ".txa_c1_next",
 		prevEl: ".txa_c1_prev",
 	},
-  });
+});
+
+// categorie-slider-end
 
 
-
+// testimonial-slider-start
 
 let txat1 = new Swiper('.txa-t1-active', {
 	loop: true,
@@ -461,16 +416,12 @@ let txat1 = new Swiper('.txa-t1-active', {
 		},
 	},
 
-  });
+});
+
+// testimonial-slider-end
 
 
-
-
-
-/*
-art-details
-====start====
-*/
+// art-details-slider-start
 
 let artthumbs = new Swiper('.txa-art-d-preview-img-active', {
 	spaceBetween: 15,
@@ -499,6 +450,8 @@ let artthumbs = new Swiper('.txa-art-d-preview-img-active', {
 	}
 });
 
+
+
 let artdetails = new Swiper('.txa-art-d-main-img-active', {
 	loop: true,
 	spaceBetween: 0,
@@ -517,7 +470,9 @@ let artdetails = new Swiper('.txa-art-d-main-img-active', {
 });
 
 
-// UPDATE: I was able to get this working again... Enjoy!
+// art-details-slider-end
+
+// art-details-carsor-start
 
 var element = document.querySelector('.cursor');
 if (element) {
@@ -531,11 +486,8 @@ if (element) {
 	
 } 
 
+// art-details-carsor-end
 
-/*
-art-details
-====end====
-*/
 
 // art-collection-start
 
@@ -581,7 +533,6 @@ back-to-top
 popup-img-activition
 ====start====
 */
-
 
 var element = document.querySelector('.popup-image');
 if (element) {
