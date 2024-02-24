@@ -48,7 +48,6 @@ gsap.registerPlugin(ScrollTrigger);
 
 var menuToggle = document.getElementById("menuToggle")
 var menuToggle2 = document.getElementById("menuToggle2")
-var menuToggleLi = document.querySelectorAll('a');
 
 if (menuToggle2) {
 
@@ -109,11 +108,7 @@ if (menuToggle2) {
 	menuToggle2.addEventListener('click', function(){
 		menubgline.reversed(!menubgline.reversed());
 	});
-	menuToggleLi.forEach(function (item) {
-		item.addEventListener('click', function () {
-			menubgline.reversed(!menubgline.reversed());
-		});
-	});
+	
 }
 
 // mobile-menu-toggle-end
