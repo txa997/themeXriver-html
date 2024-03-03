@@ -501,6 +501,53 @@ if (element2) {
 // art-collection-start
 
 
+// plugin-testimonial-marquee
+const marquee = document.querySelector(".marquee");
+
+if (marquee) {
+
+	$('.marquee').marquee({
+		duration: 15000,
+		gap: 25,
+		pauseOnHover: true,
+		delayBeforeStart: 0,
+		direction: 'left',
+		startVisible:true,
+		duplicated: true
+	});
+
+}
+
+// plugin-testimonial-marquee-2
+const marquee2 = document.querySelector(".marquee2");
+
+if (marquee2) {
+
+	$('.marquee2').marquee({
+		duration: 15000,
+		gap: 25,
+		pauseOnHover: true,
+		delayBeforeStart: 0,
+		direction: 'right',
+		startVisible:true,
+		duplicated: true
+	});
+
+}
+
+/*
+faq-active-class
+====start====
+*/
+$(document).on('click', '.accordion-item', function(){
+	$(this).addClass('faq_bg').siblings().removeClass('faq_bg')
+})
+/*
+faq-active-class
+====end====
+*/
+
+
 /*
 back-to-top
 =====start==== */
