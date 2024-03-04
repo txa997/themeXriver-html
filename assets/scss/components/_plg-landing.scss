@@ -128,7 +128,7 @@
     }
 
     &-grid {
-        box-shadow: 0 20px 30px 0 rgba(118, 0, 239, 0.03);
+        box-shadow: 0 20px 30px 0 rgb(0 0 0 / 5%);
         border-radius: 0 0 30px 30px;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -932,6 +932,10 @@
             }
         }
 
+        .price-wrap .cents {
+            background: linear-gradient(242deg, #6400ed 0%, #f000ff 115%);
+        }
+
         &:hover {
             .price-wrap .cents {
                 animation: shake 200ms 2 linear;
@@ -1393,7 +1397,7 @@
                         line-height: 1.8;
 
                         &::before {
-                            content: "\f118";
+                            content: "\f11d";
                             font-family: flaticon_plg !important;
                         }
                     }
