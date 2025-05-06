@@ -22,6 +22,21 @@ Version: 1.0
 // 		});
 // 	})
 // });
+
+$('.txa-product-details-content-show-more-btn').on('click', function () {
+	var $btn = $(this);
+	var wasActive = $btn.hasClass('has-active'); 
+	
+	$btn.toggleClass('has-active');
+	$('.txa-product-details-content').toggleClass('has-active');
+  
+	
+	if (wasActive) {
+	  $('html, body').animate({
+		scrollTop: $btn.offset().top - 400
+	  }, 400);
+	}
+});
   
 
 // mobile-menu-start
