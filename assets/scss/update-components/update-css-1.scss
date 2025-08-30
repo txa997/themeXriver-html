@@ -1,0 +1,448 @@
+@use '../abstracts/variables' as *;
+
+/* 
+    update-css-1-start
+*/
+
+
+/* 
+    common-css-start
+*/
+.txa-pr-btn-1 {
+    &:is(.has-v2) {
+        font-size: 16px;
+        font-weight: 600;
+        border-radius: 6px;
+        padding: 15px 20px;
+    }
+}
+/* 
+    common-css-end
+*/
+
+/* 
+    header-start
+*/
+.has-header-2 {
+    &:is(.txa-header-1-area) {
+
+        .txa-social-1 {
+            a {
+                border-color: rgb(30 28 28 / 14%);
+                color: var(--txa-heading-2);
+                position: relative;
+                z-index: 1;
+                border-radius: 6px;
+                transition: all .3s var(--cube-1);
+                background: transparent;
+
+                &::after {
+                    content: "";
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 6px;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    background: var(--txa-gd-1);
+                    transition: all .5s var(--cube-1);
+                    opacity: 0;
+                    z-index: -1;
+                }
+
+                &:hover {
+                    color: #fff;
+                    border-color: transparent;
+                    &::after {
+                        opacity: 1;
+                    }
+
+                    i {
+                        animation: unset;
+                    }
+                }
+            }
+        }
+
+        .txa-header-1 {
+            &-top {
+                padding: 24px 0;
+                border-bottom: 1px solid #EFEFEF;
+
+                &-action-link {
+                    gap: 20px;
+
+                    .txa-login-reg-btn-1 {
+                        &:is(.has-border) {
+                            padding-left: 20px;
+                            border-left-color: #D9D9D9;
+                        }
+
+                        a, span, button {
+                            font-family: var(--urbanist);
+                            font-weight: 600;
+                            text-transform: capitalize;
+                            color: var(--txa-heading-2);
+                            display: inline-block;
+                            font-size: 16px;
+                            transition: 300ms var(--cube-2);
+                            line-height: 1.9;
+
+                            &:hover {
+                                color: var(--txa-pr-1);
+                            }
+                        }
+                    }
+                }
+            }
+
+            &-bottom {
+                border-bottom: none;
+                .txa-categories-1 {
+                    .txa-bar-1 {
+                        height: 14px;
+                        span {
+                            background: var(--txa-heading-2);
+                            height: 2px;
+                            border-radius: 5px;
+                        }
+
+                        
+                    }
+
+                    > a {
+                        color: var(--txa-heading-2);
+                        font-weight: 600;
+                        font-size: 16px;
+                    }
+
+                    &:hover {
+                        .txa-bar-1 {
+                            span {
+                                background: var(--txa-gd-1);
+                            }
+                        }
+                    }
+
+                    .main-navigation {
+                        .navbar-nav {
+                            gap: 0;
+                            li {
+                                a {
+                                    font-weight: 500;
+                                    font-size: 14px;
+                                    color: var(--txa-heading-2);
+                                    opacity: 1;
+
+                                    &:hover {
+                                        color: var(--txa-pr-1);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .main-navigation {
+                    .navbar-nav {
+                        gap: 46px;
+
+                        @media #{$lg} {
+                            gap: 30px;
+                        }
+
+                        li {
+                            a {
+                                color: var(--txa-heading-2);
+                                font-weight: 600;
+                                letter-spacing: 0;
+                            }
+
+                            &:hover {
+                                > a {
+                                    color: var(--txa-pr-1);
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &-action-link {
+                    .txa-rating-1 {
+                        .title {
+                            font-weight: 600;
+                            color: var(--txa-heading-2);
+                        }
+                    }
+                    .txa-cart-btn-1 {
+                        color: var(--txa-heading-2);
+                        font-weight: 600;
+                        font-size: 16px;
+                        transition: 400ms var(--cube-1);
+                        gap: 6px;
+
+                        i {
+                            font-size: 20px;
+                        }
+
+                        &:hover {
+                            color: var(--txa-pr-1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/* 
+    header-end
+*/
+
+/* 
+    hero-start
+*/
+.txa-hero-2 {
+    &-area {
+        background-color: #F5EFF6;
+    }
+
+    &-content {
+        text-align: center;
+        max-width: 1075px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    &-trust {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 8px;
+        padding-right: 16px;
+        border: 1px solid rgb(239 239 239 / 70%);
+        background-color: rgb(255 255 255 / 30%);
+        border-radius: 100px;
+        margin-bottom: 30px;
+
+        &-author {
+            display: inline-flex;
+
+            .single-author {
+                width: 34px;
+                height: 34px;
+                border-radius: 50%;
+                border: 1px solid #ddd;
+
+                &:not(:first-child) {
+                    margin-left: -10px;
+                }
+            }
+        }
+    }
+
+    &-title {
+        font-size: 60px;
+        line-height: 1.2;
+        font-weight: 700;
+        color: #02021E;
+        letter-spacing: -1.2px;
+        margin-bottom: 20px;
+
+        span {
+            color: rgba(30, 28, 28, 0.80);
+            font-weight: 600;
+        }
+    }
+
+    &-disc {
+        font-size: 20px;
+        color: #262641;
+        font-weight: 400;
+        line-height: 140%;
+        max-width: 690px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 32px;
+    }
+
+
+    &-form {
+        &-wrap {
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
+            border-radius: 12px;
+        }
+        
+        &-animation {
+            width: 1050px;
+            height: 1050px;
+            display: block;
+            background: conic-gradient(from 1deg, rgba(0, 0, 0, 0) 0%, #6400ed 10%, #f000ff 12%, transparent 17%);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50% , -50%);
+            z-index: -1;
+            border-radius: 12px;
+            animation: lqd-outline-glow-1 3s linear infinite;
+        }
+        
+
+    }
+
+    &-form {
+        border: 1px solid transparent;
+        background-clip: padding-box;
+
+
+        &-input {
+            font-family: var(--urbanist);
+            width: 100%;
+            height: 70px;
+            border-radius: 10px;
+            border: none;
+            outline: none;
+            font-size: 16px;
+            font-weight: 500;
+            color: rgb(2 2 30 / 70%);
+            padding-left: 50px;
+            padding-right: 150px;
+            background: #FFFBFB;
+
+
+    
+            @media #{$xs} {
+                padding-right: 25px;
+            }
+    
+            @media #{$sm} {
+                padding-right: 150px;
+            }
+    
+        }
+
+        &-btn {
+            position: absolute;
+            border-radius: 12px !important;
+            right: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1;
+            border: none;
+            outline: none;
+
+            &:hover {
+                transform: scale(98%) translateY(-50%);
+            }
+    
+        }
+
+        &-icon {
+            position: absolute;
+            top: 50%;
+            left: 24px;
+            transform: translateY(-50%);
+            z-index: 1;
+        }
+    }
+    
+    
+    @keyframes lqd-outline-glow-1 {
+        0% {
+            transform: translate(-50%,-50%) rotate(0deg)
+        }
+    
+        to {
+            transform: translate(-50%,-50%) rotate(360deg)
+        }
+    }
+    
+    &-partner {
+        .partner-title {
+            color: var(--txa-heading-2);
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        &-logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px 48px;
+            flex-wrap: wrap;
+            margin-top: 50px;
+        }
+    }
+
+
+    &-themes {
+        margin-left: 16px;
+        margin-right: 16px;
+        display: flex;
+
+        &-subscription {
+            max-width: 332px;
+            background-color: #1B4CF5;
+            border-radius: 16px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 35px 40px;
+
+            .icon {
+                margin-bottom: 32px;
+            }
+            .title {
+                font-size: 24px;
+                font-weight: 700;
+                color: #fff;
+                margin-bottom: 12px;
+            }
+
+            .disc {
+                margin-bottom: 32px;
+                color: #fff;
+                line-height: 26px;
+                opacity: .9;
+            }
+
+            .txa-pr-btn-1 {
+                width: 100%;
+                background-color: #FDC448;
+                color: #000;
+                &::before {
+                    opacity: 0;
+                }
+                &::after {
+                    opacity: 0;
+                    transition: .5s var(--cube-1);
+                }
+
+                &:hover {
+                    background: transparent;
+                    color: #fff;
+                    &::after {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+    
+    
+
+}
+
+
+
+
+
+/* 
+    hero-end
+*/
+/* 
+    update-css-1-start
+*/

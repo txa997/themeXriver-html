@@ -12288,4 +12288,350 @@ img.txa-team-bg-shape-2 {
   transform: translateY(0);
 }
 
+/* 
+    update-css-1-start
+*/
+/* 
+    common-css-start
+*/
+.txa-pr-btn-1:is(.has-v2) {
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 6px;
+  padding: 15px 20px;
+}
+
+/* 
+    common-css-end
+*/
+/* 
+    header-start
+*/
+.has-header-2:is(.txa-header-1-area) .txa-social-1 a {
+  border-color: rgba(30, 28, 28, 0.14);
+  color: var(--txa-heading-2);
+  position: relative;
+  z-index: 1;
+  border-radius: 6px;
+  transition: all 0.3s var(--cube-1);
+  background: transparent;
+}
+.has-header-2:is(.txa-header-1-area) .txa-social-1 a::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: var(--txa-gd-1);
+  transition: all 0.5s var(--cube-1);
+  opacity: 0;
+  z-index: -1;
+}
+.has-header-2:is(.txa-header-1-area) .txa-social-1 a:hover {
+  color: #fff;
+  border-color: transparent;
+}
+.has-header-2:is(.txa-header-1-area) .txa-social-1 a:hover::after {
+  opacity: 1;
+}
+.has-header-2:is(.txa-header-1-area) .txa-social-1 a:hover i {
+  animation: unset;
+}
+.has-header-2:is(.txa-header-1-area) .txa-header-1-top {
+  padding: 24px 0;
+  border-bottom: 1px solid #EFEFEF;
+}
+.has-header-2:is(.txa-header-1-area) .txa-header-1-top-action-link {
+  gap: 20px;
+}
+.has-header-2:is(.txa-header-1-area) .txa-header-1-top-action-link .txa-login-reg-btn-1:is(.has-border) {
+  padding-left: 20px;
+  border-left-color: #D9D9D9;
+}
+.has-header-2:is(.txa-header-1-area) .txa-header-1-top-action-link .txa-login-reg-btn-1 a, .has-header-2:is(.txa-header-1-area) .txa-header-1-top-action-link .txa-login-reg-btn-1 span, .has-header-2:is(.txa-header-1-area) .txa-header-1-top-action-link .txa-login-reg-btn-1 button {
+  font-family: var(--urbanist);
+  font-weight: 600;
+  text-transform: capitalize;
+  color: var(--txa-heading-2);
+  display: inline-block;
+  font-size: 16px;
+  transition: 300ms var(--cube-2);
+  line-height: 1.9;
+}
+.has-header-2:is(.txa-header-1-area) .txa-header-1-top-action-link .txa-login-reg-btn-1 a:hover, .has-header-2:is(.txa-header-1-area) .txa-header-1-top-action-link .txa-login-reg-btn-1 span:hover, .has-header-2:is(.txa-header-1-area) .txa-header-1-top-action-link .txa-login-reg-btn-1 button:hover {
+  color: var(--txa-pr-1);
+}
+.has-header-2:is(.txa-header-1-area) .txa-header-1-bottom {
+  border-bottom: none;
+}
+.has-header-2:is(.txa-header-1-area) .txa-header-1-bottom .txa-categories-1 .txa-bar-1 {
+  height: 14px;
+}
+.has-header-2:is(.txa-header-1-area) .txa-header-1-bottom .txa-categories-1 .txa-bar-1 span {
+  background: var(--txa-heading-2);
+  height: 2px;
+  border-radius: 5px;
+}
+.has-header-2:is(.txa-header-1-area) .txa-header-1-bottom .txa-categories-1 > a {
+  color: var(--txa-heading-2);
+  font-weight: 600;
+  font-size: 16px;
+}
+.has-header-2:is(.txa-header-1-area) .txa-header-1-bottom .txa-categories-1:hover .txa-bar-1 span {
+  background: var(--txa-gd-1);
+}
+.has-header-2:is(.txa-header-1-area) .txa-header-1-bottom .txa-categories-1 .main-navigation .navbar-nav {
+  gap: 0;
+}
+.has-header-2:is(.txa-header-1-area) .txa-header-1-bottom .txa-categories-1 .main-navigation .navbar-nav li a {
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--txa-heading-2);
+  opacity: 1;
+}
+.has-header-2:is(.txa-header-1-area) .txa-header-1-bottom .txa-categories-1 .main-navigation .navbar-nav li a:hover {
+  color: var(--txa-pr-1);
+}
+.has-header-2:is(.txa-header-1-area) .txa-header-1-bottom .main-navigation .navbar-nav {
+  gap: 46px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .has-header-2:is(.txa-header-1-area) .txa-header-1-bottom .main-navigation .navbar-nav {
+    gap: 30px;
+  }
+}
+.has-header-2:is(.txa-header-1-area) .txa-header-1-bottom .main-navigation .navbar-nav li a {
+  color: var(--txa-heading-2);
+  font-weight: 600;
+  letter-spacing: 0;
+}
+.has-header-2:is(.txa-header-1-area) .txa-header-1-bottom .main-navigation .navbar-nav li:hover > a {
+  color: var(--txa-pr-1);
+}
+.has-header-2:is(.txa-header-1-area) .txa-header-1-bottom-action-link .txa-rating-1 .title {
+  font-weight: 600;
+  color: var(--txa-heading-2);
+}
+.has-header-2:is(.txa-header-1-area) .txa-header-1-bottom-action-link .txa-cart-btn-1 {
+  color: var(--txa-heading-2);
+  font-weight: 600;
+  font-size: 16px;
+  transition: 400ms var(--cube-1);
+  gap: 6px;
+}
+.has-header-2:is(.txa-header-1-area) .txa-header-1-bottom-action-link .txa-cart-btn-1 i {
+  font-size: 20px;
+}
+.has-header-2:is(.txa-header-1-area) .txa-header-1-bottom-action-link .txa-cart-btn-1:hover {
+  color: var(--txa-pr-1);
+}
+
+/* 
+    header-end
+*/
+/* 
+    hero-start
+*/
+.txa-hero-2-area {
+  background-color: #F5EFF6;
+}
+.txa-hero-2-content {
+  text-align: center;
+  max-width: 1075px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.txa-hero-2-trust {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px;
+  padding-right: 16px;
+  border: 1px solid rgba(239, 239, 239, 0.7);
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 100px;
+  margin-bottom: 30px;
+}
+.txa-hero-2-trust-author {
+  display: inline-flex;
+}
+.txa-hero-2-trust-author .single-author {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+}
+.txa-hero-2-trust-author .single-author:not(:first-child) {
+  margin-left: -10px;
+}
+.txa-hero-2-title {
+  font-size: 60px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #02021E;
+  letter-spacing: -1.2px;
+  margin-bottom: 20px;
+}
+.txa-hero-2-title span {
+  color: rgba(30, 28, 28, 0.8);
+  font-weight: 600;
+}
+.txa-hero-2-disc {
+  font-size: 20px;
+  color: #262641;
+  font-weight: 400;
+  line-height: 140%;
+  max-width: 690px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 32px;
+}
+.txa-hero-2-form-wrap {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  border-radius: 12px;
+}
+.txa-hero-2-form-animation {
+  width: 1050px;
+  height: 1050px;
+  display: block;
+  background: conic-gradient(from 1deg, rgba(0, 0, 0, 0) 0%, #6400ed 10%, #f000ff 12%, transparent 17%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  border-radius: 12px;
+  animation: lqd-outline-glow-1 3s linear infinite;
+}
+.txa-hero-2-form {
+  border: 1px solid transparent;
+  background-clip: padding-box;
+}
+.txa-hero-2-form-input {
+  font-family: var(--urbanist);
+  width: 100%;
+  height: 70px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  font-weight: 500;
+  color: rgba(2, 2, 30, 0.7);
+  padding-left: 50px;
+  padding-right: 150px;
+  background: #FFFBFB;
+}
+@media (max-width: 767px) {
+  .txa-hero-2-form-input {
+    padding-right: 25px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .txa-hero-2-form-input {
+    padding-right: 150px;
+  }
+}
+.txa-hero-2-form-btn {
+  position: absolute;
+  border-radius: 12px !important;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  border: none;
+  outline: none;
+}
+.txa-hero-2-form-btn:hover {
+  transform: scale(98%) translateY(-50%);
+}
+.txa-hero-2-form-icon {
+  position: absolute;
+  top: 50%;
+  left: 24px;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+@keyframes lqd-outline-glow-1 {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+.txa-hero-2-partner .partner-title {
+  color: var(--txa-heading-2);
+  font-size: 20px;
+  font-weight: 600;
+}
+.txa-hero-2-partner-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px 48px;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+.txa-hero-2-themes {
+  margin-left: 16px;
+  margin-right: 16px;
+  display: flex;
+}
+.txa-hero-2-themes-subscription {
+  max-width: 332px;
+  background-color: #1B4CF5;
+  border-radius: 16px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 35px 40px;
+}
+.txa-hero-2-themes-subscription .icon {
+  margin-bottom: 32px;
+}
+.txa-hero-2-themes-subscription .title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 12px;
+}
+.txa-hero-2-themes-subscription .disc {
+  margin-bottom: 32px;
+  color: #fff;
+  line-height: 26px;
+  opacity: 0.9;
+}
+.txa-hero-2-themes-subscription .txa-pr-btn-1 {
+  width: 100%;
+  background-color: #FDC448;
+  color: #000;
+}
+.txa-hero-2-themes-subscription .txa-pr-btn-1::before {
+  opacity: 0;
+}
+.txa-hero-2-themes-subscription .txa-pr-btn-1::after {
+  opacity: 0;
+  transition: 0.5s var(--cube-1);
+}
+.txa-hero-2-themes-subscription .txa-pr-btn-1:hover {
+  background: transparent;
+  color: #fff;
+}
+.txa-hero-2-themes-subscription .txa-pr-btn-1:hover::after {
+  opacity: 1;
+}
+
+/* 
+    hero-end
+*/
+/* 
+    update-css-1-start
+*/
+
 /*# sourceMappingURL=main.css.map */
