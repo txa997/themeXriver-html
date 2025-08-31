@@ -533,6 +533,10 @@ if (marquee) {
 
 }
 
+
+
+
+
 // plugin-testimonial-marquee-2
 const marquee2 = document.querySelector(".marquee2");
 
