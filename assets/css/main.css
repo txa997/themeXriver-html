@@ -12541,6 +12541,14 @@ img.txa-team-bg-shape-2 {
 /* 
     hero-start
 */
+.txa-hero-2-area {
+  padding-top: 120px;
+}
+@media (max-width: 767px) {
+  .txa-hero-2-area {
+    padding-top: 80px;
+  }
+}
 .txa-hero-2-content {
   text-align: center;
   max-width: 1075px;
@@ -12874,14 +12882,19 @@ img.txa-team-bg-shape-2 {
 }
 .txa-hero-2-bg-video video {
   width: 100%;
-  height: 111%;
+  height: 121%;
   object-fit: cover;
-  object-position: 50% -520px;
+  object-position: 50% -620px;
   filter: brightness(0.4) contrast(1.2) saturate(1.5) hue-rotate(106deg);
 }
-@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+@media only screen and (min-width: 768px) and (max-width: 991px) {
   .txa-hero-2-bg-video video {
-    object-position: 50% -660px;
+    object-position: 50% -870px;
+  }
+}
+@media (max-width: 767px) {
+  .txa-hero-2-bg-video video {
+    object-position: 50% -1000px;
   }
 }
 .txa-hero-2-bg-video::after {
@@ -12916,7 +12929,7 @@ img.txa-team-bg-shape-2 {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  animation: hero-2-bg-animation-2 15s linear infinite;
+  animation: hero-2-bg-animation 10s linear infinite;
 }
 
 .txa-hero-2-bg-circle-2 {
@@ -12930,41 +12943,41 @@ img.txa-team-bg-shape-2 {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  animation: hero-2-bg-animation 15s linear infinite;
+  animation: hero-2-bg-animation-2 10s linear infinite;
 }
 
-@keyframes hero-2-bg-animation-2 {
-  0% {
-    transform: translate(-50%, -50%);
-  }
-  25% {
-    transform: translate(-50%, -50%);
-  }
-  50% {
-    transform: translate(-50%, -50%);
-  }
-  75% {
-    transform: translate(-50%, -50%);
-  }
-  100% {
-    transform: translate(-50%, -50%);
-  }
-}
 @keyframes hero-2-bg-animation {
   0% {
-    transform: translate(0%, 0%);
+    transform: translate(-250%, -50%);
   }
   25% {
-    transform: translate(200%, 0%);
+    transform: translate(-280%, -50%);
   }
   50% {
-    transform: translate(0%, -100%);
+    transform: translate(-280%, -90%);
   }
   75% {
-    transform: translate(150%, 0%);
+    transform: translate(-170%, -40%);
   }
   100% {
-    transform: translate(0%, 0%);
+    transform: translate(-250%, -50%);
+  }
+}
+@keyframes hero-2-bg-animation-2 {
+  0% {
+    transform: translate(180%, -50%);
+  }
+  25% {
+    transform: translate(210%, -50%);
+  }
+  50% {
+    transform: translate(210%, -90%);
+  }
+  75% {
+    transform: translate(100%, -40%);
+  }
+  100% {
+    transform: translate(180%, -50%);
   }
 }
 /* 
@@ -13334,7 +13347,7 @@ img.txa-team-bg-shape-2 {
   display: none;
 }
 .has-categories-2:is(.txa-categorie-1-btn) .nav-link:not(:last-child) {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 }
 .has-categories-2:is(.txa-categorie-1-btn) .nav-link:hover {
   color: var(--txa-pr-1);

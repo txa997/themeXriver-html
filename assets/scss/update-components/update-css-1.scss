@@ -309,6 +309,11 @@
 */
 .txa-hero-2 {
     &-area {
+        padding-top: 120px;
+
+        @media #{$xs} {
+            padding-top: 80px;
+        }
     }
 
     &-content {
@@ -693,13 +698,18 @@
 
         video {
             width: 100%;
-            height: 111%;
+            height: 121%;
             object-fit: cover;
-            object-position: 50% -520px;
+            object-position: 50% -620px;
             filter: brightness(0.4) contrast(1.2) saturate(1.5) hue-rotate(106deg);
 
-            @media #{$md,$xs} {
-                object-position: 50% -660px;
+            @media #{$md} {
+                object-position: 50% -870px;
+            }
+
+            
+            @media #{$xs} {
+                object-position: 50% -1000px;
             }
         }
 
@@ -742,7 +752,7 @@
     left: 50%;
     top: 50%;
     transform: translate(-50% , -50%);
-    animation: hero-2-bg-animation-2 15s linear infinite;
+    animation: hero-2-bg-animation 10s linear infinite;
     // opacity: .5;
 }
 
@@ -757,45 +767,47 @@
     left: 50%;
     top: 50%;
     transform: translate(-50% , -50%);
-    animation: hero-2-bg-animation 15s linear infinite;
+    animation: hero-2-bg-animation-2 10s linear infinite;
     // opacity: .5;
 }
 
 
 
-@keyframes hero-2-bg-animation-2 {
-    0% {
-        transform: translate(-50% , -50%);
-    }
-    25% {
-        transform: translate(-50% , -50%);
-    }
-    50% {
-        transform: translate(-50% , -50%);
-    }
-    75% {
-        transform: translate(-50% , -50%);
-    }
-    100% {
-        transform: translate(-50% , -50%);
-    }
-}
 
 @keyframes hero-2-bg-animation {
     0% {
-        transform: translate(0% , 0%);
+        transform: translate(-250%, -50%);
     }
     25% {
-        transform: translate(200% , 0%);
+       transform: translate(-280%, -50%);
     }
     50% {
-        transform: translate( 0% , -100%);
+        transform: translate(-280%, -90%);
     }
     75% {
-        transform: translate(150% , 0%);
+        transform: translate(-170%, -40%);
     }
     100% {
-        transform: translate(0% , 0%);
+        transform: translate(-250%, -50%);
+    }
+}
+
+
+@keyframes hero-2-bg-animation-2 {
+    0% {
+        transform: translate(180%, -50%);
+    }
+    25% {
+       transform: translate(210%, -50%);
+    }
+    50% {
+        transform: translate(210%, -90%);
+    }
+    75% {
+        transform: translate(100%, -40%);
+    }
+    100% {
+        transform: translate(180%, -50%);
     }
 }
 
@@ -1221,7 +1233,7 @@
             }
 
             &:not(:last-child) {
-                border-bottom: 1px solid rgb(0 0 0 / 10%);
+                 border-bottom: 1px solid rgb(0 0 0 / 8%);
             }
 
 
