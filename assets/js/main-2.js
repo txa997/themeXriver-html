@@ -129,4 +129,52 @@ if($(".txa-price-2-toggle").length) {
 
 
 
+
+
+/* 
+	marquee-down-top 
+*/
+if ($(".wa_marquee_down_top").length) {
+  document.querySelectorAll(".wa_marquee_down_top").forEach((waMarqueeTop) => {
+    const waMarqueeClone = waMarqueeTop.cloneNode(true);
+    waMarqueeTop.parentNode.appendChild(waMarqueeClone);
+
+    const waMarqueeTotalHeight = waMarqueeTop.offsetHeight;
+
+    gsap.to([waMarqueeTop, waMarqueeClone], {
+      y: `-${waMarqueeTotalHeight}px`,
+      ease: "none",
+      duration: 20,
+      repeat: -1,
+      modifiers: {
+        y: gsap.utils.unitize((waY) => parseFloat(waY) % waMarqueeTotalHeight),
+      },
+    });
+  });
+}
+
+
+/* 
+	marquee-top-down 
+*/
+if ($(".wa_marquee_top_down").length) { 
+	const waMarqueeTopDown = document.querySelector('.wa_marquee_top_down');
+	const waMarqueeTopDownClone = waMarqueeTopDown.cloneNode(true);
+	waMarqueeTopDown.parentNode.appendChild(waMarqueeTopDownClone);
+	
+	const waMarqueeTopDownHeight = waMarqueeTopDown.offsetHeight;
+	
+	gsap.to(".wa_marquee_top_down", {
+	  y: `${waMarqueeTopDownHeight}px`, 
+	  ease: "none",
+	  duration: 20,
+	  repeat: -1,
+	  modifiers: {
+		y: gsap.utils.unitize(waY => parseFloat(waY) % waMarqueeTopDownHeight)
+	  }
+	});
+}
+
+
+
 })(jQuery);

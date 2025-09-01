@@ -13014,6 +13014,7 @@ img.txa-team-bg-shape-2 {
   display: grid;
   grid-template-columns: 1fr 1.29fr;
   gap: 40px;
+  overflow: hidden;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px) {
   .txa-showcase-2-wrap {
@@ -13095,7 +13096,7 @@ img.txa-team-bg-shape-2 {
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .txa-showcase-2-right {
-    height: 562px;
+    height: 561px;
   }
 }
 @media (max-width: 767px) {
@@ -13108,20 +13109,33 @@ img.txa-team-bg-shape-2 {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
-.txa-showcase-2-row {
+.txa-showcase-2-right .item-row:nth-child(2) {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  height: 454px;
+  justify-content: end;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .txa-showcase-2-right .item-row:nth-child(2) {
+    height: 561px;
+  }
 }
 @media (max-width: 767px) {
-  .txa-showcase-2-row:nth-child(3) {
+  .txa-showcase-2-right .item-row:nth-child(3) {
     display: none;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
-  .txa-showcase-2-row:nth-child(3) {
+  .txa-showcase-2-right .item-row:nth-child(3) {
     display: inline-flex;
   }
+}
+.txa-showcase-2-row {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 8px;
+  will-change: transform;
 }
 .txa-showcase-2-item {
   border-radius: 8px;
@@ -13458,6 +13472,9 @@ img.txa-team-bg-shape-2 {
 }
 .has-product-2:is(.txa-product-1-tabs-content) .txa-product-1-single-btn:hover::before {
   opacity: 0;
+}
+.has-product-2:is(.txa-product-1-tabs-content) .txa-product-1-single-btn:hover .txt {
+  animation: unset;
 }
 
 /* 
@@ -13943,6 +13960,19 @@ img.txa-team-bg-shape-2 {
 }
 .txa-price-2-card:is(.has-v2) .card-row:nth-child(2) {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.16) 0%, rgba(153, 153, 153, 0) 65%);
+}
+.txa-price-2-card:is(.has-v2) .card-row-border {
+  position: relative;
+  border-radius: 24px;
+}
+.txa-price-2-card:is(.has-v2) .card-row-border::after {
+  content: "";
+  position: absolute;
+  inset: 5px; /* border thickness */
+  background: linear-gradient(45deg, #ff7e5f, #feb47b) border-box; /* gradient border */
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
 }
 .txa-price-2-card:is(.has-v2) .package-name {
   background: rgba(255, 255, 255, 0.05);

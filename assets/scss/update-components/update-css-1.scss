@@ -858,6 +858,7 @@
         display: grid;
         grid-template-columns: 1fr 1.29fr;
         gap: 40px;
+        overflow: hidden;
 
         @media #{$xl,$lg} {
             grid-template-columns: 1fr 1.1fr;
@@ -944,7 +945,7 @@
         overflow: hidden;
 
         @media #{$lg} {
-            height: 562px;
+            height: 561px;
         }
 
         @media #{$xs} {
@@ -953,21 +954,40 @@
         @media #{$sm} {
             grid-template-columns: 1fr 1fr 1fr;
         }
+
+        .item-row {
+            &:nth-child(2) {
+                display: flex;
+                flex-direction: column;
+                height: 454px;
+                justify-content: end;
+
+                @media #{$lg} {
+                    height: 561px;
+                }
+            }
+
+            &:nth-child(3) {
+                @media #{$xs} {
+                    display: none; 
+                }
+                @media #{$sm} {
+                    display: inline-flex; 
+                }
+            }
+        }
+
     }
     
     &-row {
         display: flex;
         flex-direction: column;
         gap: 8px;
+        margin-bottom: 8px;
 
-        &:nth-child(3) {
-            @media #{$xs} {
-                display: none; 
-            }
-            @media #{$sm} {
-                display: inline-flex; 
-            }
-        }
+        will-change: transform;
+
+
     }
 
     &-item {
@@ -1279,9 +1299,7 @@
             .main-img {
                 border-radius: 12px;
             }
-            .content-wrap {
-                // height: 168px;
-            }
+
             .title {
                 font-weight: 600;
                 line-height: 140%;
@@ -1326,6 +1344,8 @@
                 font-size: 20px;
                 font-weight: 700;
                 margin-bottom: 22px;
+
+
             }
 
             &-sales-wrap {
@@ -1379,6 +1399,9 @@
                     color: #fff;
                     &::before {
                         opacity: 0;
+                    }
+                    .txt {
+                        animation: unset;
                     }
                 }
             }
@@ -2003,6 +2026,24 @@
 
                 &:nth-child(2) {
                     background: linear-gradient(180deg, rgba(255, 255, 255, 0.16) 0%, rgba(153, 153, 153, 0) 65%);
+                }
+            }
+
+            .card-row-border {
+                position: relative;
+                border-radius: 24px;
+                
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    inset: 5px; /* border thickness */
+                    background: linear-gradient(45deg, #ff7e5f, #feb47b) border-box; /* gradient border */
+                    -webkit-mask: 
+                        linear-gradient(#fff 0 0) content-box, 
+                        linear-gradient(#fff 0 0); 
+                    -webkit-mask-composite: xor;
+                            mask-composite: exclude;
                 }
             }
 
