@@ -10,6 +10,11 @@ Version: 2.0
 (function ($) {
 "use strict";
 
+
+gsap.config({
+	nullTargetWarn: false,
+});
+
 /* 
     marquee-left
 */
