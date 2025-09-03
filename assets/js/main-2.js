@@ -19,7 +19,7 @@ gsap.config({
     marquee-left
 */
 $('.wa_marquee_left').marquee({
-	speed: 30,
+	speed: 18,
 	gap: 0,
 	delayBeforeStart: 0,
 	startVisible:true,
@@ -179,6 +179,108 @@ if ($(".wa_marquee_top_down").length) {
 	  }
 	});
 }
+
+/* 
+	cta2ani
+*/
+
+var cta2ani = gsap.timeline({
+	scrollTrigger: {
+		trigger: ".txa-cta-2-wrap",
+		toggleActions: "play none none reverse",
+		start: "top 80%",
+		markers: false,
+	}
+})
+
+cta2ani.from(".txa-cta-2-item .has-ani-1", {
+	y: -100,
+	xPercent: -100,
+	opacity: 0,
+	duration: .4
+},"<40%")
+
+
+cta2ani.from(".txa-cta-2-item .has-ani-2", {
+	xPercent: -100,
+	opacity: 0,
+	duration: .4
+},"<40%")
+
+
+cta2ani.from(".txa-cta-2-item .has-ani-3", {
+	y: 100,
+	xPercent: -100,
+	opacity: 0,
+	duration: .4
+},"<40%")
+
+
+cta2ani.from(".txa-cta-2-item .has-ani-4", {
+	y: -100,
+	xPercent: 100,
+	opacity: 0,
+	duration: .4
+},"<40%")
+
+
+cta2ani.from(".txa-cta-2-item .has-ani-5", {
+	xPercent: 100,
+	opacity: 0,
+	duration: .4
+},"<40%")
+
+cta2ani.from(".txa-cta-2-item .has-ani-6", {
+	y: 100,
+	xPercent: 100,
+	opacity: 0,
+	duration: .4
+},"<40%")
+
+
+
+/* 
+	showcase-3-svg
+*/
+if($(".txa-showcase-2-wrap-line").length) {
+	const path = document.querySelector(".txa-showcase-2-wrap-line path");
+	const pathLength = path.getTotalLength();
+	
+	path.style.strokeDasharray = pathLength;
+	path.style.strokeDashoffset = pathLength;
+	
+	gsap.to(path, {
+	  strokeDashoffset: 0,
+	  duration: 2,
+	  scrollTrigger: {
+		trigger: ".txa-showcase-2-wrap-line",
+		start: "top 80%",   
+		end: "bottom 20%",  
+		toggleActions: "play none none reverse",
+	  }
+	});
+	
+}
+
+/* 
+	showcase-3-img
+*/
+var showcase3img = gsap.timeline({
+	scrollTrigger: {
+		trigger: ".txa-showcase-3-right",
+		toggleActions: "play none none reverse",
+		start: "top 80%",
+		markers: false,
+	}
+})
+
+showcase3img.from(".txa-showcase-3-item", {
+	yPercent: 100,
+	opacity: 0,
+	duration: .4,
+	stagger: 0.1,
+})
+
 
 
 
