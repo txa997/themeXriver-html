@@ -68,6 +68,7 @@ if ($('.nm_t1_preview_slider_active').length) {
 		speed: 500,
 		slidesPerView: "auto",
 		spaceBetween: 20,
+		allowTouchMove: false, 
 
 	});
   
@@ -75,6 +76,7 @@ if ($('.nm_t1_preview_slider_active').length) {
 		speed: 500,
 		slidesPerView: "auto",
 		effect: "fade",
+		allowTouchMove: false, 
 		fadeEffect: { crossFade: true },
 		navigation: {
 			nextEl: ".kk_t1_next",
