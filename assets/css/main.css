@@ -14969,7 +14969,7 @@ img.txa-team-bg-shape-2 {
 .txa-themes-3-item .main-img {
   border-radius: 20px;
   padding: 12px;
-  border: 1px solid #EAEAEA;
+  border: 1px solid rgba(234, 234, 234, 0.4);
   background-color: #FAFAFA;
   height: 560px;
 }
@@ -14985,7 +14985,7 @@ img.txa-team-bg-shape-2 {
 .txa-themes-3-item .themes-content {
   border-radius: 20px;
   padding: 16px 20px;
-  border: 1px solid #EAEAEA;
+  border: 1px solid rgba(234, 234, 234, 0.4);
   background-color: #FAFAFA;
   display: flex;
   align-items: center;
