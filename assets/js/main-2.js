@@ -285,5 +285,27 @@ showcase3img.from(".txa-showcase-3-item", {
 
 
 
+/* 
+	contact-2-themes
+*/
+var showcase3img = gsap.timeline({
+	scrollTrigger: {
+		trigger: ".txa-contact-2-theme-ss",
+		toggleActions: "play none none reverse",
+		start: "top 90%",
+		markers: false,
+	}
+})
+
+showcase3img.from(".txa-contact-2-theme-ss .single-ss", {
+	yPercent: 100,
+	opacity: 0,
+	duration: .4,
+	stagger: 0.1,
+})
+
+
+
+
 
 })(jQuery);
