@@ -304,8 +304,14 @@ showcase3img.from(".txa-contact-2-theme-ss .single-ss", {
 	stagger: 0.1,
 })
 
+/* 
+	tooltip-active
+*/
+$(function () {
 
 
+	$('[data-toggle="tooltip"]').tooltip();
+})
 
 
 })(jQuery);
