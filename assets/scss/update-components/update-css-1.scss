@@ -353,6 +353,8 @@
 .txa-hero-2 {
     &-area {
         padding-top: 120px;
+        background: #0A0A0A;
+        z-index: 1;
 
         @media #{$xs} {
             padding-top: 80px;
@@ -361,7 +363,7 @@
 
     &-content {
         text-align: center;
-        max-width: 1075px;
+        max-width: 1115px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -372,8 +374,8 @@
         gap: 8px;
         padding: 8px;
         padding-right: 16px;
-        border: 1px solid rgb(239 239 239 / 70%);
-        background-color: rgb(255 255 255 / 30%);
+        border: 1px solid rgba(239, 239, 239, 0.10);
+        background: rgba(255, 255, 255, 0.15);
         border-radius: 100px;
         margin-bottom: 30px;
 
@@ -390,6 +392,17 @@
                     margin-left: -10px;
                 }
             }
+
+
+        }
+
+        &-title {
+            color: #fff;
+            font-weight: 400;
+            span {
+                font-size: 24px;
+                font-weight: 500;
+            }
         }
     }
 
@@ -397,12 +410,12 @@
         font-size: 60px;
         line-height: 1.2;
         font-weight: 700;
-        color: #02021E;
+        color: #fff;
         letter-spacing: -1.2px;
         margin-bottom: 20px;
 
         span {
-            color: rgba(30, 28, 28, 0.80);
+            color: rgb(255 255 255 / 80%);
             font-weight: 600;
         }
 
@@ -426,7 +439,7 @@
 
     &-disc {
         font-size: 20px;
-        color: #262641;
+        color: #fff;
         font-weight: 400;
         line-height: 140%;
         max-width: 690px;
@@ -442,11 +455,14 @@
             z-index: 1;
             overflow: hidden;
             border-radius: 12px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
         }
         
         &-animation {
-            width: 1050px;
-            height: 1050px;
+            width: 800px;
+            height: 800px;
             display: block;
             background: conic-gradient(from 1deg, rgba(0, 0, 0, 0) 0%, #6400ed 10%, #f000ff 12%, transparent 17%);
             position: absolute;
@@ -455,7 +471,7 @@
             transform: translate(-50% , -50%);
             z-index: -1;
             border-radius: 12px;
-            animation: lqd-outline-glow-1 3s linear infinite;
+            animation: lqd-outline-glow-1 4s linear infinite;
         }
         
 
@@ -475,10 +491,10 @@
             outline: none;
             font-size: 16px;
             font-weight: 500;
-            color: rgb(2 2 30 / 70%);
-            padding-left: 50px;
+            color: rgba(255, 255, 255, 0.9);
+            padding-left: 77px;
             padding-right: 150px;
-            background: #FFFBFB;
+            background: #404040;
 
 
     
@@ -501,9 +517,29 @@
             z-index: 1;
             border: none;
             outline: none;
+            color: #000;
+            transition: all .5s var(--cube-1);
+
+            &::before {
+                background: #fff;
+                transition: all .5s var(--cube-1);
+            }
+
+            &::after {
+                opacity: 0;
+                transition: all .5s var(--cube-1);
+            }
 
             &:hover {
                 transform: translateY(-50%) !important;
+
+                &::after {
+                    opacity: 1;
+                }
+
+                &::before {
+                    opacity: 0;
+                }
             }
     
         }
@@ -511,9 +547,20 @@
         &-icon {
             position: absolute;
             top: 50%;
-            left: 24px;
+            left: 11px;
             transform: translateY(-50%);
             z-index: 1;
+            width: 52px;
+            height: 52px;
+            border-radius: 50%;
+            overflow: hidden;
+
+            video {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transform: scale(103%);
+            }
         }
     }
     
@@ -530,9 +577,9 @@
     
     &-partner {
         .partner-title {
-            color: var(--txa-heading-2);
+            color: #fff;
             font-size: 20px;
-            font-weight: 600;
+            font-weight: 500;
         }
 
         &-logo {
@@ -542,6 +589,12 @@
             gap: 15px 48px;
             flex-wrap: wrap;
             margin-top: 50px;
+
+            .single-logo {
+                @media #{$xs} {
+                    max-width: 120px;
+                }
+            }
         }
     }
 
@@ -591,7 +644,8 @@
                 background-color: #FDC448;
                 color: #000;
                 &::before {
-                    opacity: 0;
+                    background: #fff;
+                    transition: .5s var(--cube-1);
                 }
                 &::after {
                     opacity: 0;
@@ -599,10 +653,12 @@
                 }
 
                 &:hover {
-                    background: transparent;
                     color: #fff;
                     &::after {
                         opacity: 1;
+                    }
+                    &::before {
+                        opacity: 0;
                     }
                 }
             }
@@ -615,7 +671,7 @@
                 content: "";
                 width: 265px;
                 height: 100%;
-                background: linear-gradient(270deg,rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 98%);
+                background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, rgb(10 10 10) 98%);
                 position: absolute;
                 left: 0;
                 top: 0;
@@ -634,7 +690,7 @@
                 content: "";
                 width: 265px;
                 height: 100%;
-                background: linear-gradient(90deg,rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 98%);
+                background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgb(10 10 10) 98%);
                 position: absolute;
                 right: 0;
                 top: 0;
@@ -658,7 +714,7 @@
 
         &-single {
             border-radius: 16px;
-            border: 1px solid #E8E8E8;
+            border: 1px solid rgb(232 232 232 / 20%);
             padding: 12px;
             padding-bottom: 0;
             flex: 0 0 auto;
@@ -677,8 +733,8 @@
                 align-items: center;
                 justify-content: space-between;
                 font-size: 20px;
-                font-weight: 600;
-                color: var(--txa-heading-2);
+                font-weight: 500;
+                color: #fff;
                 padding: 27px 8px;
                 transition: all .5s var(--cube-1);
                 .icon {
@@ -689,6 +745,9 @@
                     justify-content: center;
                     svg {
                         transition: all .5s var(--cube-1);
+                        * {
+                            fill: #fff;
+                        }
                         &:nth-child(2) {
                             position: absolute;
                             transform: translate(-16px, 16px);
@@ -732,30 +791,64 @@
 
     &-bg-video {
         position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        overflow: hidden;
+        top: -34%;
         z-index: -2;
-        height: 100%;
+        mix-blend-mode: luminosity;
+        width: 100%;
+        // opacity: .7;
+        
+
+                
+        @media only screen and (min-width: 5120px)  {
+            top: -129%;
+        }
+        
+        @media only screen and (min-width: 4480px) and (max-width: 5119px) {
+            top: -107%;
+        }
+
+        @media only screen and (min-width: 3456px) and (max-width: 4479px) {
+            top: -78%;
+        }
+
+        @media only screen and (min-width: 3024px) and (max-width: 3455px) {
+            top: -64%;
+        }
+
+        
+        @media only screen and (min-width: 2560px) and (max-width: 3023px) {
+            top: -51%;
+        }
+
+
+        @media #{$xxxl} {
+            top: -24%;
+        }
+        @media #{$xxl} {
+            top: -16%;
+        }
+        @media #{$xl} {
+            top: -12%;
+        }
+
+        @media #{$lg} {
+            top: -6%;
+        }
+        
+        @media #{$md} {
+            top: 0%;
+        }
+        @media #{$xs} {
+            top: 6%;
+        }
+                
+        @media #{$sm} {
+            top: 3%;
+        }
 
         video {
             width: 100%;
-            height: 121%;
-            object-fit: cover;
-            object-position: 50% -620px;
-            filter: brightness(0.4) contrast(1.2) saturate(1.5) hue-rotate(106deg);
-
-            @media #{$md} {
-                object-position: 50% -870px;
-            }
-
-            
-            @media #{$xs} {
-                object-position: 50% -1000px;
-            }
         }
-
 
         &::after {
             content: "";
@@ -767,6 +860,7 @@
             background: rgb(255 255 255 / 96%);
             mix-blend-mode: exclusion;
             pointer-events: none;
+            display: none;
         }
     }
 
@@ -778,40 +872,26 @@
         height: 100%;
         z-index: -2;
         background: rgb(255 255 255 / 60%);
+        display: none;
     }
 
 }
 
 
 
-.txa-hero-2-bg-circle-1 {
-    display: block;
-    width: 300px;
-    height: 300px;
-    background: linear-gradient(180deg, rgba(255, 123, 202, 0.8) 0%, rgba(255, 197, 111, 0.5) 100%);
-    filter: blur(100px);
-    border-radius: 50%;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50% , -50%);
-    animation: hero-2-bg-animation 10s linear infinite;
-    // opacity: .5;
-}
 
 .txa-hero-2-bg-circle-2 {
     display: block;
     width: 300px;
     height: 300px;
-    background: linear-gradient(180deg, rgba(255, 123, 202, 0.8) 0%, rgba(255, 197, 111, 0.5) 100%);
+    background: linear-gradient(180deg, rgba(255, 123, 202, 0.50) 0%, rgba(255, 197, 111, 0.25) 100%);
     filter: blur(100px);
     border-radius: 50%;
     position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50% , -50%);
-    animation: hero-2-bg-animation-2 10s linear infinite;
-    // opacity: .5;
+    left: 76%;
+    top: 64%;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: luminosity;
 }
 
 
