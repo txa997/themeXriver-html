@@ -654,6 +654,7 @@
                 &::after {
                     opacity: 0;
                     transition: .5s var(--cube-1);
+                    background: #000;
                 }
 
                 &:hover {
@@ -800,6 +801,7 @@
         mix-blend-mode: luminosity;
         width: 100%;
         // opacity: .7;
+
         
 
                 
@@ -852,6 +854,7 @@
 
         video {
             width: 100%;
+            mix-blend-mode: luminosity;
         }
 
         &::after {

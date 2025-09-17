@@ -12842,6 +12842,7 @@ img.txa-team-bg-shape-2 {
 .txa-hero-2-themes-subscription .txa-pr-btn-1::after {
   opacity: 0;
   transition: 0.5s var(--cube-1);
+  background: #000;
 }
 .txa-hero-2-themes-subscription .txa-pr-btn-1:hover {
   color: #fff;
@@ -13024,6 +13025,7 @@ img.txa-team-bg-shape-2 {
 }
 .txa-hero-2-bg-video video {
   width: 100%;
+  mix-blend-mode: luminosity;
 }
 .txa-hero-2-bg-video::after {
   content: "";
