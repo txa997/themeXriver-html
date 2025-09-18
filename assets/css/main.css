@@ -13,7 +13,7 @@
 }
 
 :root {
-  scroll-behavior: inherit;
+  scroll-behavior: smooth;
 }
 
 body {
