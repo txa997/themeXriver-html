@@ -4743,6 +4743,165 @@
     product-details-page-end
 */
 
+
+/* 
+    popup-1-start
+*/
+.txa-popup-1 {
+    &-area {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background: var(--txa-heading-1);
+        border-radius: 12px;
+        max-width: 400px;
+        z-index: 11;
+        overflow: hidden;
+        box-shadow: 0px 0px 60px rgb(0 0 0 / 20%);
+        transform: translate(50%, 50%);
+        opacity: 0;
+        transition: all .5s var(--cube-1);
+        visibility: hidden;
+
+        &:is(.active) {
+            transform: translate(0%, 0%);
+            opacity: 1;
+            visibility: visible;
+        }
+
+
+        @media #{$xs} {
+            display: none;
+        }
+    }
+
+    &-top {
+        display: flex;
+        padding: 20px 25px;
+        padding-top: 27px;
+
+        .title {
+            font-size: 24px;
+            line-height: 1.272;
+            color: #fff;
+            font-weight: 600;
+            letter-spacing: 0.01em;
+            margin-bottom: 19px;
+        }
+
+        .close-btn {
+            width: 40px;
+            height: 40px;
+            flex: 0 0 auto;
+            background: #141F3A;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: .3s;
+            cursor: pointer;
+            svg * {
+                transition: .3s;
+            }
+
+            &:hover {
+                svg * {
+                    fill: var(--txa-pr-1);
+                }
+            }
+        }
+
+        .txa-border-ani-btn {
+            font-size: 16px;
+            background: transparent;
+            padding: 2px;
+            color: #fff;
+
+            .btn-content {
+                padding: 14px 18px;
+                background: var(--txa-gd-1);
+            }
+
+            .txa-hero-2-form-animation {
+                width: 270px;
+                height: 270px;
+                background: conic-gradient(from 1deg, rgba(0, 0, 0, 0) 0%, #ffffff 10%, #ffffff 12%, transparent 17%);
+            }
+
+            &:hover {
+                transform: scale(98%);
+                .txa-hero-2-form-animation {
+                    opacity: 0;
+                }
+            }
+        }
+    }
+
+    &-img {
+        position: relative;
+        z-index: 1;
+
+        &::after {
+            content: "";
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(0deg, #141414, transparent);
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+    }
+
+    &-content {
+        position: absolute;
+        bottom: 14px;
+        left: 0;
+        width: 100%;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+
+        .title {
+            font-size: 24px;
+            line-height: 1.272;
+            color: #fff;
+            font-weight: 600;
+        }
+        
+        .disc {
+            color: #fff;
+            font-size: 14px;
+            letter-spacing: 0.03em;
+            opacity: .8;
+        }
+        
+        .item-col {
+            text-align: center;
+        }
+    }
+}
+
+
+
+/* 
+    popup-1-end
+*/
+@keyframes swing {
+    20% { transform: rotate3d(0, 0, 1, 7deg); }
+    40% { transform: rotate3d(0, 0, 1, -5deg); }
+    60% { transform: rotate3d(0, 0, 1, 1.5deg); }
+    80% { transform: rotate3d(0, 0, 1, -1.5deg); }
+    to  { transform: rotate3d(0, 0, 1, 0deg); }
+  }
+  
+  .animate__swing {
+    animation: swing 1s ease ;
+  }
+
+.txa-sidebar-widget-subscription:hover {
+    animation: unset;
+}
 /* 
     update-css-1-end
 */

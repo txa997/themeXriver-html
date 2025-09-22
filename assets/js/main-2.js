@@ -314,4 +314,23 @@ $(function () {
 })
 
 
+
+document.addEventListener("DOMContentLoaded", function () {
+    const popup = document.querySelector(".txa-popup-1-area");
+    const closeBtn = document.querySelector(".txa-popup-1-top .close-btn");
+    setTimeout(() => {
+        popup.classList.add("active");
+    }, 3000);
+
+    closeBtn.addEventListener("click", function () {
+        popup.classList.remove("active");
+    });
+
+
+
+});
+
+
+
+
 })(jQuery);

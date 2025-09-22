@@ -554,6 +554,8 @@ if (marquee2) {
 
 }
 
+
+
 /*
 faq-active-class
 ====start====
@@ -666,6 +668,21 @@ $("[data-background]").each(function(){
 data-bg-activition
 ====end====
 */
+
+
+if($(".txa-sidebar-widget-subscription").length) {
+	const el = document.querySelector(".txa-sidebar-widget-subscription");
+	function startSwing() {
+	  el.classList.add("animate__swing");
+	  setTimeout(() => {
+		el.classList.remove("animate__swing");
+		setTimeout(startSwing, 500); 
+	  }, 1000); 
+	}
+	
+	startSwing();
+}
+
 
 
 
