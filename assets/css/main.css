@@ -16430,4 +16430,148 @@ img.txa-team-bg-shape-2 {
     update-css-1-end
 */
 
+/* 
+    black-friday-start
+*/
+.txa-blf-banner {
+  background: linear-gradient(163.64deg, #7700EF 16.57%, #E600FE 83.43%);
+  padding-top: 10px;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  .txa-blf-banner {
+    padding-bottom: 10px;
+  }
+}
+.txa-blf-banner-container {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: 1880px;
+  margin-left: auto;
+  margin-right: auto;
+  flex-wrap: wrap;
+}
+@media only screen and (min-width: 1400px) and (max-width: 1599px), only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  .txa-blf-banner-container {
+    gap: 30px;
+  }
+}
+.txa-blf-banner-counter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.txa-blf-banner-counter-single {
+  width: 72px;
+  height: 77px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+.txa-blf-banner-counter-single .number {
+  line-height: 1;
+  font-size: 28px;
+}
+.txa-blf-banner-counter-single .disc {
+  color: #02021E;
+  line-height: 1;
+  font-size: 15px;
+  opacity: 70%;
+}
+.txa-blf-banner-illus img {
+  transform-origin: center bottom;
+  animation: blfKf 3s linear infinite;
+}
+.txa-blf-banner-offer img {
+  transform-origin: center bottom;
+  animation: blfKf 3s linear infinite;
+  animation-delay: 1.5s;
+}
+.txa-blf-banner-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: -0.02em;
+  max-width: 510px;
+}
+@media only screen and (min-width: 1600px) and (max-width: 1799px) {
+  .txa-blf-banner-title {
+    font-size: 28px;
+    max-width: 280px;
+  }
+}
+@media only screen and (min-width: 1400px) and (max-width: 1599px), only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  .txa-blf-banner-title {
+    font-size: 20px;
+    max-width: 190px;
+  }
+}
+.txa-blf-banner-btn {
+  display: inline-flex;
+  margin-left: auto;
+  font-size: 16px;
+  color: #190664;
+  font-weight: 600;
+  flex: 0 0 auto;
+}
+@media (max-width: 767px) {
+  .txa-blf-banner-btn {
+    margin-left: 0;
+  }
+}
+.txa-blf-banner-btn .icon {
+  width: 44px;
+  height: 44px;
+  background: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s;
+}
+.txa-blf-banner-btn .text {
+  padding: 12px 23px;
+  background: #72EF23;
+  border-radius: 40px;
+  transition: 0.2s;
+}
+.txa-blf-banner-btn:hover .icon {
+  background: #72EF23;
+  transform: rotate(45deg);
+}
+.txa-blf-banner-btn:hover .text {
+  background: #fff;
+}
+
+@keyframes blfKf {
+  0% {
+    transform: scaleY(100%);
+  }
+  10% {
+    transform: scaleY(105%);
+  }
+  13% {
+    transform: scaleY(100%);
+  }
+  23% {
+    transform: scaleY(104%);
+  }
+  25% {
+    transform: scaleY(100%);
+  }
+  100% {
+    transform: scaleY(100%);
+  }
+}
+/* 
+    black-friday-end
+*/
+
 /*# sourceMappingURL=main.css.map */
