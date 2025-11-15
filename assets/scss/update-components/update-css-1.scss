@@ -5065,3 +5065,358 @@
 /* 
     black-friday-end
 */
+
+
+/* 
+    design-hub-2-start
+*/
+.txa-design-hub-2 {
+
+    &-area {
+        background-color: var(--txa-heading-1);
+        padding-top: 180px;
+        padding-bottom: 400px;
+        z-index: 1;
+        position: relative;
+
+        @media #{$xs} {
+            padding-top: 120px;
+        }
+
+
+
+        .txa-design-hub-content {
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 800px;
+
+            .title {
+                color: #fff;
+                font-size: 60px;
+
+                @media #{$xl} {
+                    font-size: 55px;
+                }
+            
+                @media #{$lg} {
+                    font-size: 50px;
+                }
+                @media #{$md} {
+                    font-size: 45px;
+                }
+                @media #{$xs} {
+                    font-size: 35px;
+                }
+                @media #{$sm} {
+                    font-size: 40px;
+                }
+            }
+
+            .disc {
+                color: #fff;
+                margin-top: 16px;
+            }
+
+            &-btn {
+                justify-content: center;
+
+                .txa-pr-btn-1:nth-child(2) {
+                    color: #fff;
+                    &::before {
+                        background: var(--txa-heading-2);
+                    }
+
+                }
+            }
+        }
+    }
+
+    &-bg-line {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -3;
+        display: flex;
+        justify-content: space-evenly;
+
+        .single-line {
+            width: 1px;
+            height: 100%;
+            background: #242424;
+            position: relative;
+        
+            &::after {
+                content: "";
+                width: 3px;
+                height: 50px;
+                background: linear-gradient(180deg, var(--txa-pr-1), transparent);
+                position: absolute;
+                bottom: -10%;
+                left: 0;
+                animation-fill-mode: backwards;
+            }
+        
+            &:nth-child(odd) {
+                &::after {
+                    animation: designHubKf1 10s linear infinite;
+                }
+            }
+        
+            &:nth-child(even) {
+                &::after {
+                    animation: designHubKf2 10s linear infinite;
+                    background: linear-gradient(0deg, var(--txa-pr-1), transparent);
+                }
+            }
+        
+            &:nth-child(1)::after { animation-delay: -1s; }
+            &:nth-child(2)::after { animation-delay: -3s; }
+            &:nth-child(3)::after { animation-delay: -6s; }
+            &:nth-child(4)::after { animation-delay: -2s; }
+            &:nth-child(5)::after { animation-delay: -5s; }
+            &:nth-child(6)::after { animation-delay: -7s; }
+            &:nth-child(7)::after { animation-delay: -4s; }
+        }
+    }
+
+
+    &-bg-ss-1 {
+        width: 39%;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: -1;
+    }
+
+    &-bg-ss-2 {
+        width: 18%;
+        position: absolute;
+        top: 18%;
+        left: 0%;
+        z-index: -1;
+
+        img {
+            animation: designHubKImgF2 20s linear infinite ;
+     
+        }
+
+        @media #{$lg,$md,$xs} {
+            display: none;
+        }
+    }
+
+    &-bg-ss-3 {
+        width: 17%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+
+        img {
+            animation: designHubKImgF2 20s linear infinite ;
+            animation-delay: 3s;
+        }
+
+        @media #{$lg,$md,$xs} {
+            display: none;
+        }
+    }
+
+    &-bg-ss-4 {
+        text-align: right;
+        width: 18%;
+        position: absolute;
+        right: 0;
+        top: 18%;
+        z-index: -1;
+
+        img {
+            animation: designHubKImgF1 20s linear infinite ;
+        }
+
+        @media #{$lg,$md,$xs} {
+            display: none;
+        }
+    }
+
+    &-bg-ss-5 {
+        text-align: right;
+        width: 17%;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+
+        img {
+            animation: designHubKImgF1 20s linear infinite ;
+            animation-delay: 4s;
+        }
+
+        @media #{$lg,$md,$xs} {
+            display: none;
+        }
+    }
+
+    &-bg-glow-1 {
+        position: absolute;
+        width: 306px;
+        height: 312px;
+        background: linear-gradient(180deg, rgba(242, 47, 176, 0.5) 0%, rgba(245, 138, 37, 0) 100%, rgba(112, 97, 163, 0.5) 100%);
+        filter: blur(110px);
+        top: 0px;
+        left: -180px;
+        z-index: -2;
+    }
+
+    &-bg-glow-2 {
+        position: absolute;
+        width: 306px;
+        height: 312px;
+        background: linear-gradient(180deg, rgba(242, 47, 176, 0.5) 0%, rgba(245, 138, 37, 0) 100%, rgba(112, 97, 163, 0.5) 100%);
+        filter: blur(110px);
+        bottom: 120px;
+        right: -180px;
+        z-index: -2;
+    }
+    
+}
+
+
+@keyframes designHubKf1 {
+    from {
+        bottom: -5%;
+    }
+    to {
+        bottom: 105%;
+    }
+}
+
+@keyframes designHubKf2 {
+    from {
+        top: -5%;
+    }
+    to {
+        top: 105%;
+    }
+}
+
+@keyframes designHubKImgF1 {
+    0% {
+        transform: translate(0%,0%);
+    }
+    10% {
+        transform: translate(5%, 0%);
+    }
+    20% {
+        transform: translate(0%, 5%);
+    }
+    30% {
+        transform: translate(5%, -5%);
+    }
+    40% {
+        transform: translate(0% , -5%);
+    }
+    50% {
+        transform: translate(5%, 0%);
+    }
+    60% {
+        transform: translate(0%, 5%);
+    }
+    70% {
+        transform: translate(5%, -5%);
+    }
+    80% {
+        transform: translate(0%, 5%);
+    }
+    90% {
+        transform: translate(5%, 0%);
+    }
+    100% {
+        transform: translate(0%,0%);
+    }
+}
+
+@keyframes designHubKImgF2 {
+    0% {
+        transform: translate(0%,0%);
+    }
+    10% {
+        transform: translate(-5%, 0%);
+    }
+    20% {
+        transform: translate(0%, 5%);
+    }
+    30% {
+        transform: translate(-5%, -5%);
+    }
+    40% {
+        transform: translate(0% , -5%);
+    }
+    50% {
+        transform: translate(-5%, 0%);
+    }
+    60% {
+        transform: translate(0%, 5%);
+    }
+    70% {
+        transform: translate(-5%, -5%);
+    }
+    80% {
+        transform: translate(0%, 5%);
+    }
+    90% {
+        transform: translate(-5%, 0%);
+    }
+    100% {
+        transform: translate(0%,0%);
+    }
+}
+
+
+.txa-design-hub-2 {
+    &-video-area {
+        background-color: #FAFAFA;
+    }
+    &-video {
+        border: 8px solid #FFFFFF;
+        box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.08);
+        border-radius: 20px;
+        max-width: 1006px;
+        height: 600px;
+        overflow: hidden;
+        margin-left: auto;
+        margin-right: auto;
+
+        position: relative;
+        z-index: 2;
+        margin-top: -300px;
+
+        @media #{$md} {
+            height: 400px;
+        }
+
+        @media #{$xs} {
+            height: 350px;
+        }
+
+        @media #{$sm} {
+            height: 380px;
+        }
+
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+
+
+
+/* 
+    design-hub-2-end
+*/

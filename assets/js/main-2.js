@@ -331,6 +331,31 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+var designHubAni = gsap.timeline()
+designHubAni.from(".txa-design-hub-2-bg-ss-2", {
+	xPercent: -50,
+	opacity: 0,
+	duration: 1,
+	ease: "power3.out",
+})
+designHubAni.from(".txa-design-hub-2-bg-ss-4", {
+	xPercent: 50,
+	opacity: 0,
+	duration: 1,
+	ease: "power3.out",
+},"<")
+designHubAni.from(".txa-design-hub-2-bg-ss-3", {
+	xPercent: -50,
+	opacity: 0,
+	duration: 1,
+	ease: "power3.out",
+},"<30%")
+designHubAni.from(".txa-design-hub-2-bg-ss-5", {
+	xPercent: 50,
+	opacity: 0,
+	duration: 1,
+	ease: "power3.out",
+},"<30%")
 
 
 })(jQuery);
