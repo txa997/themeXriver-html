@@ -16399,7 +16399,7 @@ img.txa-team-bg-shape-2 {
 }
 
 /* 
-    popup-1-start
+    popup-2-start
 */
 .txa-popup-2-area {
   position: fixed;
@@ -16428,10 +16428,11 @@ img.txa-team-bg-shape-2 {
   border: 1px solid #363636;
   padding: 6px;
   margin-bottom: 12px;
+  background-color: #fff;
 }
 .txa-popup-2-slider {
   overflow: hidden;
-  height: 200px;
+  height: 180px;
   border-radius: 10px;
 }
 .txa-popup-2-slider .swiper-wrapper .swiper-slide {
@@ -16471,8 +16472,12 @@ img.txa-team-bg-shape-2 {
 .txa-popup-2-btn:is(.txa-pr-btn-1):is(.active):hover::after {
   opacity: 0;
 }
+.txa-popup-2-btn:is(.txa-pr-btn-1):nth-child(2) {
+  border: 1px solid #363636;
+}
 .txa-popup-2-btn:is(.txa-pr-btn-1):nth-child(2):hover {
   color: #fff;
+  border-color: transparent;
 }
 .txa-popup-2-btn:is(.txa-pr-btn-1):nth-child(2):hover::after {
   opacity: 1;
@@ -16507,7 +16512,6 @@ img.txa-team-bg-shape-2 {
   width: 100%;
 }
 .txa-popup-2-btn:hover {
-  background: #000;
   color: #fff;
 }
 .txa-popup-2-btn:hover .text::after {
@@ -16520,7 +16524,7 @@ img.txa-team-bg-shape-2 {
 }
 
 /* 
-    popup-1-end
+    popup-2-end
 */
 @keyframes swing {
   20% {

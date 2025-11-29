@@ -4883,7 +4883,7 @@
 }
 
 /* 
-    popup-1-start
+    popup-2-start
 */
 .txa-popup-2 {
     &-area {
@@ -4916,11 +4916,12 @@
         border: 1px solid #363636;
         padding: 6px;
         margin-bottom: 12px;
+        background-color: #fff;
     }
 
     &-slider {
         overflow: hidden;
-        height: 200px;
+        height: 180px;
         border-radius: 10px;
 
         .swiper-wrapper {
@@ -4947,6 +4948,8 @@
             border-radius: 10px;
             padding: 13px 20px;
             color: #02021E;
+
+
             &::before {
                 background-color: #fff;
             }
@@ -4972,9 +4975,11 @@
             }
 
             &:nth-child(2) {
+                border: 1px solid #363636;
 
                 &:hover {
                     color: #fff;
+                    border-color: transparent;
                     &::after {
                         opacity: 1;
                     }
@@ -5013,11 +5018,9 @@
                 width: 100%;
             }
         }
-    
+
         &:hover {
-            background: #000;
             color: #fff;
-    
             .text {
                 &::after {
                     opacity: 1;
@@ -5029,14 +5032,14 @@
                 }
             }
         }
+
     }
 }
 
-
-
 /* 
-    popup-1-end
+    popup-2-end
 */
+
 @keyframes swing {
     20% { transform: rotate3d(0, 0, 1, 7deg); }
     40% { transform: rotate3d(0, 0, 1, -5deg); }
