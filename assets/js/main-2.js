@@ -314,21 +314,51 @@ $(function () {
 })
 
 
-
+/* 
+	popup-2-activation
+*/
 document.addEventListener("DOMContentLoaded", function () {
-    const popup = document.querySelector(".txa-popup-1-area");
-    const closeBtn = document.querySelector(".txa-popup-1-top .close-btn");
+    const popup = document.querySelector(".txa-popup-2-area");
     setTimeout(() => {
         popup.classList.add("active");
     }, 3000);
-
-    closeBtn.addEventListener("click", function () {
-        popup.classList.remove("active");
-    });
-
-
-
 });
+
+/* 
+	popup-2-slider
+*/
+if ($('.txa_popup2_slider').length) {
+
+    var txa_popup2_slider = new Swiper(".txa_popup2_slider", {
+		direction: "vertical",
+		loop: true,
+		autoplay: {
+			delay: 3000,
+		},
+	});
+  
+}
+
+/* 
+	popup-2-btn
+*/
+  
+if($(".txa-popup-2-btn").length) {
+	const buttons = document.querySelectorAll('.txa-popup-2-btn');
+	const defaultActive = buttons[0]; 
+	
+	buttons.forEach(btn => {
+		btn.addEventListener('mouseenter', function () {
+			buttons.forEach(b => b.classList.remove('active'));
+			this.classList.add('active');
+		});
+	
+		btn.addEventListener('mouseleave', function () {
+			buttons.forEach(b => b.classList.remove('active'));
+			defaultActive.classList.add('active');
+		});
+	});
+}
 
 
 var designHubAni = gsap.timeline()
