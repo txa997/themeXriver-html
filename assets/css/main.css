@@ -16453,6 +16453,41 @@ img.txa-team-bg-shape-2 {
   border-radius: 10px;
   padding: 13px 20px;
   color: #02021E;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  overflow: hidden;
+}
+.txa-popup-2-btn:is(.txa-pr-btn-1) .icon {
+  width: 16px;
+  height: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+.txa-popup-2-btn:is(.txa-pr-btn-1) .icon::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  z-index: -1;
+  transform: scale(105%);
+  transition: all 0.4s cubic-bezier(0.4, 0.39, 0.49, 1.33);
+}
+.txa-popup-2-btn:is(.txa-pr-btn-1) .icon svg {
+  width: 70%;
+  transition: all 0.4s cubic-bezier(0.4, 0.39, 0.49, 1.33);
+}
+.txa-popup-2-btn:is(.txa-pr-btn-1) .icon svg path {
+  fill: #fff;
+  transition: all 0.4s cubic-bezier(0.4, 0.39, 0.49, 1.33);
 }
 .txa-popup-2-btn:is(.txa-pr-btn-1)::before {
   background-color: #fff;
@@ -16469,6 +16504,12 @@ img.txa-team-bg-shape-2 {
 .txa-popup-2-btn:is(.txa-pr-btn-1):is(.active)::after {
   opacity: 1;
 }
+.txa-popup-2-btn:is(.txa-pr-btn-1):is(.active) .icon::after {
+  background-color: #fff;
+}
+.txa-popup-2-btn:is(.txa-pr-btn-1):is(.active) .icon svg path {
+  fill: #000;
+}
 .txa-popup-2-btn:is(.txa-pr-btn-1):is(.active):hover::after {
   opacity: 0;
 }
@@ -16482,14 +16523,13 @@ img.txa-team-bg-shape-2 {
 .txa-popup-2-btn:is(.txa-pr-btn-1):nth-child(2):hover::after {
   opacity: 1;
 }
-.txa-popup-2-btn .text {
+.txa-popup-2-btn:is(.txa-pr-btn-1) .text {
   position: relative;
   z-index: 1;
   overflow: hidden;
   line-height: 1;
-  text-align: center;
 }
-.txa-popup-2-btn .text::after {
+.txa-popup-2-btn:is(.txa-pr-btn-1) .text::after {
   top: 0;
   left: 0;
   opacity: 0;
@@ -16498,9 +16538,8 @@ img.txa-team-bg-shape-2 {
   position: absolute;
   content: attr(data-back);
   transform: translateY(100%);
-  width: 100%;
 }
-.txa-popup-2-btn .text::before {
+.txa-popup-2-btn:is(.txa-pr-btn-1) .text::before {
   top: 0;
   left: 0;
   opacity: 1;
@@ -16509,18 +16548,27 @@ img.txa-team-bg-shape-2 {
   position: relative;
   content: attr(data-front);
   transform: translateY(0);
-  width: 100%;
 }
-.txa-popup-2-btn:hover {
+.txa-popup-2-btn:is(.txa-pr-btn-1):hover {
   color: #fff;
 }
-.txa-popup-2-btn:hover .text::after {
+.txa-popup-2-btn:is(.txa-pr-btn-1):hover .text::after {
   opacity: 1;
   transform: translateY(0%);
 }
-.txa-popup-2-btn:hover .text::before {
+.txa-popup-2-btn:is(.txa-pr-btn-1):hover .text::before {
   opacity: 0;
   transform: translateY(-100%);
+}
+.txa-popup-2-btn:is(.txa-pr-btn-1):hover .icon::after {
+  transform: scale(4);
+  opacity: 0;
+}
+.txa-popup-2-btn:is(.txa-pr-btn-1):hover .icon svg {
+  transform: scale(1.7);
+}
+.txa-popup-2-btn:is(.txa-pr-btn-1):hover .icon svg path {
+  fill: #fff;
 }
 
 /* 
