@@ -17094,5 +17094,635 @@ img.txa-team-bg-shape-2 {
 /* 
     design-hub-2-end
 */
+/* 
+    affiliates-2-start
+*/
+.txa-affiliates-2-hero {
+  position: relative;
+  z-index: 1;
+}
+.txa-affiliates-2-hero-bg-shape {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+}
+.txa-affiliates-2-hero-bg-shape img {
+  width: 100%;
+}
+.txa-affiliates-2-hero-top {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .txa-affiliates-2-hero-top {
+    grid-template-columns: 1fr 0.8fr;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  .txa-affiliates-2-hero-top {
+    grid-template-columns: 1fr;
+  }
+}
+.txa-affiliates-2-hero-content .title {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 116%;
+  margin-bottom: 12px;
+}
+.txa-affiliates-2-hero-content .title span {
+  color: var(--txa-sd-1);
+  border-bottom: 2px solid var(--txa-sd-1);
+  display: inline-block;
+  line-height: 0.7;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .txa-affiliates-2-hero-content .title {
+    font-size: 45px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .txa-affiliates-2-hero-content .title {
+    font-size: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .txa-affiliates-2-hero-content .title {
+    font-size: 28px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .txa-affiliates-2-hero-content .title {
+    font-size: 35px;
+  }
+}
+.txa-affiliates-2-hero-content .disc {
+  color: #262641;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+.txa-affiliates-2-hero-cards {
+  background-color: #FAFAFA;
+  border-radius: 32px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 36px;
+  padding: 30px;
+  margin-top: -30px;
+  z-index: 1;
+  position: relative;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .txa-affiliates-2-hero-cards {
+    margin-top: 50px;
+    padding: 12px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  .txa-affiliates-2-hero-cards {
+    margin-top: 50px;
+    padding: 12px;
+    grid-template-columns: 1fr;
+  }
+}
+.txa-affiliates-2-hero-cards-single {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  background: #FFFFFF;
+  outline: 6px solid #FFFFFF;
+  border-radius: 24px;
+  padding: 40px 30px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  .txa-affiliates-2-hero-cards-single {
+    padding: 40px 20px;
+  }
+}
+.txa-affiliates-2-hero-cards-single .bg-shape {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+.txa-affiliates-2-hero-cards-single .bg-shape-2 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.txa-affiliates-2-hero-cards-single .icon-elm {
+  width: 80px;
+  height: 80px;
+  background: #0D88FF;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+.txa-affiliates-2-hero-cards-single .icon-elm:is(.has-clr-2) {
+  background: #49B363;
+}
+.txa-affiliates-2-hero-cards-single .title {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+@media (max-width: 767px) {
+  .txa-affiliates-2-hero-cards-single .title {
+    font-size: 22px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .txa-affiliates-2-hero-cards-single .title {
+    font-size: 24px;
+  }
+}
+.txa-affiliates-2-hero-cards-single .disc {
+  font-weight: 400;
+  margin-bottom: 32px;
+  opacity: 0.7;
+}
+.txa-affiliates-2-hero-img {
+  mix-blend-mode: multiply;
+}
+
+.txa-affiliates-2-features {
+  position: relative;
+  z-index: 1;
+}
+.txa-affiliates-2-features-title {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 60px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .txa-affiliates-2-features-title {
+    font-size: 44px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .txa-affiliates-2-features-title {
+    font-size: 38px;
+  }
+}
+@media (max-width: 767px) {
+  .txa-affiliates-2-features-title {
+    font-size: 28px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .txa-affiliates-2-features-title {
+    font-size: 32px;
+  }
+}
+.txa-affiliates-2-features-cards {
+  background: #FFFFFF;
+  box-shadow: 0px 12px 50px 10px rgba(0, 0, 0, 0.06);
+  border-radius: 32px;
+  padding: 40px 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 12px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .txa-affiliates-2-features-cards {
+    padding: 12px 12px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .txa-affiliates-2-features-cards {
+    padding: 12px 12px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (max-width: 767px) {
+  .txa-affiliates-2-features-cards {
+    padding: 12px 12px;
+    grid-template-columns: 1fr;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .txa-affiliates-2-features-cards {
+    padding: 12px 12px;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.txa-affiliates-2-features-cards-single {
+  text-align: center;
+  border: 1px solid #EAEAEA;
+  border-radius: 16px;
+  padding: 24px 20px;
+}
+.txa-affiliates-2-features-cards-single .icon-elm {
+  width: 72px;
+  height: 72px;
+  background: #FFB000;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 32px;
+  box-shadow: 0px 7px 35px rgba(255, 176, 0, 0.4);
+}
+.txa-affiliates-2-features-cards-single .title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.txa-affiliates-2-features-cards-single .disc {
+  opacity: 0.8;
+  font-weight: 400;
+}
+.txa-affiliates-2-features-cards-single:nth-child(2) .icon-elm {
+  background: #0D88FF;
+  box-shadow: 0px 7px 35px rgba(13, 136, 255, 0.4);
+}
+.txa-affiliates-2-features-cards-single:nth-child(3) .icon-elm {
+  background: #49B363;
+  box-shadow: 0px 7px 35px rgba(73, 179, 99, 0.4);
+}
+.txa-affiliates-2-features-cards-single:nth-child(4) .icon-elm {
+  background: #6F4BFB;
+  box-shadow: 0px 7px 35px rgba(111, 75, 251, 0.4);
+}
+
+.txa-affiliates-2-benefits {
+  background-color: #FAFAFA;
+  padding-top: 275px;
+  margin-top: -158px;
+  padding-bottom: 120px;
+}
+.txa-affiliates-2-benefits-title {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 60px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .txa-affiliates-2-benefits-title {
+    font-size: 44px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .txa-affiliates-2-benefits-title {
+    font-size: 38px;
+  }
+}
+@media (max-width: 767px) {
+  .txa-affiliates-2-benefits-title {
+    font-size: 28px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .txa-affiliates-2-benefits-title {
+    font-size: 32px;
+  }
+}
+.txa-affiliates-2-benefits-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .txa-affiliates-2-benefits-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 767px) {
+  .txa-affiliates-2-benefits-cards {
+    grid-template-columns: 1fr;
+  }
+}
+.txa-affiliates-2-benefits-cards-single {
+  border: 1px solid #F0F0F0;
+  border-radius: 32px;
+  padding: 10px;
+  position: relative;
+  z-index: 1;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  .txa-affiliates-2-benefits-cards-single {
+    padding: 5px;
+  }
+}
+.txa-affiliates-2-benefits-cards-single::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 32px;
+  padding: 1px;
+  background: var(--txa-gd-1);
+  z-index: -1;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  opacity: 0;
+  transition: all 0.5s var(--cube-1);
+}
+.txa-affiliates-2-benefits-cards-single .card-border {
+  background-size: 100% 100%;
+  padding: 32px 32px;
+  border-radius: 28px;
+  overflow: hidden;
+  background-color: #fff;
+  height: 100%;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  .txa-affiliates-2-benefits-cards-single .card-border {
+    padding: 32px 15px;
+  }
+}
+.txa-affiliates-2-benefits-cards-single .icon-elm {
+  position: relative;
+  z-index: 1;
+  width: 72px;
+  height: 72px;
+  border-radius: 12px;
+  background-color: rgba(246, 247, 249, 0.5);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+.txa-affiliates-2-benefits-cards-single .icon-elm-bg {
+  position: absolute;
+  opacity: 0.1;
+  transition: all 0.5s var(--cube-1);
+}
+.txa-affiliates-2-benefits-cards-single .icon-elm-main {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  background-color: #E5E5E5;
+  border-radius: 50%;
+}
+.txa-affiliates-2-benefits-cards-single .icon-elm-main img {
+  transition: all 0.5s var(--cube-1);
+}
+.txa-affiliates-2-benefits-cards-single .title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+.txa-affiliates-2-benefits-cards-single .disc {
+  opacity: 0.8;
+  font-weight: 400;
+}
+.txa-affiliates-2-benefits-cards-single:hover::before {
+  opacity: 1;
+}
+.txa-affiliates-2-benefits-cards-single:hover .icon-elm-bg {
+  opacity: 1;
+}
+.txa-affiliates-2-benefits-cards-single:hover .icon-elm-main {
+  background: var(--txa-gd-1);
+}
+.txa-affiliates-2-benefits-cards-single:hover .icon-elm-main img {
+  filter: brightness(0) invert(1);
+}
+
+.txa-affiliates-2-faqs-title {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 60px;
+  max-width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .txa-affiliates-2-faqs-title {
+    font-size: 44px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .txa-affiliates-2-faqs-title {
+    font-size: 38px;
+  }
+}
+@media (max-width: 767px) {
+  .txa-affiliates-2-faqs-title {
+    font-size: 28px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .txa-affiliates-2-faqs-title {
+    font-size: 32px;
+  }
+}
+.txa-affiliates-2-faqs .txa-accordion-2 {
+  max-width: 1076px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.txa-affiliates-2-faqs .txa-accordion-2-item {
+  background-color: #FAFAFA;
+  border: 1px solid #F0F0F0;
+  border-radius: 32px;
+  padding: 8px;
+}
+.txa-affiliates-2-faqs .txa-accordion-2-item .item-border {
+  background: #fff;
+  border-radius: 28px;
+}
+.txa-affiliates-2-faqs .txa-accordion-2-item .item-title {
+  font-size: 28px;
+  font-weight: 600;
+  padding: 25px 32px;
+  position: relative;
+  z-index: 1;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px) {
+  .txa-affiliates-2-faqs .txa-accordion-2-item .item-title {
+    font-size: 22px;
+    padding: 25px 15px;
+  }
+}
+@media (max-width: 767px) {
+  .txa-affiliates-2-faqs .txa-accordion-2-item .item-title {
+    font-size: 20px;
+    padding: 25px 15px;
+  }
+}
+.txa-affiliates-2-faqs .txa-accordion-2-item .item-title .icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  border: none;
+}
+.txa-affiliates-2-faqs .txa-accordion-2-item .item-title .icon::before {
+  border-radius: 12px;
+  opacity: 1;
+}
+.txa-affiliates-2-faqs .txa-accordion-2-item .item-title .icon svg:nth-child(2) {
+  position: absolute;
+  transition: all 0.5s var(--cube-1);
+  opacity: 0;
+}
+.txa-affiliates-2-faqs .txa-accordion-2-item .item-title .bg-shape {
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-radius: 0 30px 0 0;
+  z-index: -1;
+  opacity: 0;
+  transition: all 0.5s var(--cube-1);
+}
+.txa-affiliates-2-faqs .txa-accordion-2-item .item-title:is(:not(.collapsed)) .bg-shape {
+  opacity: 1;
+}
+.txa-affiliates-2-faqs .txa-accordion-2-item .item-title:is(:not(.collapsed)) .icon {
+  background: var(--txa-gd-1);
+}
+.txa-affiliates-2-faqs .txa-accordion-2-item .item-title:is(:not(.collapsed)) .icon::before {
+  opacity: 1;
+}
+.txa-affiliates-2-faqs .txa-accordion-2-item .item-title:is(:not(.collapsed)) .icon svg:nth-child(1) {
+  opacity: 0;
+}
+.txa-affiliates-2-faqs .txa-accordion-2-item .item-title:is(:not(.collapsed)) .icon svg:nth-child(2) {
+  opacity: 1;
+}
+.txa-affiliates-2-faqs .txa-accordion-2-item .item-title:is(:not(.collapsed)) .icon svg * {
+  fill: #fff;
+}
+.txa-affiliates-2-faqs .txa-accordion-2-item .item-content {
+  padding: 0 32px;
+  display: grid;
+  gap: 50px;
+  grid-template-columns: 1.3fr 1fr;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  .txa-affiliates-2-faqs .txa-accordion-2-item .item-content {
+    padding: 0 15px;
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+}
+.txa-affiliates-2-faqs .txa-accordion-2-item .item-content-left {
+  padding-bottom: 30px;
+}
+.txa-affiliates-2-faqs .txa-accordion-2-item .item-content-left .disc {
+  font-size: 17px;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+.txa-affiliates-2-faqs .txa-accordion-2-item .item-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 13px 24px;
+}
+@media (max-width: 767px) {
+  .txa-affiliates-2-faqs .txa-accordion-2-item .item-list {
+    grid-template-columns: 1fr;
+  }
+}
+.txa-affiliates-2-faqs .txa-accordion-2-item .item-list li {
+  font-size: 17px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.txa-affiliates-2-guide-title {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 60px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .txa-affiliates-2-guide-title {
+    font-size: 44px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .txa-affiliates-2-guide-title {
+    font-size: 38px;
+  }
+}
+@media (max-width: 767px) {
+  .txa-affiliates-2-guide-title {
+    font-size: 28px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .txa-affiliates-2-guide-title {
+    font-size: 32px;
+  }
+}
+.txa-affiliates-2-guide-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  .txa-affiliates-2-guide-wrap {
+    grid-template-columns: 1fr;
+  }
+}
+.txa-affiliates-2-guide-inner-title {
+  background-color: #02021E;
+  color: #fff;
+  font-weight: 600;
+  padding: 21px 40px;
+  font-size: 24px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  .txa-affiliates-2-guide-inner-title {
+    padding: 21px 15px;
+    font-size: 20px;
+  }
+}
+.txa-affiliates-2-guide-item {
+  background: #FAFAFA;
+  padding: 40px 40px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+  .txa-affiliates-2-guide-item {
+    padding: 40px 20px;
+  }
+}
+.txa-affiliates-2-guide-item-single {
+  display: flex;
+  gap: 12px;
+  border-bottom: 1px solid #EAEAEA;
+  padding-bottom: 40px;
+}
+.txa-affiliates-2-guide-item-single:not(:last-child) {
+  margin-bottom: 40px;
+}
+.txa-affiliates-2-guide-item-single .icon {
+  flex: 0 0 auto;
+}
+.txa-affiliates-2-guide-item-single .title {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 14px;
+}
+.txa-affiliates-2-guide-item-single .disc {
+  font-weight: 400;
+  color: #262641;
+}
+.txa-affiliates-2-guide-item-single .content-wrap {
+  padding-top: 3px;
+}
+
+/* 
+    affiliates-2-end
+*/
 
 /*# sourceMappingURL=main.css.map */
